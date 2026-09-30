@@ -1,4 +1,63 @@
 'use strict';
-const CACHE_NAME='heimspielplaner-v49.1'; const APP_SHELL=['./index.html','./manifest.webmanifest','./version.json','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
-self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE_NAME);await c.addAll(APP_SHELL);await self.skipWaiting()})())); self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const k of await caches.keys())if(k.startsWith('heimspielplaner-')&&k!==CACHE_NAME)await caches.delete(k);await self.clients.claim()})()));
-self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==self.location.origin)return;if(u.pathname.endsWith('/spiele-live.json')||u.pathname.endsWith('/version.json')){e.respondWith((async()=>{const c=await caches.open(CACHE_NAME);try{const n=await fetch(r,{cache:'no-store'});if(n.ok)await c.put(u.pathname.split('/').pop(),n.clone());return n}catch(x){return(await c.match(u.pathname.split('/').pop()))||new Response('',{status:503})}})());return}if(r.mode==='navigate'){e.respondWith((async()=>{const c=await caches.open(CACHE_NAME);try{const n=await fetch(r);if(n.ok)await c.put('./index.html',n.clone());return n}catch(x){return(await c.match('./index.html'))||new Response('Offline',{status:503})}})());return}e.respondWith((async()=>{const c=await caches.open(CACHE_NAME),h=await c.match(r,{ignoreSearch:true});if(h)return h;try{const n=await fetch(r);if(n.ok)await c.put(r,n.clone());return n}catch(x){return new Response('',{status:503})}})())});
+const CACHE_NAME='heimspielplaner-v49.2';
+const APP_SHELL=[
+  './index.html',
+  './manifest.webmanifest?v=49.2',
+  './version.json',
+  './icon-192.png?v=49.2',
+  './icon-512.png?v=49.2',
+  './apple-touch-icon.png?v=49.2'
+];
+self.addEventListener('install',event=>event.waitUntil((async()=>{
+  const cache=await caches.open(CACHE_NAME);
+  await cache.addAll(APP_SHELL);
+  await self.skipWaiting();
+})()));
+self.addEventListener('activate',event=>event.waitUntil((async()=>{
+  for(const key of await caches.keys()){
+    if(key.startsWith('heimspielplaner-')&&key!==CACHE_NAME) await caches.delete(key);
+  }
+  await self.clients.claim();
+})()));
+self.addEventListener('fetch',event=>{
+  const request=event.request;
+  if(request.method!=='GET') return;
+  const url=new URL(request.url);
+  if(url.origin!==self.location.origin) return;
+  if(/\/(spiele-live\.json|version\.json)$/.test(url.pathname)){
+    event.respondWith((async()=>{
+      const cache=await caches.open(CACHE_NAME);
+      try{
+        const response=await fetch(request,{cache:'no-store'});
+        if(response.ok) await cache.put(request,response.clone());
+        return response;
+      }catch(error){
+        return (await cache.match(request,{ignoreSearch:true}))||new Response('',{status:503});
+      }
+    })());
+    return;
+  }
+  if(request.mode==='navigate'){
+    event.respondWith((async()=>{
+      const cache=await caches.open(CACHE_NAME);
+      try{
+        const response=await fetch(request,{cache:'no-store'});
+        if(response.ok) await cache.put('./index.html',response.clone());
+        return response;
+      }catch(error){
+        return (await cache.match('./index.html'))||new Response('Offline',{status:503});
+      }
+    })());
+    return;
+  }
+  event.respondWith((async()=>{
+    const cache=await caches.open(CACHE_NAME);
+    try{
+      const response=await fetch(request,{cache:'no-cache'});
+      if(response.ok) await cache.put(request,response.clone());
+      return response;
+    }catch(error){
+      return (await cache.match(request,{ignoreSearch:true}))||new Response('',{status:503});
+    }
+  })());
+});
