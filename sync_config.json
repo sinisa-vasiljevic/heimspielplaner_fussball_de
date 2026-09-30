@@ -1,0 +1,13 @@
+{
+  "season": "2627",
+  "venueDefault": "Frankenstadion",
+  "vfr": {
+    "clubId": "023QDJNIQK000000VS54898GVUU5JGVL",
+    "url": "https://www.fussball.de/verein/vfr-heilbronn-96-18-wuerttemberg/-/id/023QDJNIQK000000VS54898GVUU5JGVL#!/",
+    "homeNames": ["VfR Heilbronn 96/18", "VfR Heilbronn"]
+  },
+  "sgv": {
+    "teamUrl": "https://www.fussball.de/mannschaft/sgv-heilbronn-freiberg-fussball-sgv-heilbronn-freiberg-wuerttemberg/-/saison/2627/team-id/019S3IKKIO000000VV0AG80NVVK3URHB#!/",
+    "homeNames": ["SGV Heilbronn-Freiberg", "SGV Freiberg"]
+  }
+}
