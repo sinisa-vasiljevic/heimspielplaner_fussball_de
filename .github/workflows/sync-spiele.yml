@@ -20,7 +20,7 @@ jobs:
       - run: python -m playwright install --with-deps chromium
       - name: Zehn feste Mannschaftsspielpläne abrufen
         run: python scripts/sync_fussball_de.py
-      - name: Änderung veröffentlichen
+      - name: JSON veröffentlichen
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -31,4 +31,3 @@ jobs:
             git commit -m "Spielplan automatisch aktualisiert"
             git push
           fi
-
