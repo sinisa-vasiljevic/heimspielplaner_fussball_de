@@ -1,14 +1,8 @@
-# Heimspielplaner V48.0
+# Heimspielplaner V49.0
+- Feste FUSSBALL.DE-Teamquellen für zehn Mannschaften.
+- Stabile interne Spiel-ID aus offizieller Spielnummer, damit Verlegungen bestehende Zuordnungen behalten.
+- Automatische Übernahme der auf der Teamseite ausgewiesenen Heimspielstätte.
+- Netzwerkzuerst für `spiele-live.json` und `version.json`, Offline-Fallback bleibt erhalten.
+- FuPa vollständig entfernt.
 
-Vollständig geprüfter Aufbau ohne FuPa.
-
-## Datenfluss
-
-1. GitHub Actions ruft alle 3 Stunden zehn feste FUSSBALL.DE-Mannschaftsseiten ab.
-2. `scripts/sync_fussball_de.py` schreibt ausschließlich Heimspiele nach `spiele-live.json`.
-3. `index.html` lädt ausschließlich `spiele-live.json` und kein FuPa-Widget.
-4. Der Service Worker behandelt `spiele-live.json` netzwerkzuerst, damit neue Termine nicht durch einen alten Cache blockiert werden.
-
-## Erstinstallation
-
-Den gesamten Inhalt dieses Pakets in den Repository-Stamm laden. Danach unter Actions den Workflow einmal manuell starten. Erst nach einem erfolgreichen Lauf enthält `spiele-live.json` die aktuellen Spiele.
+`spiele-live.json` ist bewusst nicht im Paket, damit der aktuelle Live-Datenstand beim Upload nicht überschrieben wird.

@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "48.0",
-  "release": "Vollständig geprüfter FUSSBALL.DE-Sync ohne FuPa",
+  "version": "49.0",
+  "release": "Spielstätten, stabile Spielnummern und Cache-Fix",
   "date": "2026-09-30"
 }
