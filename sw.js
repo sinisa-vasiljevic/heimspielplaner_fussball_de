@@ -1,6 +1,6 @@
 'use strict';
-const CACHE_NAME='heimspielplaner-v46.0-offline';
-const APP_SHELL=['./index.html','./manifest.webmanifest','./version.json','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
+const CACHE_NAME='heimspielplaner-v47.1-fussballde';
+const APP_SHELL=['./index.html','./manifest.webmanifest','./version.json','./spiele-live.json','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 
 self.addEventListener('install',event=>{
   event.waitUntil((async()=>{
