@@ -1,9 +1,7 @@
-name: FUSSBALL.DE Spielplan synchronisieren und Pages bereitstellen
+name: FUSSBALL.DE Diagnose und Pages bereitstellen
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 */3 * * *'
 
 permissions:
   contents: write
@@ -11,30 +9,33 @@ permissions:
   id-token: write
 
 concurrency:
-  group: fussball-de-sync-pages
+  group: fussball-de-diagnose-pages
   cancel-in-progress: false
 
 jobs:
-  sync-and-deploy:
+  diagnose:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - run: pip install playwright==1.55.0
-
       - run: python -m playwright install --with-deps chromium
-
-      - name: Zehn feste Mannschaftsspielpläne abrufen
+      - name: Zehn Teamseiten abrufen und Diagnose erzeugen
         run: python scripts/sync_fussball_de.py
-
-      - name: Aktualisierte JSON in main speichern
+      - name: Diagnose als Download bereitstellen
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fussballde-diagnose
+          path: debug-fussballde/
+          if-no-files-found: error
+          retention-days: 3
+      - name: Aktualisierte JSON speichern
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -45,15 +46,10 @@ jobs:
             git commit -m "Spielplan automatisch aktualisiert"
             git push
           fi
-
-      - name: GitHub Pages konfigurieren
-        uses: actions/configure-pages@v5
-
-      - name: Pages-Artefakt hochladen
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: .
-
       - name: GitHub Pages veröffentlichen
         id: deployment
         uses: actions/deploy-pages@v4
