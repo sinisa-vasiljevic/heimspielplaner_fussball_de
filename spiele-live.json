@@ -1,18 +1,18 @@
 {
-  "schema": 3,
-  "updatedAt": "2026-09-30T18:38:41.536385+00:00",
+  "schema": 4,
+  "updatedAt": "2026-09-30T20:11:18.133073+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
+    "u14": 5,
+    "u15": 7,
+    "u11": 2,
+    "u12": 3,
     "vh": 5,
-    "u19": 4,
     "u17": 6,
     "u16": 3,
-    "u15": 7,
-    "u14": 5,
-    "u13": 4,
-    "u12": 3,
-    "u11": 2
+    "u19": 4,
+    "u13": 2
   },
   "games": [
     {
@@ -209,36 +209,6 @@
       "status": "angesetzt",
       "gameNo": "550032073",
       "competitionType": "FS"
-    },
-    {
-      "id": "fd-2bc332c94ce46ebe6a44",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-10-18",
-      "time": "10:16",
-      "opponent": "SGM Nagelsberg/Amrichshausen I",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "560901001",
-      "competitionType": "TU"
-    },
-    {
-      "id": "fd-c7fff8bc29e7ef62404d",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-10-18",
-      "time": "10:16",
-      "opponent": "SGM Heinsheim/Sommerberg I",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "560901003",
-      "competitionType": "TU"
     },
     {
       "id": "fd-b55d6e214c15fb9b67a3",
@@ -676,5 +646,7 @@
       "competitionType": "ME"
     }
   ],
-  "warnings": []
+  "warnings": [
+    "Turnierspiele (TU) werden nicht als Heimspiele im Frankenstadion gewertet."
+  ]
 }

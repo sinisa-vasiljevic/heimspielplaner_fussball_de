@@ -62,5 +62,8 @@
       "teamId": "027N6TN03G000000VS5489B2VSOPA3SJ",
       "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/027N6TN03G000000VS5489B2VSOPA3SJ#!/"
     }
-  }
+  },
+  "excludeCompetitionTypes": [
+    "TU"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "49.0",
-  "release": "Spielstätten, stabile Spielnummern und Cache-Fix",
+  "version": "49.1",
+  "release": "Turnierschutz, Zeitzuordnung und Cache-Korrektur",
   "date": "2026-09-30"
 }
