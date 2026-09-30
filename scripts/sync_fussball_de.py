@@ -9,7 +9,8 @@ CFG = json.loads((ROOT / 'sync_config.json').read_text(encoding='utf-8'))
 OUT = ROOT / 'spiele-live.json'
 DATE_RE = re.compile(r'(?:(?:Mo|Di|Mi|Do|Fr|Sa|So)\.?\s*,?\s*)?(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?([0-2]?\d:[0-5]\d)', re.I)
 INFO_RE = re.compile(r'\b(ME|FS|PO|TU)\s*\|\s*(\d{6,})')
-TIME_RE = re.compile(r'^[0-2]?\d:[0-5]\d$')
+TIME_RE = re.compile(r'(?<!\d)([0-2]?\d:[0-5]\d)(?!\d)')
+EXCLUDED_TYPES = {str(x).upper() for x in CFG.get('excludeCompetitionTypes', ['TU'])}
 
 
 def clean(value):
@@ -44,15 +45,21 @@ def parse_games(text, key, cfg):
             y = '20' + y if len(y) == 2 else y
             current_date = f'{y}-{int(m):02d}-{int(d):02d}'
             current_time = tm.zfill(5)
-        elif TIME_RE.fullmatch(line) and current_date:
-            current_time = line.zfill(5)
+        elif current_date:
+            time_match = TIME_RE.search(line)
+            if time_match:
+                current_time = time_match.group(1).zfill(5)
         info = INFO_RE.search(line)
         if info:
             current_type, current_no = info.groups()
         if i + 2 < len(lines) and lines[i + 1] == ':' and current_date and current_time:
             home, away = lines[i], lines[i + 2]
             tail = '\n'.join(lines[i:min(len(lines), i + 7)])
-            if club_needle in home.lower():
+            competition_type = (current_type or '').upper()
+            # TU = Turnier. Die zuerst genannte Mannschaft ist dort nicht automatisch
+            # Gastgeber am eigenen Platz. Solche Einträge dürfen den Heimspielplan,
+            # Verkauf, freie Slots, Kollisionen und Kabinen nicht belegen.
+            if club_needle in home.lower() and competition_type not in EXCLUDED_TYPES:
                 stable = (cfg['teamId'] + '|' + current_no) if current_no else '|'.join([cfg['teamId'], home.lower(), away.lower(), CFG['season']])
                 gid = 'fd-' + hashlib.sha1(stable.encode()).hexdigest()[:20]
                 if gid not in seen:
@@ -72,6 +79,10 @@ def parse_games(text, key, cfg):
                         'gameNo': current_no or '',
                         'competitionType': current_type or ''
                     })
+            # Match-specific values must not leak into the next row.
+            current_time = None
+            current_type = None
+            current_no = None
             i += 2
         i += 1
     return games
