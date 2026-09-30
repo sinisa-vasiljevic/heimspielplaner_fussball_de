@@ -1,1 +1,48 @@
-{"schema":2,"updatedAt":"","source":"FUSSBALL.DE","counts":{},"games":[],"warnings":["Erster Abruf der festen Teamkonfiguration steht aus."]}
+{
+  "schema": 2,
+  "updatedAt": "2026-09-30T12:41:43.097975+00:00",
+  "source": "FUSSBALL.DE",
+  "counts": {
+    "sgv": 2,
+    "vh": 0,
+    "u19": 0,
+    "u17": 0,
+    "u16": 0,
+    "u15": 0,
+    "u14": 0,
+    "u13": 0,
+    "u12": 0,
+    "u11": 0
+  },
+  "games": [
+    {
+      "id": "fd-750596a2517c0e43b0ef",
+      "teamId": "sgv",
+      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "club": "sgv",
+      "label": "Herren",
+      "date": "2026-09-26",
+      "time": "14:00",
+      "opponent": "SV Stuttgarter Kickers",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": ""
+    },
+    {
+      "id": "fd-d5615fcb092d9c4f7ad3",
+      "teamId": "sgv",
+      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "club": "sgv",
+      "label": "Herren",
+      "date": "2026-10-03",
+      "time": "14:00",
+      "opponent": "TSV Steinbach Haiger",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": ""
+    }
+  ],
+  "warnings": []
+}
