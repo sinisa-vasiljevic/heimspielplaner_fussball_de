@@ -1,18 +1,18 @@
 {
-  "schema": 4,
-  "updatedAt": "2026-09-30T20:11:18.133073+00:00",
+  "schema": 3,
+  "updatedAt": "2026-09-30T20:28:08.337575+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
-    "u14": 5,
-    "u15": 7,
-    "u11": 2,
-    "u12": 3,
     "vh": 5,
+    "u19": 4,
     "u17": 6,
     "u16": 3,
-    "u19": 4,
-    "u13": 2
+    "u15": 7,
+    "u14": 5,
+    "u13": 2,
+    "u12": 3,
+    "u11": 2
   },
   "games": [
     {
@@ -646,7 +646,5 @@
       "competitionType": "ME"
     }
   ],
-  "warnings": [
-    "Turnierspiele (TU) werden nicht als Heimspiele im Frankenstadion gewertet."
-  ]
+  "warnings": []
 }
