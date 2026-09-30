@@ -1,7 +1,9 @@
-name: FUSSBALL.DE Diagnose und Pages bereitstellen
+name: FUSSBALL.DE Spielplan synchronisieren und Pages bereitstellen
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '17 */3 * * *'
 
 permissions:
   contents: write
@@ -9,11 +11,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: fussball-de-diagnose-pages
+  group: fussball-de-sync-pages
   cancel-in-progress: false
 
 jobs:
-  diagnose:
+  sync-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -25,17 +27,9 @@ jobs:
           python-version: '3.12'
       - run: pip install playwright==1.55.0
       - run: python -m playwright install --with-deps chromium
-      - name: Zehn Teamseiten abrufen und Diagnose erzeugen
+      - name: Zehn feste Mannschaftsspielpläne abrufen
         run: python scripts/sync_fussball_de.py
-      - name: Diagnose als Download bereitstellen
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: fussballde-diagnose
-          path: debug-fussballde/
-          if-no-files-found: error
-          retention-days: 3
-      - name: Aktualisierte JSON speichern
+      - name: Aktualisierte JSON in main speichern
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
