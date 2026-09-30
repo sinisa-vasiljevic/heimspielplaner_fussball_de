@@ -18,7 +18,7 @@ jobs:
           python-version: '3.12'
       - run: pip install playwright==1.55.0
       - run: python -m playwright install --with-deps chromium
-      - name: Spielpläne abrufen
+      - name: Zehn feste Mannschaftsspielpläne abrufen
         run: python scripts/sync_fussball_de.py
       - name: Änderung veröffentlichen
         run: |
@@ -31,3 +31,4 @@ jobs:
             git commit -m "Spielplan automatisch aktualisiert"
             git push
           fi
+
