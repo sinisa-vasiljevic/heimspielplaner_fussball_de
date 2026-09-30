@@ -1,13 +1,60 @@
 {
   "season": "2627",
   "venueDefault": "Frankenstadion",
-  "vfr": {
-    "clubId": "023QDJNIQK000000VS54898GVUU5JGVL",
-    "url": "https://www.fussball.de/verein/vfr-heilbronn-96-18-wuerttemberg/-/id/023QDJNIQK000000VS54898GVUU5JGVL#!/",
-    "homeNames": ["VfR Heilbronn 96/18", "VfR Heilbronn"]
-  },
-  "sgv": {
-    "teamUrl": "https://www.fussball.de/mannschaft/sgv-heilbronn-freiberg-fussball-sgv-heilbronn-freiberg-wuerttemberg/-/saison/2627/team-id/019S3IKKIO000000VV0AG80NVVK3URHB#!/",
-    "homeNames": ["SGV Heilbronn-Freiberg", "SGV Freiberg"]
+  "teams": {
+    "sgv": {
+      "club": "sgv",
+      "label": "Herren",
+      "teamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "url": "https://www.fussball.de/mannschaft/sgv-heilbronn-freiberg-fussball-sgv-heilbronn-freiberg-wuerttemberg/-/saison/2627/team-id/019S3IKKIO000000VV0AG80NVVK3URHB#!/",
+      "homeNames": ["SGV Heilbronn-Freiberg", "SGV Freiberg"]
+    },
+    "vh": {
+      "club": "vfr",
+      "label": "Herren",
+      "teamId": "023SF66GL8000000VS548984VU2AAOK0",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/023SF66GL8000000VS548984VU2AAOK0#!/",
+      "homeNames": ["VfR Heilbronn", "VfR Heilbronn 96/18"]
+    },
+    "u19": {
+      "club": "vfr", "label": "U19", "teamId": "027KSOGTMK000000VS5489B2VVDR0U48",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/027KSOGTMK000000VS5489B2VVDR0U48#!/",
+      "homeNames": ["VfR Heilbronn 96/18"]
+    },
+    "u17": {
+      "club": "vfr", "label": "U17", "teamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-i-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/02EKPDV1FS000000VS5489B2VU47K6LH#!/",
+      "homeNames": ["VfR Heilbronn 96/18 I"]
+    },
+    "u16": {
+      "club": "vfr", "label": "U16", "teamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-ii-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/02IGCLELL8000000VS5489B1VUG7QVAU#!/",
+      "homeNames": ["VfR Heilbronn 96/18 II"]
+    },
+    "u15": {
+      "club": "vfr", "label": "U15", "teamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-i-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/02B1JLKKD4000000VS5489B2VS0NK514#!/",
+      "homeNames": ["VfR Heilbronn 96/18 I"]
+    },
+    "u14": {
+      "club": "vfr", "label": "U14", "teamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-ii-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/02EKPGCJ60000000VS5489B2VU47K6LH#!/",
+      "homeNames": ["VfR Heilbronn 96/18 II"]
+    },
+    "u13": {
+      "club": "vfr", "label": "U13", "teamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-i-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/02B1JNESM0000000VS5489B2VS0NK514#!/",
+      "homeNames": ["VfR Heilbronn 96/18 I"]
+    },
+    "u12": {
+      "club": "vfr", "label": "U12", "teamId": "02B1JNO7AO000000VS5489B2VS0NK514",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-ii-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/02B1JNO7AO000000VS5489B2VS0NK514#!/",
+      "homeNames": ["VfR Heilbronn 96/18 II"]
+    },
+    "u11": {
+      "club": "vfr", "label": "U11", "teamId": "027N6TN03G000000VS5489B2VSOPA3SJ",
+      "url": "https://www.fussball.de/mannschaft/vfr-heilbronn-96-18-vfr-heilbronn-96-18-wuerttemberg/-/saison/2627/team-id/027N6TN03G000000VS5489B2VSOPA3SJ#!/",
+      "homeNames": ["VfR Heilbronn 96/18"]
+    }
   }
 }
