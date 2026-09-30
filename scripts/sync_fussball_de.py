@@ -19,7 +19,8 @@ def parse_games(text,key,cfg):
    if len(parts)==2 and any(h.lower() in parts[0].lower() for h in cfg['homeNames']): pair=(parts[0].strip(),parts[1].strip()); break
   if not pair: continue
   home,away=pair; nm=re.search(r'\b(?:FS|ME|PO)\s*\|\s*(\d{6,})',block); no=nm.group(1) if nm else ''
-  raw='|'.join([cfg['teamId'],no,date,tm,home.lower(),away.lower()]); gid='fd-'+hashlib.sha1(raw.encode()).hexdigest()[:20]
+  stable=(cfg['teamId']+'|'+no) if no else '|'.join([cfg['teamId'],home.lower(),away.lower(),CFG['season']])
+  gid='fd-'+hashlib.sha1(stable.encode()).hexdigest()[:20]
   if gid in seen: continue
   seen.add(gid); status='abgesetzt' if re.search(r'Absetzung|abgesetzt',block,re.I) else 'angesetzt'
   out.append({'id':gid,'teamId':key,'externalTeamId':cfg['teamId'],'club':cfg['club'],'label':cfg['label'],'date':date,'time':tm,'opponent':away,'venue':CFG.get('venueDefault','Frankenstadion'),'source':'FUSSBALL.DE','status':status,'gameNo':no})
@@ -29,23 +30,23 @@ async def load(page,url):
  for name in ['Alle akzeptieren','Akzeptieren','Zustimmen']:
   try: await page.get_by_role('button',name=re.compile(name,re.I)).click(timeout=1200); await page.wait_for_timeout(1200); break
   except Exception: pass
- for _ in range(5): await page.mouse.wheel(0,1400); await page.wait_for_timeout(400)
+ for _ in range(6): await page.mouse.wheel(0,1400); await page.wait_for_timeout(450)
  return await page.locator('body').inner_text()
 async def main():
  games=[]; warnings=[]; counts={}
  async with async_playwright() as p:
-  browser=await p.chromium.launch(headless=True); page=await browser.new_page(locale='de-DE',user_agent='Mozilla/5.0 Chrome/124 Safari/537.36')
+  browser=await p.chromium.launch(headless=True); page=await browser.new_page(locale='de-DE',user_agent='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36')
   for key,cfg in CFG['teams'].items():
    try:
-    found=parse_games(await load(page,cfg['url']),key,cfg); games.extend(found); counts[key]=len(found); print(key,cfg['teamId'],len(found))
-   except Exception as exc: warnings.append(f'{key}: {exc}')
+    found=parse_games(await load(page,cfg['url']),key,cfg); games.extend(found); counts[key]=len(found); print(f'{key}: {len(found)} Heimspiele')
+   except Exception as exc: counts[key]=0; warnings.append(f'{key}: {exc}')
   await browser.close()
  games=sorted({g['id']:g for g in games if g['status']!='abgesetzt'}.values(),key=lambda g:(g['date'],g['time'],g['teamId']))
  old={}
  if OUT.exists():
   try: old=json.loads(OUT.read_text(encoding='utf-8'))
   except Exception: pass
- if not games and old.get('games'): raise SystemExit('0 Spiele; vorhandene JSON bleibt erhalten. '+'; '.join(warnings))
+ if not games and old.get('games'): raise SystemExit('Abruf ergab 0 Spiele; gültige JSON bleibt erhalten. '+'; '.join(warnings))
  OUT.write_text(json.dumps({'schema':2,'updatedAt':datetime.now(timezone.utc).isoformat(),'source':'FUSSBALL.DE','counts':counts,'games':games,'warnings':warnings},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
- print('Gesamt:',len(games),'Warnungen:',warnings)
+ print('Gesamt:',len(games),'Counts:',counts,'Warnungen:',warnings)
 if __name__=='__main__': asyncio.run(main())
