@@ -1,10 +1,10 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-02T18:40:05.917108+00:00",
+  "updatedAt": "2026-10-02T21:34:28.330230+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
-    "vh": 5,
+    "vh": 6,
     "u19": 4,
     "u17": 6,
     "u16": 3,
@@ -613,6 +613,21 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "390013069",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-54e4812ba8e3a9fad8d6",
+      "teamId": "vh",
+      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
+      "club": "vfr",
+      "label": "Herren",
+      "date": "2027-02-27",
+      "time": "15:30",
+      "opponent": "FV Löchgau",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350181172",
       "competitionType": "ME"
     },
     {
