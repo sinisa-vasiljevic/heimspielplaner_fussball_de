@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-03T09:34:51.483980+00:00",
+  "updatedAt": "2026-10-03T15:50:04.309047+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -15,21 +15,6 @@
     "u11": 2
   },
   "games": [
-    {
-      "id": "fd-4021f0aac04fa4f2a156",
-      "teamId": "sgv",
-      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
-      "club": "sgv",
-      "label": "Herren",
-      "date": "2026-10-03",
-      "time": "14:00",
-      "opponent": "TSV Steinbach Haiger",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "490010082",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-0fbdc82bf8b4e3998a50",
       "teamId": "u14",
@@ -613,6 +598,21 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "390013069",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-4f21025b2ada7ce51a81",
+      "teamId": "sgv",
+      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "club": "sgv",
+      "label": "Herren",
+      "date": "2027-02-20",
+      "time": "14:00",
+      "opponent": "VfR Mannheim",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "490010172",
       "competitionType": "ME"
     },
     {
