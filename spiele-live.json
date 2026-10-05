@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-05T09:40:18.872396+00:00",
+  "updatedAt": "2026-10-05T12:44:18.007113+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -511,6 +511,21 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-41c4f68cd0b2b3a85fc3",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-11-21",
+      "time": "09:30",
+      "opponent": "SSV Reutlingen 1905 Fußball",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351457043",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-f4baf40e820d12ef768f",
       "teamId": "vh",
       "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
@@ -523,21 +538,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181149",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-41c4f68cd0b2b3a85fc3",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-21",
-      "time": "15:55",
-      "opponent": "SSV Reutlingen 1905 Fußball",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457043",
       "competitionType": "ME"
     },
     {
