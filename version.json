@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "49.2",
-  "release": "Neue App-Icons und Cache-Aktualisierung",
-  "date": "2026-09-30"
+  "version": "49.3",
+  "release": "Verkaufsintervalle bei Beruehrung oder Ueberlappung korrekt zusammenfuehren",
+  "date": "2026-10-06"
 }
