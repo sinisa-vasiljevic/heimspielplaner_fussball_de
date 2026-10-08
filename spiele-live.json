@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-08T16:15:12.421502+00:00",
+  "updatedAt": "2026-10-08T17:13:44.695050+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -31,6 +31,21 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-18a920e6f058a19c7e47",
+      "teamId": "u11",
+      "externalTeamId": "027N6TN03G000000VS5489B2VSOPA3SJ",
+      "club": "vfr",
+      "label": "U11",
+      "date": "2026-10-10",
+      "time": "11:15",
+      "opponent": "TV Flein I",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351576015",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-d7cda85af7cf59c6f049",
       "teamId": "u12",
       "externalTeamId": "02B1JNO7AO000000VS5489B2VS0NK514",
@@ -43,21 +58,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351462016",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-18a920e6f058a19c7e47",
-      "teamId": "u11",
-      "externalTeamId": "027N6TN03G000000VS5489B2VSOPA3SJ",
-      "club": "vfr",
-      "label": "U11",
-      "date": "2026-10-10",
-      "time": "13:15",
-      "opponent": "TV Flein I",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351576015",
       "competitionType": "ME"
     },
     {
