@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-07T17:21:24.118589+00:00",
+  "updatedAt": "2026-10-08T00:15:16.594585+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -15,6 +15,21 @@
     "u11": 2
   },
   "games": [
+    {
+      "id": "fd-c669f96731797d2efe74",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2026-10-10",
+      "time": "10:00",
+      "opponent": "SGV Heilbronn-Freiberg Fußball II",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351891012",
+      "competitionType": "ME"
+    },
     {
       "id": "fd-18a920e6f058a19c7e47",
       "teamId": "u11",
@@ -61,33 +76,18 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-c669f96731797d2efe74",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2026-10-10",
-      "time": "15:30",
-      "opponent": "SGV Heilbronn-Freiberg Fußball II",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891012",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-b0bb5f0f588da8bf08bb",
+      "id": "fd-ca32e2275db2e3642270",
       "teamId": "u12",
       "externalTeamId": "02B1JNO7AO000000VS5489B2VS0NK514",
       "club": "vfr",
       "label": "U12",
       "date": "2026-10-11",
-      "time": "11:00",
-      "opponent": "VfL Kirchheim/Teck II (U12)",
+      "time": "10:00",
+      "opponent": "SV Böblingen II (U12)",
       "venue": "Frankenstadion",
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
-      "gameNo": "550032076",
+      "gameNo": "550032077",
       "competitionType": "FS"
     },
     {
