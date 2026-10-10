@@ -1,10 +1,10 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-10T14:11:07.546241+00:00",
+  "updatedAt": "2026-10-10T15:11:19.984224+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
-    "vh": 6,
+    "vh": 5,
     "u19": 4,
     "u17": 6,
     "u16": 5,
@@ -15,21 +15,6 @@
     "u11": 1
   },
   "games": [
-    {
-      "id": "fd-e76c5a54399af692e1ec",
-      "teamId": "vh",
-      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
-      "club": "vfr",
-      "label": "Herren",
-      "date": "2026-10-10",
-      "time": "14:00",
-      "opponent": "SV Leonberg/Eltingen",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "350181094",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-ca32e2275db2e3642270",
       "teamId": "u12",
