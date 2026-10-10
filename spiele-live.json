@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-10T13:12:49.437507+00:00",
+  "updatedAt": "2026-10-10T14:11:07.546241+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -8,7 +8,7 @@
     "u19": 4,
     "u17": 6,
     "u16": 5,
-    "u15": 6,
+    "u15": 7,
     "u14": 4,
     "u13": 3,
     "u12": 3,
@@ -613,6 +613,21 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181172",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-6799ddc5a0ec9518a7d3",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2027-03-13",
+      "time": "15:00",
+      "opponent": "SC Pfullendorf",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390013084",
       "competitionType": "ME"
     },
     {
