@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-10T10:11:03.498777+00:00",
+  "updatedAt": "2026-10-10T11:11:10.454604+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -9,27 +9,12 @@
     "u17": 6,
     "u16": 5,
     "u15": 6,
-    "u14": 5,
+    "u14": 4,
     "u13": 3,
     "u12": 3,
     "u11": 1
   },
   "games": [
-    {
-      "id": "fd-c669f96731797d2efe74",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2026-10-10",
-      "time": "10:00",
-      "opponent": "SGV Heilbronn-Freiberg Fußball II",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891012",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-e76c5a54399af692e1ec",
       "teamId": "vh",
