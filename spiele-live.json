@@ -1,11 +1,11 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-11T16:11:34.487210+00:00",
+  "updatedAt": "2026-10-11T17:11:20.128273+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
     "vh": 5,
-    "u19": 4,
+    "u19": 3,
     "u17": 6,
     "u16": 4,
     "u15": 7,
@@ -15,21 +15,6 @@
     "u11": 1
   },
   "games": [
-    {
-      "id": "fd-8dd6c1b40f8c06bfd948",
-      "teamId": "u19",
-      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
-      "club": "vfr",
-      "label": "U19",
-      "date": "2026-10-11",
-      "time": "16:00",
-      "opponent": "Freiburger FC",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390033030",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-7205af2e26604f960027",
       "teamId": "u16",
