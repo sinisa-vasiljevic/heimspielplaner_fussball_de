@@ -1,13 +1,13 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-11T13:13:37.311546+00:00",
+  "updatedAt": "2026-10-11T14:11:44.003946+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
     "vh": 5,
     "u19": 4,
     "u17": 6,
-    "u16": 5,
+    "u16": 4,
     "u15": 7,
     "u14": 4,
     "u13": 3,
@@ -15,21 +15,6 @@
     "u11": 1
   },
   "games": [
-    {
-      "id": "fd-118004697199140e6a09",
-      "teamId": "u16",
-      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
-      "club": "vfr",
-      "label": "U16",
-      "date": "2026-10-11",
-      "time": "13:00",
-      "opponent": "SV Heilbronn am Leinbach I",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351900012",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-8dd6c1b40f8c06bfd948",
       "teamId": "u19",
