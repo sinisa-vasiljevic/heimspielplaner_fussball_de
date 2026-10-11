@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-11T11:11:14.287385+00:00",
+  "updatedAt": "2026-10-11T12:14:15.808813+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -15,21 +15,6 @@
     "u11": 1
   },
   "games": [
-    {
-      "id": "fd-3c880c5d7690e93a1034",
-      "teamId": "u17",
-      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U17",
-      "date": "2026-10-11",
-      "time": "11:00",
-      "opponent": "SGM VfL Winterbach/SV Remshalden I",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "350838020",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-118004697199140e6a09",
       "teamId": "u16",
@@ -643,6 +628,21 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900052",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-8d9d7fb900a8cc913a76",
+      "teamId": "u17",
+      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U17",
+      "date": "2027-04-11",
+      "time": "11:00",
+      "opponent": "SV Allmersbach I",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350838080",
       "competitionType": "ME"
     }
   ],
