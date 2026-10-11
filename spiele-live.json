@@ -1,6 +1,6 @@
 {
   "schema": 3,
-  "updatedAt": "2026-10-11T07:13:39.858011+00:00",
+  "updatedAt": "2026-10-11T08:12:44.687998+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 5,
@@ -11,25 +11,10 @@
     "u15": 7,
     "u14": 4,
     "u13": 3,
-    "u12": 3,
+    "u12": 2,
     "u11": 1
   },
   "games": [
-    {
-      "id": "fd-ca32e2275db2e3642270",
-      "teamId": "u12",
-      "externalTeamId": "02B1JNO7AO000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U12",
-      "date": "2026-10-11",
-      "time": "10:00",
-      "opponent": "SV Böblingen II (U12)",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550032077",
-      "competitionType": "FS"
-    },
     {
       "id": "fd-3c880c5d7690e93a1034",
       "teamId": "u17",
