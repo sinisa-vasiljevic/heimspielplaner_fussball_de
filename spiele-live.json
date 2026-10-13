@@ -1,6 +1,6 @@
 {
   "schema": 4,
-  "updatedAt": "2026-10-13T09:48:39.512784+00:00",
+  "updatedAt": "2026-10-13T10:18:58.386084+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -9,8 +9,8 @@
     "u17": 10,
     "u16": 10,
     "u15": 10,
-    "u14": 9,
-    "u13": 6,
+    "u14": 7,
+    "u13": 4,
     "u12": 5,
     "u11": 4
   },
@@ -340,24 +340,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-3f7bcfdb58f55e6205f7",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-10-24",
-      "time": "14:30",
-      "homeTeam": "VfR Aalen",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "VfR Aalen",
-      "venue": "VfR Aalen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457026",
-      "competitionType": "ME"
-    },
-    {
       "id": "fd-9fbca2905f96c51894b5",
       "teamId": "u15",
       "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
@@ -535,24 +517,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900028",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-aea5eae8f473b386889e",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-01",
-      "time": "13:30",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "FC Esslingen I",
-      "locationType": "home",
-      "opponent": "FC Esslingen I",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457033",
       "competitionType": "ME"
     },
     {
@@ -826,24 +790,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-d7ddc63251476810f453",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2026-11-15",
-      "time": "11:00",
-      "homeTeam": "SGM Bühlertann/Bühlerzell",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "SGM Bühlertann/Bühlerzell",
-      "venue": "SGM Bühlertann/Bühlerzell",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891040",
-      "competitionType": "ME"
-    },
-    {
       "id": "fd-850be6f87aee58f23391",
       "teamId": "u17",
       "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
@@ -985,24 +931,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181149",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-2dac4946f9328e7c13cd",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2026-11-21",
-      "time": "14:15",
-      "homeTeam": "SV Heilbronn am Leinbach",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "SV Heilbronn am Leinbach",
-      "venue": "SV Heilbronn am Leinbach",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891042",
       "competitionType": "ME"
     },
     {
