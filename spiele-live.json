@@ -1,6 +1,6 @@
 {
   "schema": 4,
-  "updatedAt": "2026-10-13T19:27:11.149179+00:00",
+  "updatedAt": "2026-10-13T20:24:05.972377+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,24 +15,6 @@
     "u11": 4
   },
   "games": [
-    {
-      "id": "fd-7205af2e26604f960027",
-      "teamId": "u16",
-      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
-      "club": "vfr",
-      "label": "U16",
-      "date": "2026-10-13",
-      "time": "19:00",
-      "homeTeam": "VfR Heilbronn 96/18 II",
-      "awayTeam": "Spfr Neckarwestheim",
-      "locationType": "home",
-      "opponent": "Spfr Neckarwestheim",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "952000028",
-      "competitionType": "PO"
-    },
     {
       "id": "fd-e1c055e51e17e53ddb41",
       "teamId": "u12",
@@ -734,6 +716,24 @@
       "status": "angesetzt",
       "gameNo": "550034579",
       "competitionType": "FS"
+    },
+    {
+      "id": "fd-c678611e16d22c0fe0cb",
+      "teamId": "u16",
+      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
+      "club": "vfr",
+      "label": "U16",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "homeTeam": "SGM SG Stetten-Kleingartach/Oberes Leintal I",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "SGM SG Stetten-Kleingartach/Oberes Leintal I",
+      "venue": "SGM SG Stetten-Kleingartach/Oberes Leintal I",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "952000035",
+      "competitionType": "PO"
     },
     {
       "id": "fd-1f528816556eb0cd073f",
