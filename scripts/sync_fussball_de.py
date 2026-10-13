@@ -11,6 +11,35 @@ INFO_RE=re.compile(r'\b(ME|FS|PO|TU)\s*\|\s*(\d{6,})')
 TIME_RE=re.compile(r'(?<!\d)([0-2]?\d:[0-5]\d)(?!\d)')
 EXCLUDED_TYPES={str(x).upper() for x in CFG.get('excludeCompetitionTypes',['TU'])}
 def clean(value): return re.sub(r'\s+',' ',str(value).replace('\xa0',' ').replace('\u200b','').replace('\u200c','').replace('\u200d','').replace('\ufeff','')).strip()
+def extract_venue(lines, row_index):
+    # FUSSBALL.DE writes the ground either as "Spielstätte: ..." or on a
+    # following line. Search only inside the current match block.
+    stop = min(len(lines), row_index + 18)
+    block = lines[row_index + 3:stop]
+    for pos, value in enumerate(block):
+        low = value.lower()
+        if DATE_RE.search(value) or (pos > 0 and value == ':'):
+            break
+        direct = re.search(r'(?:spielstätte|spielstaette|spielort|austragungsort)\s*:?\s*(.+)$', value, re.I)
+        if direct and clean(direct.group(1)):
+            return clean(direct.group(1))
+        if re.fullmatch(r'(?:spielstätte|spielstaette|spielort|austragungsort)\s*:?', value, re.I):
+            if pos + 1 < len(block):
+                return clean(block[pos + 1])
+    # Fallback for common ground/stadium/address lines.
+    for value in block:
+        low = value.lower()
+        if re.search(r'\b(?:stadion|sportplatz|sportgelände|sportgelaende|rasenplatz|kunstrasenplatz|arena|leingarten)\b', low):
+            return clean(value)
+    return ''
+
+def is_local_venue(venue):
+    if not venue:
+        return True
+    needles = [clean(x).lower() for x in CFG.get('localVenueNeedles', [CFG.get('venueDefault', 'Frankenstadion')]) if clean(x)]
+    low = clean(venue).lower()
+    return any(needle in low for needle in needles)
+
 def parse_games(text,key,cfg):
  lines=[clean(x) for x in text.splitlines() if clean(x)]
  try:start=lines.index('MANNSCHAFTSSPIELPLAN')
@@ -28,11 +57,11 @@ def parse_games(text,key,cfg):
   info=INFO_RE.search(line)
   if info:current_type,current_no=info.groups()
   if i+2<len(lines) and lines[i+1]==':' and current_date and current_time:
-   home,away=lines[i],lines[i+2];tail='\n'.join(lines[i:min(len(lines),i+7)]);ctype=(current_type or '').upper();is_home=club_needle in home.lower();is_away=club_needle in away.lower()
+   home,away=lines[i],lines[i+2];tail='\n'.join(lines[i:min(len(lines),i+18)]);ctype=(current_type or '').upper();is_home=club_needle in home.lower();is_away=club_needle in away.lower();actual_venue=extract_venue(lines,i);is_relocated=is_home and bool(actual_venue) and not is_local_venue(actual_venue)
    if (is_home or is_away) and ctype not in EXCLUDED_TYPES:
     stable=(cfg['teamId']+'|'+current_no) if current_no else '|'.join([cfg['teamId'],home.lower(),away.lower(),CFG['season']]);gid='fd-'+hashlib.sha1(stable.encode()).hexdigest()[:20]
     if gid not in seen:
-     seen.add(gid);games.append({'id':gid,'teamId':key,'externalTeamId':cfg['teamId'],'club':cfg['club'],'label':cfg['label'],'date':current_date,'time':current_time,'homeTeam':home,'awayTeam':away,'locationType':'home' if is_home else 'away','opponent':away if is_home else home,'venue':CFG.get('venueDefault','Frankenstadion') if is_home else home,'source':'FUSSBALL.DE','status':'abgesetzt' if re.search(r'Absetzung|abgesetzt',tail,re.I) else 'angesetzt','gameNo':current_no or '','competitionType':current_type or ''})
+     seen.add(gid);games.append({'id':gid,'teamId':key,'externalTeamId':cfg['teamId'],'club':cfg['club'],'label':cfg['label'],'date':current_date,'time':current_time,'homeTeam':home,'awayTeam':away,'locationType':'relocated' if is_relocated else ('home' if is_home else 'away'),'opponent':away if is_home else home,'venue':actual_venue or (CFG.get('venueDefault','Frankenstadion') if is_home else home),'source':'FUSSBALL.DE','status':'abgesetzt' if re.search(r'Absetzung|abgesetzt',tail,re.I) else 'angesetzt','gameNo':current_no or '','competitionType':current_type or ''})
    current_time=current_type=current_no=None;i+=2
   i+=1
  return games
