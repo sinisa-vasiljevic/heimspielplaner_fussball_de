@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "49.5",
-  "release": "Live-Spiele dauerhaft per Spiel-ID zusammenführen und Historie behalten",
-  "date": "2026-10-11"
+  "version": "49.6",
+  "release": "Heim, Auswaerts und Alle als reine Anzeige auf Basis 49.5",
+  "date": "2026-10-13"
 }
