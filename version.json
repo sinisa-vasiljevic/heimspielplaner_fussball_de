@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "49.6",
-  "release": "Automatische Heim- und Auswaertsspiele von FUSSBALL.DE, Planung nur Heim",
+  "version": "49.8",
+  "release": "Heim, Auswaerts und Alle direkt unter Heimspielen; automatische FUSSBALL.DE-Daten",
   "date": "2026-10-13"
 }
