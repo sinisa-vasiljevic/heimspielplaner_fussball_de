@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "49.9",
-  "release": "Ausgelagerte Heimspiele erkennen und ohne lokale Planung mit Pfeilsymbol anzeigen",
+  "version": "50.0",
+  "release": "Manuelle Ausgelagert-Auswahl",
   "date": "2026-10-13"
 }
