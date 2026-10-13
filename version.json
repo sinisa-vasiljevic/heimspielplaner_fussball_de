@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "49.8",
-  "release": "Heim, Auswaerts und Alle direkt unter Heimspielen; automatische FUSSBALL.DE-Daten",
+  "version": "49.9",
+  "release": "Ausgelagerte Heimspiele erkennen und ohne lokale Planung mit Pfeilsymbol anzeigen",
   "date": "2026-10-13"
 }
