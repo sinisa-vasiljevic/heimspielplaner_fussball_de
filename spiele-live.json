@@ -1,6 +1,6 @@
 {
   "schema": 4,
-  "updatedAt": "2026-10-14T18:27:21.515802+00:00",
+  "updatedAt": "2026-10-14T19:30:46.456586+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -11,28 +11,10 @@
     "u15": 10,
     "u14": 7,
     "u13": 4,
-    "u12": 5,
+    "u12": 4,
     "u11": 4
   },
   "games": [
-    {
-      "id": "fd-e1c055e51e17e53ddb41",
-      "teamId": "u12",
-      "externalTeamId": "02B1JNO7AO000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U12",
-      "date": "2026-10-14",
-      "time": "17:30",
-      "homeTeam": "SGM TSV Brettach KoBra II",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "SGM TSV Brettach KoBra II",
-      "venue": "SGM TSV Brettach KoBra II",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550032068",
-      "competitionType": "FS"
-    },
     {
       "id": "fd-b09c34eaf6905df42ad6",
       "teamId": "u13",
