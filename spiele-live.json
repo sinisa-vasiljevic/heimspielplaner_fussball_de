@@ -1,6 +1,6 @@
 {
   "schema": 4,
-  "updatedAt": "2026-10-14T09:27:17.959242+00:00",
+  "updatedAt": "2026-10-14T10:27:03.697831+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -194,24 +194,6 @@
       "status": "angesetzt",
       "gameNo": "550034550",
       "competitionType": "FS"
-    },
-    {
-      "id": "fd-a6b260e837071b61d3c9",
-      "teamId": "u19",
-      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
-      "club": "vfr",
-      "label": "U19",
-      "date": "2026-10-18",
-      "time": "14:00",
-      "homeTeam": "Offenburger FV",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "Offenburger FV",
-      "venue": "Offenburger FV",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390033036",
-      "competitionType": "ME"
     },
     {
       "id": "fd-1c039d92cd9076b29c1d",
@@ -499,6 +481,24 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900028",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-a6b260e837071b61d3c9",
+      "teamId": "u19",
+      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
+      "club": "vfr",
+      "label": "U19",
+      "date": "2026-11-01",
+      "time": "14:00",
+      "homeTeam": "Offenburger FV",
+      "awayTeam": "VfR Heilbronn 96/18",
+      "locationType": "away",
+      "opponent": "Offenburger FV",
+      "venue": "Offenburger FV",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390033036",
       "competitionType": "ME"
     },
     {
