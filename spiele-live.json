@@ -1,6 +1,6 @@
 {
   "schema": 4,
-  "updatedAt": "2026-10-15T12:27:58.347553+00:00",
+  "updatedAt": "2026-10-15T13:37:49.575388+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -448,6 +448,24 @@
       "competitionType": "FS"
     },
     {
+      "id": "fd-e90c823f3eacf76945f6",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "homeTeam": "SC Urbach I",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "SC Urbach I",
+      "venue": "SC Urbach I",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550038172",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-b05bce536537c9298077",
       "teamId": "u14",
       "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
@@ -499,24 +517,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900028",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-aea5eae8f473b386889e",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-01",
-      "time": "13:30",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "FC Esslingen I",
-      "locationType": "home",
-      "opponent": "FC Esslingen I",
-      "venue": "Frankenstadion",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457033",
       "competitionType": "ME"
     },
     {
