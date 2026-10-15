@@ -1,6 +1,6 @@
 {
   "schema": 4,
-  "updatedAt": "2026-10-15T06:28:13.414663+00:00",
+  "updatedAt": "2026-10-15T07:36:34.675765+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -11,7 +11,7 @@
     "u15": 10,
     "u14": 7,
     "u13": 4,
-    "u12": 4,
+    "u12": 5,
     "u11": 4
   },
   "games": [
@@ -193,6 +193,24 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "390013033",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-d7cda85af7cf59c6f049",
+      "teamId": "u12",
+      "externalTeamId": "02B1JNO7AO000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U12",
+      "date": "2026-10-21",
+      "time": "17:00",
+      "homeTeam": "VfR Heilbronn 96/18 II",
+      "awayTeam": "Aramäer Heilbronn",
+      "locationType": "home",
+      "opponent": "Aramäer Heilbronn",
+      "venue": "Frankenstadion",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351462016",
       "competitionType": "ME"
     },
     {
