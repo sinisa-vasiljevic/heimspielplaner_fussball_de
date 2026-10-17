@@ -1,30 +1,23 @@
-Heimspielplaner Version 50.3 - Aktualisierung
+Heimspielplaner Version 50.4
 
-Enthaltene Dateien:
-- index.html
-- sw.js
-- version.json
-- sync_config.json
-- scripts/sync_fussball_de.py
+Diese Version ersetzt die fehlerhafte Linksuche aus 50.3.
+
+Geändert:
+- Spieldetail-URLs werden nicht mehr nur in sichtbaren HTML-Links gesucht.
+- Zusätzlich werden Seiten-HTML, DOM-Attribute und geladene FUSSBALL.DE-Antworten durchsucht.
+- Detail-URLs werden anhand beider Mannschaftsnamen dem richtigen Spiel zugeordnet.
+- Der konkrete Platz wird kompakt als "🏟️ Kunstrasenplatz" bzw. "🏟️ Rasenplatz" angezeigt.
+- Bei Kollisionen wird der Grund angezeigt.
+- Fehlt der Platz weiterhin, steht ausdrücklich "Platz nicht verfügbar".
 
 Installation:
-1. Inhalt dieser ZIP in das Stammverzeichnis des bestehenden GitHub-Repositories kopieren.
-2. Vorhandene Dateien gleichen Namens ersetzen.
-3. Die unveränderten vorhandenen Dateien (Manifest, Icons, Workflow und spiele-live.json) im Repository belassen.
-4. Den bestehenden GitHub-Workflow "sync-spiele" einmal manuell ausführen.
-5. Im Workflow-Protokoll die Werte "Detail-Links" und "Heimspiele mit Platz" prüfen.
+1. Dateien in das Stammverzeichnis des bestehenden Repositories kopieren.
+2. Vorhandene gleichnamige Dateien ersetzen.
+3. Unveränderte Icons, Manifest, Workflow und spiele-live.json im Repository belassen.
+4. Workflow sync-spiele manuell starten.
+5. Im Protokoll prüfen: "Detail-Links X / Y", "Kandidaten X" und "Heimspiele mit Platz".
 
-Änderungen in 50.3:
-- FUSSBALL.DE-Spieldetailseiten werden für lokale Heimspiele ausgewertet.
-- Platz, Belag, Detailort und Detail-URL werden in spiele-live.json gespeichert.
-- SGV-Heimspiel sperrt den vollständigen Kalendertag ohne Zeitprüfung.
-- Herren gegen alle: Kollision bei zeitlicher Überschneidung, Platz unabhängig.
-- Jugend gegen Jugend: Kollision bei Überschneidung auf demselben Platz.
-- Wenn eine Platzangabe fehlt, wird vorsorglich eine Kollision gemeldet.
-- Bestehende Platzdaten bleiben bei einem vorübergehenden Detailabruf-Fehler erhalten.
-
-Prüfung vor Freigabe:
-- Python-, JavaScript- und JSON-Syntax geprüft.
-- Platzparser, Linkzuordnung und Erhalt vorhandener Platzdaten geprüft.
-- Kollisionsmatrix für SGV, Herren, Jugend, Plätze und Zeitgrenzen geprüft.
-- Ein gefundener Fehler (ein einzelnes SGV-Spiel wurde selbst als Kollision markiert) wurde behoben und erneut getestet.
+Zusätzliche Qualitätsprüfung:
+- Kollisionen mit SGV, Herren, Jugend, gleichen/verschiedenen Plätzen, Vorlauf und Nachlauf geprüft.
+- Auswärtsspiele werden ausdrücklich aus Heimspiel-, Verkaufs-, Slot- und Kabinenberechnungen ausgeschlossen.
+- Temporäre Netzwerk-Listener werden nach jeder Mannschaftsseite entfernt.

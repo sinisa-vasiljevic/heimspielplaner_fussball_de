@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "50.3",
-  "release": "Platzdaten aus FUSSBALL.DE und neue Kollisionsregeln",
+  "version": "50.4",
+  "release": "Robuster Detailabruf, Platzanzeige und Kollisionsgrund",
   "date": "2026-10-17"
 }
