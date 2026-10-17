@@ -1,0 +1,30 @@
+Heimspielplaner Version 50.3 - Aktualisierung
+
+Enthaltene Dateien:
+- index.html
+- sw.js
+- version.json
+- sync_config.json
+- scripts/sync_fussball_de.py
+
+Installation:
+1. Inhalt dieser ZIP in das Stammverzeichnis des bestehenden GitHub-Repositories kopieren.
+2. Vorhandene Dateien gleichen Namens ersetzen.
+3. Die unveränderten vorhandenen Dateien (Manifest, Icons, Workflow und spiele-live.json) im Repository belassen.
+4. Den bestehenden GitHub-Workflow "sync-spiele" einmal manuell ausführen.
+5. Im Workflow-Protokoll die Werte "Detail-Links" und "Heimspiele mit Platz" prüfen.
+
+Änderungen in 50.3:
+- FUSSBALL.DE-Spieldetailseiten werden für lokale Heimspiele ausgewertet.
+- Platz, Belag, Detailort und Detail-URL werden in spiele-live.json gespeichert.
+- SGV-Heimspiel sperrt den vollständigen Kalendertag ohne Zeitprüfung.
+- Herren gegen alle: Kollision bei zeitlicher Überschneidung, Platz unabhängig.
+- Jugend gegen Jugend: Kollision bei Überschneidung auf demselben Platz.
+- Wenn eine Platzangabe fehlt, wird vorsorglich eine Kollision gemeldet.
+- Bestehende Platzdaten bleiben bei einem vorübergehenden Detailabruf-Fehler erhalten.
+
+Prüfung vor Freigabe:
+- Python-, JavaScript- und JSON-Syntax geprüft.
+- Platzparser, Linkzuordnung und Erhalt vorhandener Platzdaten geprüft.
+- Kollisionsmatrix für SGV, Herren, Jugend, Plätze und Zeitgrenzen geprüft.
+- Ein gefundener Fehler (ein einzelnes SGV-Spiel wurde selbst als Kollision markiert) wurde behoben und erneut getestet.

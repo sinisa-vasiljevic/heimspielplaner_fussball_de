@@ -1,6 +1,9 @@
 {
   "season": "2627",
   "venueDefault": "Frankenstadion",
+  "localVenueNeedles": [
+    "Frankenstadion"
+  ],
   "teams": {
     "sgv": {
       "club": "sgv",
