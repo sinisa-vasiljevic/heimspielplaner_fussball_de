@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-17T16:21:35.418776+00:00",
+  "updatedAt": "2026-10-17T17:21:28.248893+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,34 +15,11 @@
     "u11": 4
   },
   "detailCounts": {
-    "homeGames": 38,
+    "homeGames": 39,
     "homeGamesWithPitch": 35,
-    "homeGamesWithoutPitch": 3
+    "homeGamesWithoutPitch": 4
   },
   "games": [
-    {
-      "id": "fd-b1e04afae57ffea8af2e",
-      "teamId": "vh",
-      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
-      "club": "vfr",
-      "label": "Herren",
-      "date": "2026-10-17",
-      "time": "16:00",
-      "homeTeam": "FC Union Heilbronn",
-      "awayTeam": "VfR Heilbronn",
-      "locationType": "away",
-      "opponent": "FC Union Heilbronn",
-      "venue": "FC Union Heilbronn",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/fc-union-heilbronn-vfr-heilbronn/-/spiel/031CDDPEP0000000VS5489BUVUR5FS5A",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "350181101",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-dc9d42159e729b98c177",
       "teamId": "u12",
@@ -1585,6 +1562,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-c48d60d88f3e28ff3115",
+      "teamId": "vh",
+      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
+      "club": "vfr",
+      "label": "Herren",
+      "date": "2027-03-14",
+      "time": "15:00",
+      "homeTeam": "VfR Heilbronn",
+      "awayTeam": "FSV Waiblingen",
+      "locationType": "home",
+      "opponent": "FSV Waiblingen",
+      "venue": "Frankenstadion",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "",
+      "detailStatus": "link_fehlt",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350181196",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-c2c0aaa28bec53737d16",
       "teamId": "u16",
       "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
@@ -1724,9 +1724,10 @@
     }
   ],
   "warnings": [
+    "vh: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u17: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u16: Detail-Link für 2 von 3 Heimspielen gefunden",
     "u15: Detail-Link für 6 von 7 Heimspielen gefunden",
-    "Keine Platzinformation für 3 Heimspiele: u15 2026-10-25 17:45, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
+    "Keine Platzinformation für 4 Heimspiele: u15 2026-10-25 17:45, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
 }
