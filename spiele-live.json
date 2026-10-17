@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-17T15:21:16.952599+00:00",
+  "updatedAt": "2026-10-17T16:21:35.418776+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -20,29 +20,6 @@
     "homeGamesWithoutPitch": 3
   },
   "games": [
-    {
-      "id": "fd-b4113b40bb917300c826",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2026-10-17",
-      "time": "15:00",
-      "homeTeam": "VfR Aalen",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "VfR Aalen",
-      "venue": "VfR Aalen",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-aalen-vfr-heilbronn-96-18-ii/-/spiel/031L72CMF0000000VS5489BTVSRD0UH9",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891018",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-b1e04afae57ffea8af2e",
       "teamId": "vh",
@@ -1376,6 +1353,29 @@
       "status": "angesetzt",
       "gameNo": "390013069",
       "competitionType": "ME"
+    },
+    {
+      "id": "fd-88360d390d965b720f65",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2026-12-06",
+      "time": "14:00",
+      "homeTeam": "Spvgg Cannstatt IV",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "Spvgg Cannstatt IV",
+      "venue": "Spvgg Cannstatt IV",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550092111",
+      "competitionType": "FS"
     },
     {
       "id": "fd-83cbb3d8323b12cb5163",
