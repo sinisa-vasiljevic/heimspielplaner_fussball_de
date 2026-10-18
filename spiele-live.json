@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-18T15:21:39.335303+00:00",
+  "updatedAt": "2026-10-18T16:22:14.240221+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -10,13 +10,13 @@
     "u16": 10,
     "u15": 10,
     "u14": 7,
-    "u13": 2,
+    "u13": 3,
     "u12": 3,
     "u11": 4
   },
   "detailCounts": {
-    "homeGames": 37,
-    "homeGamesWithPitch": 32,
+    "homeGames": 38,
+    "homeGamesWithPitch": 33,
     "homeGamesWithoutPitch": 5
   },
   "games": [
@@ -915,6 +915,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900037",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-41c4f68cd0b2b3a85fc3",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-11-21",
+      "time": "09:30",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "SSV Reutlingen 1905 Fußball",
+      "locationType": "home",
+      "opponent": "SSV Reutlingen 1905 Fußball",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-ssv-reutlingen-1905-fussball/-/spiel/031K6LR1VK000000VS5489BTVSRD0UH9",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351457043",
       "competitionType": "ME"
     },
     {
