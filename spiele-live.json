@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-18T14:22:02.551788+00:00",
+  "updatedAt": "2026-10-18T15:21:39.335303+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -10,13 +10,13 @@
     "u16": 10,
     "u15": 10,
     "u14": 7,
-    "u13": 3,
+    "u13": 2,
     "u12": 3,
     "u11": 4
   },
   "detailCounts": {
-    "homeGames": 38,
-    "homeGamesWithPitch": 33,
+    "homeGames": 37,
+    "homeGamesWithPitch": 32,
     "homeGamesWithoutPitch": 5
   },
   "games": [
@@ -366,29 +366,6 @@
       "competitionType": "FS"
     },
     {
-      "id": "fd-e90c823f3eacf76945f6",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-10-31",
-      "time": "10:00",
-      "homeTeam": "SC Urbach I",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "SC Urbach I",
-      "venue": "SC Urbach I",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/sc-urbach-i-vfr-heilbronn-96-18-i/-/spiel/032DA5H2U4000000VS5489BUVV5V31CI",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550038172",
-      "competitionType": "FS"
-    },
-    {
       "id": "fd-b05bce536537c9298077",
       "teamId": "u14",
       "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
@@ -455,29 +432,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900028",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-aea5eae8f473b386889e",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-01",
-      "time": "13:30",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "FC Esslingen I",
-      "locationType": "home",
-      "opponent": "FC Esslingen I",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-fc-esslingen-i/-/spiel/031K6LR2C4000000VS5489BTVSRD0UH9",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457033",
       "competitionType": "ME"
     },
     {
@@ -823,6 +777,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010136",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-cde5590c5feec1d8a5ad",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-11-14",
+      "time": "14:30",
+      "homeTeam": "SGV Heilbronn-Freiberg Fußball I",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "SGV Heilbronn-Freiberg Fußball I",
+      "venue": "SGV Heilbronn-Freiberg Fußball I",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sgv-heilbronn-freiberg-fussball-i-vfr-heilbronn-96-18-i/-/spiel/031K6LR250000000VS5489BTVSRD0UH9",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351457039",
       "competitionType": "ME"
     },
     {
