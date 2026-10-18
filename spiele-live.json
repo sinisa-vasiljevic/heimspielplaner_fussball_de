@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-18T11:20:58.034154+00:00",
+  "updatedAt": "2026-10-18T12:22:31.660543+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,57 +15,11 @@
     "u11": 4
   },
   "detailCounts": {
-    "homeGames": 37,
+    "homeGames": 38,
     "homeGamesWithPitch": 33,
-    "homeGamesWithoutPitch": 4
+    "homeGamesWithoutPitch": 5
   },
   "games": [
-    {
-      "id": "fd-c50c69e58471e8b06e22",
-      "teamId": "u16",
-      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
-      "club": "vfr",
-      "label": "U16",
-      "date": "2026-10-18",
-      "time": "10:30",
-      "homeTeam": "SpVgg Satteldorf",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "SpVgg Satteldorf",
-      "venue": "SpVgg Satteldorf",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/spvgg-satteldorf-vfr-heilbronn-96-18-ii/-/spiel/031KFG1SSG000000VS5489BUVVKNMR0J",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351900020",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-d5549d909f579a8c5cda",
-      "teamId": "u17",
-      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U17",
-      "date": "2026-10-18",
-      "time": "11:00",
-      "homeTeam": "SGV Heilbronn-Freiberg Fußball II",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "SGV Heilbronn-Freiberg Fußball II",
-      "venue": "SGV Heilbronn-Freiberg Fußball II",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/sgv-heilbronn-freiberg-fussball-ii-vfr-heilbronn-96-18-i/-/spiel/031GJUQADG000000VS5489BUVSJ4CRAP",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "350838029",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-b55d6e214c15fb9b67a3",
       "teamId": "u14",
@@ -1675,13 +1629,59 @@
       "status": "angesetzt",
       "gameNo": "350838080",
       "competitionType": "ME"
+    },
+    {
+      "id": "fd-b59e3ac1a747eb940aa4",
+      "teamId": "u16",
+      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
+      "club": "vfr",
+      "label": "U16",
+      "date": "2027-04-18",
+      "time": "10:30",
+      "homeTeam": "VfR Heilbronn 96/18 II",
+      "awayTeam": "SpVgg Satteldorf",
+      "locationType": "home",
+      "opponent": "SpVgg Satteldorf",
+      "venue": "Frankenstadion",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "",
+      "detailStatus": "link_fehlt",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351900065",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-017df16e41fe077f42bd",
+      "teamId": "u17",
+      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U17",
+      "date": "2027-04-18",
+      "time": "10:30",
+      "homeTeam": "SGM VfL Winterbach/SV Remshalden I",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "SGM VfL Winterbach/SV Remshalden I",
+      "venue": "SGM VfL Winterbach/SV Remshalden I",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sgm-vfl-winterbach-sv-remshalden-i-vfr-heilbronn-96-18-i/-/spiel/031GJUQD90000000VS5489BUVSJ4CRAP",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350838086",
+      "competitionType": "ME"
     }
   ],
   "warnings": [
     "vh: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u17: Detail-Link für 5 von 6 Heimspielen gefunden",
-    "u16: Detail-Link für 2 von 3 Heimspielen gefunden",
+    "u16: Detail-Link für 2 von 4 Heimspielen gefunden",
     "u15: Detail-Link für 6 von 7 Heimspielen gefunden",
-    "Keine Platzinformation für 4 Heimspiele: u15 2026-10-25 17:45, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
+    "Keine Platzinformation für 5 Heimspiele: u15 2026-10-25 17:45, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00, u16 2027-04-18 10:30"
   ]
 }
