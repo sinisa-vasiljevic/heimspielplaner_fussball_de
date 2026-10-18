@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-18T10:22:47.405842+00:00",
+  "updatedAt": "2026-10-18T11:20:58.034154+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -10,39 +10,16 @@
     "u16": 10,
     "u15": 10,
     "u14": 7,
-    "u13": 3,
-    "u12": 4,
+    "u13": 2,
+    "u12": 3,
     "u11": 4
   },
   "detailCounts": {
-    "homeGames": 39,
-    "homeGamesWithPitch": 35,
+    "homeGames": 37,
+    "homeGamesWithPitch": 33,
     "homeGamesWithoutPitch": 4
   },
   "games": [
-    {
-      "id": "fd-dc9d42159e729b98c177",
-      "teamId": "u12",
-      "externalTeamId": "02B1JNO7AO000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U12",
-      "date": "2026-10-18",
-      "time": "10:00",
-      "homeTeam": "VfR Heilbronn 96/18 II",
-      "awayTeam": "Intersocca Reutlingen",
-      "locationType": "home",
-      "opponent": "Intersocca Reutlingen",
-      "venue": "Frankenstadion",
-      "pitch": "Rasenplatz",
-      "surface": "rasen",
-      "venueDetail": "Heilbronn Frankenstadion Rasen 2 (Nebenplatz)",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-ii-intersocca-reutlingen/-/spiel/0328DM2K5O000000VS5489BUVUFHD2VV",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550032073",
-      "competitionType": "FS"
-    },
     {
       "id": "fd-c50c69e58471e8b06e22",
       "teamId": "u16",
@@ -547,29 +524,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900028",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-aea5eae8f473b386889e",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-01",
-      "time": "13:30",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "FC Esslingen I",
-      "locationType": "home",
-      "opponent": "FC Esslingen I",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-fc-esslingen-i/-/spiel/031K6LR2C4000000VS5489BTVSRD0UH9",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457033",
       "competitionType": "ME"
     },
     {
