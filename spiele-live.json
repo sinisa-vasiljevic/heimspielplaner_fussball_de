@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-19T08:36:57.552989+00:00",
+  "updatedAt": "2026-10-19T09:33:36.192269+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -1087,9 +1087,9 @@
       "date": "2026-11-28",
       "time": "14:30",
       "homeTeam": "VfR Heilbronn 96/18",
-      "awayTeam": "SGV Heilbronn-Freiberg Fußball I",
+      "awayTeam": "SGV Heilbronn-Freiberg Fußball",
       "locationType": "home",
-      "opponent": "SGV Heilbronn-Freiberg Fußball I",
+      "opponent": "SGV Heilbronn-Freiberg Fußball",
       "venue": "Frankenstadion",
       "pitch": "Kunstrasenplatz",
       "surface": "kunstrasen",
