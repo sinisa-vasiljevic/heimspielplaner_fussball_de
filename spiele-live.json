@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-19T12:32:29.727364+00:00",
+  "updatedAt": "2026-10-19T13:44:06.035811+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -1102,6 +1102,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-c668a6151cb6d3a96596",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2026-11-29",
+      "time": "10:30",
+      "homeTeam": "MTV Stuttgart I",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "MTV Stuttgart I",
+      "venue": "MTV Stuttgart I",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/mtv-stuttgart-i-vfr-heilbronn-96-18-i/-/spiel/032EJ51ETC000000VS5489BUVSGKI48U",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550034599",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-45b97f819424e5593187",
       "teamId": "u17",
       "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
@@ -1467,29 +1490,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181196",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-900666191456c3854df2",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2027-03-20",
-      "time": "12:00",
-      "homeTeam": "Karlsruher SC",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "Karlsruher SC",
-      "venue": "Karlsruher SC",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/karlsruher-sc-u15-vfr-heilbronn-96-18-i/-/spiel/031CQL1HAG000000VS5489BUVUR5FS5A",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013087",
       "competitionType": "ME"
     },
     {
