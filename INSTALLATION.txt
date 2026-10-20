@@ -1,20 +1,17 @@
-Heimspielplaner Version 50.6
+Heimspielplaner Version 50.7
 
 Basis:
-- Aktuell laufende index.html Version 50.4.
-- Änderungen aus 50.5 vollständig übernommen.
+- Funktionierende Version 50.6.
 
 Geändert:
-- Alle Kollisionspartner pro Spiel werden gesammelt und angezeigt.
-- Jede Meldung nennt Uhrzeit, Mannschaft, Gegner und vorhandenen Platz des kollidierenden Spiels.
-- Herrenspiele kollidieren bei Zeitüberschneidung unabhängig vom Platz.
-- SGV-Heimspiele kollidieren mit allen anderen Heimspielen am selben Tag.
-- Jugendspiele kollidieren bei Zeitüberschneidung nur auf demselben Platz.
-- Im Dialog Spiel bearbeiten kann der Platz zwischen Kunstrasenplatz und Rasenplatz geändert werden.
-- Die manuelle Platzänderung wird gespeichert, sofort angezeigt und sofort für die Kollisionsberechnung verwendet.
-- Kollisionsdetails werden ebenfalls im WhatsApp-Heimspieltext ausgegeben.
+- Datumsbereich der Heimspielansicht von 80 Prozent auf 100 Prozent Breite erweitert.
+- Datumsfelder der Heimspielansicht von 32 auf 46 Pixel Höhe vergrößert.
+- Schriftgröße von 14 auf 16 Pixel erhöht.
+- Innenabstand auf 8 x 10 Pixel angepasst.
+- Mobile Breitenregel ebenfalls auf 100 Prozent gesetzt.
+- Keine Änderungen an Kollisionslogik, Platzbearbeitung, Import, Verkauf, Slots oder Kabinen.
 
 Installation:
 1. index.html, sw.js und version.json im Stammverzeichnis ersetzen.
 2. Kein manueller Start des sync-spiele-Workflows erforderlich.
-3. App vollständig schließen und neu öffnen. Falls die alte Version sichtbar bleibt, einmal im Browser neu laden.
+3. App vollständig schließen und neu öffnen. Falls noch 50.6 sichtbar ist, die Seite einmal im Browser neu laden.
