@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "50.4",
-  "release": "Robuster Detailabruf, Platzanzeige und Kollisionsgrund",
-  "date": "2026-10-17"
+  "version": "50.6",
+  "release": "Mehrfachkollisionen und manuelle Platzänderung",
+  "date": "2026-10-20"
 }
