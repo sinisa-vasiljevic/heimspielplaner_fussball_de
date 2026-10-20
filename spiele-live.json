@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-20T13:38:45.409011+00:00",
+  "updatedAt": "2026-10-20T14:30:37.970754+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -8,16 +8,16 @@
     "u19": 6,
     "u17": 10,
     "u16": 10,
-    "u15": 10,
+    "u15": 7,
     "u14": 7,
     "u13": 3,
     "u12": 3,
     "u11": 4
   },
   "detailCounts": {
-    "homeGames": 36,
-    "homeGamesWithPitch": 31,
-    "homeGamesWithoutPitch": 5
+    "homeGames": 34,
+    "homeGamesWithPitch": 30,
+    "homeGamesWithoutPitch": 4
   },
   "games": [
     {
@@ -87,6 +87,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010116",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-9fbca2905f96c51894b5",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2026-10-24",
+      "time": "11:00",
+      "homeTeam": "VfR Heilbronn 96/18",
+      "awayTeam": "FC Astoria Walldorf",
+      "locationType": "home",
+      "opponent": "FC Astoria Walldorf",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-fc-astoria-walldorf/-/spiel/031CQL1CBG000000VS5489BUVUR5FS5A",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390013039",
       "competitionType": "ME"
     },
     {
@@ -179,29 +202,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351457026",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-9fbca2905f96c51894b5",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2026-10-24",
-      "time": "15:00",
-      "homeTeam": "VfR Heilbronn 96/18",
-      "awayTeam": "FC Astoria Walldorf",
-      "locationType": "home",
-      "opponent": "FC Astoria Walldorf",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-fc-astoria-walldorf/-/spiel/031CQL1CBG000000VS5489BUVUR5FS5A",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013039",
       "competitionType": "ME"
     },
     {
@@ -318,29 +318,6 @@
       "status": "angesetzt",
       "gameNo": "390033042",
       "competitionType": "ME"
-    },
-    {
-      "id": "fd-141cbdd96f44b5391a68",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2026-10-25",
-      "time": "17:45",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "1.CfR Pforzheim",
-      "locationType": "home",
-      "opponent": "1.CfR Pforzheim",
-      "venue": "Frankenstadion",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "",
-      "detailStatus": "link_fehlt",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390005159",
-      "competitionType": "FS"
     },
     {
       "id": "fd-b05bce536537c9298077",
@@ -573,29 +550,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-18ab3efe3387d651ab4f",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2026-11-07",
-      "time": "15:30",
-      "homeTeam": "TSG Balingen Fußball",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "TSG Balingen Fußball",
-      "venue": "TSG Balingen Fußball",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/tsg-balingen-fussball-vfr-heilbronn-96-18-i/-/spiel/031CQL1BN8000000VS5489BUVUR5FS5A",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013043",
-      "competitionType": "ME"
-    },
-    {
       "id": "fd-656aaa242298df0de62e",
       "teamId": "u17",
       "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
@@ -780,29 +734,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-99d63097c6c5b7d049a1",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2026-11-14",
-      "time": "14:30",
-      "homeTeam": "VfR Heilbronn 96/18",
-      "awayTeam": "Offenburger FV",
-      "locationType": "home",
-      "opponent": "Offenburger FV",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-offenburger-fv/-/spiel/031CQL1BE8000000VS5489BUVUR5FS5A",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013051",
-      "competitionType": "ME"
-    },
-    {
       "id": "fd-850be6f87aee58f23391",
       "teamId": "u17",
       "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
@@ -826,29 +757,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-d6eba3819950d11c5c98",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2026-11-15",
-      "time": "13:30",
-      "homeTeam": "SV Vaihingen Allianz I",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "SV Vaihingen Allianz I",
-      "venue": "SV Vaihingen Allianz I",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/sv-vaihingen-allianz-i-vfr-heilbronn-96-18-i/-/spiel/032ELRER7K000000VS5489BUVSGKI48U",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550034603",
-      "competitionType": "FS"
-    },
-    {
       "id": "fd-f16ed721da7542f4768d",
       "teamId": "u19",
       "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
@@ -869,6 +777,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "390033054",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-99d63097c6c5b7d049a1",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2026-11-15",
+      "time": "15:00",
+      "homeTeam": "Offenburger FV",
+      "awayTeam": "VfR Heilbronn 96/18",
+      "locationType": "away",
+      "opponent": "Offenburger FV",
+      "venue": "Offenburger FV",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/offenburger-fv-vfr-heilbronn-96-18-i/-/spiel/031CQL1BE8000000VS5489BUVUR5FS5A",
+      "detailStatus": "altbestand_beibehalten",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390013051",
       "competitionType": "ME"
     },
     {
@@ -1704,7 +1635,6 @@
     "vh: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u17: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u16: Detail-Link für 2 von 4 Heimspielen gefunden",
-    "u15: Detail-Link für 4 von 5 Heimspielen gefunden",
-    "Keine Platzinformation für 5 Heimspiele: u15 2026-10-25 17:45, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00, u16 2027-04-18 10:30"
+    "Keine Platzinformation für 4 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00, u16 2027-04-18 10:30"
   ]
 }
