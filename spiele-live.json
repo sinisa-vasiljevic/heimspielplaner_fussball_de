@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-20T11:27:55.743910+00:00",
+  "updatedAt": "2026-10-20T12:30:00.818427+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -1010,6 +1010,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-e5c272d553da04b4f134",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2026-11-22",
+      "time": "11:00",
+      "homeTeam": "VfL Nagold",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "VfL Nagold",
+      "venue": "VfL Nagold",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/vfl-nagold-vfr-heilbronn-96-18-i/-/spiel/032ET1A4K4000000VS5489BUVSGKI48U",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550034610",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-36ac583160fb70c03e8f",
       "teamId": "u16",
       "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
@@ -1398,29 +1421,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010190",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-fc644545150fc6406e11",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2027-03-06",
-      "time": "14:00",
-      "homeTeam": "SSV Reutlingen 1905 Fußball",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "SSV Reutlingen 1905 Fußball",
-      "venue": "SSV Reutlingen 1905 Fußball",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/ssv-reutlingen-1905-fussball-vfr-heilbronn-96-18-i/-/spiel/031CQL1I3O000000VS5489BUVUR5FS5A",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013075",
       "competitionType": "ME"
     },
     {
