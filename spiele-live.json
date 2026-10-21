@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-21T14:25:38.192289+00:00",
+  "updatedAt": "2026-10-21T19:11:14.779263+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -11,61 +11,15 @@
     "u15": 7,
     "u14": 7,
     "u13": 3,
-    "u12": 3,
-    "u11": 4
+    "u12": 2,
+    "u11": 3
   },
   "detailCounts": {
-    "homeGames": 34,
-    "homeGamesWithPitch": 30,
+    "homeGames": 33,
+    "homeGamesWithPitch": 29,
     "homeGamesWithoutPitch": 4
   },
   "games": [
-    {
-      "id": "fd-d7cda85af7cf59c6f049",
-      "teamId": "u12",
-      "externalTeamId": "02B1JNO7AO000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U12",
-      "date": "2026-10-21",
-      "time": "17:00",
-      "homeTeam": "VfR Heilbronn 96/18 II",
-      "awayTeam": "Aramäer Heilbronn",
-      "locationType": "home",
-      "opponent": "Aramäer Heilbronn",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-ii-aramaeer-heilbronn/-/spiel/031LEPNVDC000000VS5489BTVSRD0UH9",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351462016",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-c345aeae9e803729f7dd",
-      "teamId": "u11",
-      "externalTeamId": "027N6TN03G000000VS5489B2VSOPA3SJ",
-      "club": "vfr",
-      "label": "U11",
-      "date": "2026-10-21",
-      "time": "17:30",
-      "homeTeam": "DJK Ludwigsburg",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "DJK Ludwigsburg",
-      "venue": "DJK Ludwigsburg",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/djk-ludwigsburg-vfr-heilbronn-96-18/-/spiel/032CEG4N1O000000VS5489BUVV5V31CI",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550070079",
-      "competitionType": "FS"
-    },
     {
       "id": "fd-b3547122cced18cccc63",
       "teamId": "sgv",
