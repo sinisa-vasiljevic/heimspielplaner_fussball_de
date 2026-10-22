@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-22T09:14:08.815767+00:00",
+  "updatedAt": "2026-10-22T15:04:42.405837+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -527,6 +527,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-79ae2be198975a4898d7",
+      "teamId": "u19",
+      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
+      "club": "vfr",
+      "label": "U19",
+      "date": "2026-11-07",
+      "time": "18:00",
+      "homeTeam": "SG Sonnenhof Großaspach",
+      "awayTeam": "VfR Heilbronn 96/18",
+      "locationType": "away",
+      "opponent": "SG Sonnenhof Großaspach",
+      "venue": "SG Sonnenhof Großaspach",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sg-sonnenhof-grossaspach-vfr-heilbronn-96-18/-/spiel/031F0C5RFS000000VS5489BTVUS470OH",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390033046",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-6b9c0067a9a9abaae037",
       "teamId": "u11",
       "externalTeamId": "027N6TN03G000000VS5489B2VSOPA3SJ",
@@ -570,29 +593,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900031",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-79ae2be198975a4898d7",
-      "teamId": "u19",
-      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
-      "club": "vfr",
-      "label": "U19",
-      "date": "2026-11-08",
-      "time": "14:00",
-      "homeTeam": "SG Sonnenhof Großaspach",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "SG Sonnenhof Großaspach",
-      "venue": "SG Sonnenhof Großaspach",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/sg-sonnenhof-grossaspach-vfr-heilbronn-96-18/-/spiel/031F0C5RFS000000VS5489BTVUS470OH",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390033046",
       "competitionType": "ME"
     },
     {
