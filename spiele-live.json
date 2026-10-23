@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-23T09:09:49.476743+00:00",
+  "updatedAt": "2026-10-23T14:57:09.666622+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -670,8 +670,8 @@
       "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
       "club": "vfr",
       "label": "U13",
-      "date": "2026-11-14",
-      "time": "14:30",
+      "date": "2026-11-15",
+      "time": "09:00",
       "homeTeam": "SGV Heilbronn-Freiberg Fußball I",
       "awayTeam": "VfR Heilbronn 96/18 I",
       "locationType": "away",
