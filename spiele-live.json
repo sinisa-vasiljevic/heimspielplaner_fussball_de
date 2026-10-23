@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-23T19:09:08.854391+00:00",
+  "updatedAt": "2026-10-23T22:05:18.810465+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,34 +15,11 @@
     "u11": 3
   },
   "detailCounts": {
-    "homeGames": 33,
-    "homeGamesWithPitch": 29,
+    "homeGames": 34,
+    "homeGamesWithPitch": 30,
     "homeGamesWithoutPitch": 4
   },
   "games": [
-    {
-      "id": "fd-b3547122cced18cccc63",
-      "teamId": "sgv",
-      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
-      "club": "sgv",
-      "label": "Herren",
-      "date": "2026-10-23",
-      "time": "19:00",
-      "homeTeam": "Kickers Offenbach",
-      "awayTeam": "SGV Heilbronn-Freiberg",
-      "locationType": "away",
-      "opponent": "Kickers Offenbach",
-      "venue": "Kickers Offenbach",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/kickers-offenbach-sgv-heilbronn-freiberg-fussball/-/spiel/031ECMOIUG000000VS5489BTVUS470OH",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "490010116",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-9fbca2905f96c51894b5",
       "teamId": "u15",
@@ -1329,6 +1306,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181186",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-31067d0accb5e84d6bbf",
+      "teamId": "sgv",
+      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "club": "sgv",
+      "label": "Herren",
+      "date": "2027-03-13",
+      "time": "14:00",
+      "homeTeam": "SGV Heilbronn-Freiberg",
+      "awayTeam": "SV Sandhausen",
+      "locationType": "home",
+      "opponent": "SV Sandhausen",
+      "venue": "Frankenstadion",
+      "pitch": "Rasenplatz",
+      "surface": "rasen",
+      "venueDetail": "Heilbronn Frankenstadion Rasen 1",
+      "detailUrl": "https://www.fussball.de/spiel/sgv-heilbronn-freiberg-fussball-sv-sandhausen/-/spiel/031ECMOORK000000VS5489BTVUS470OH",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "490010200",
       "competitionType": "ME"
     },
     {
