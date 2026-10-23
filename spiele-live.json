@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-23T03:20:17.238574+00:00",
+  "updatedAt": "2026-10-23T09:09:49.476743+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -343,29 +343,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-a6b260e837071b61d3c9",
-      "teamId": "u19",
-      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
-      "club": "vfr",
-      "label": "U19",
-      "date": "2026-11-01",
-      "time": "14:00",
-      "homeTeam": "Offenburger FV",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "Offenburger FV",
-      "venue": "Offenburger FV",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/offenburger-fv-vfr-heilbronn-96-18/-/spiel/031F0C5RVG000000VS5489BTVUS470OH",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390033036",
-      "competitionType": "ME"
-    },
-    {
       "id": "fd-c0cdeca23b7f37448b74",
       "teamId": "vh",
       "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
@@ -386,6 +363,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181124",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-a6b260e837071b61d3c9",
+      "teamId": "u19",
+      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
+      "club": "vfr",
+      "label": "U19",
+      "date": "2026-11-01",
+      "time": "15:00",
+      "homeTeam": "Offenburger FV",
+      "awayTeam": "VfR Heilbronn 96/18",
+      "locationType": "away",
+      "opponent": "Offenburger FV",
+      "venue": "Offenburger FV",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/offenburger-fv-vfr-heilbronn-96-18/-/spiel/031F0C5RVG000000VS5489BTVUS470OH",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390033036",
       "competitionType": "ME"
     },
     {
