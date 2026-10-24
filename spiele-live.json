@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-24T14:19:30.447445+00:00",
+  "updatedAt": "2026-10-24T17:53:54.664798+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,57 +15,11 @@
     "u11": 2
   },
   "detailCounts": {
-    "homeGames": 33,
-    "homeGamesWithPitch": 29,
+    "homeGames": 32,
+    "homeGamesWithPitch": 28,
     "homeGamesWithoutPitch": 4
   },
   "games": [
-    {
-      "id": "fd-38cb8e08e1fc8fc7d7e6",
-      "teamId": "vh",
-      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
-      "club": "vfr",
-      "label": "Herren",
-      "date": "2026-10-24",
-      "time": "14:00",
-      "homeTeam": "VfR Heilbronn",
-      "awayTeam": "SG Schorndorf",
-      "locationType": "home",
-      "opponent": "SG Schorndorf",
-      "venue": "Frankenstadion",
-      "pitch": "Rasenplatz",
-      "surface": "rasen",
-      "venueDetail": "Heilbronn Frankenstadion Rasen 1",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-sg-schorndorf/-/spiel/031CDDPEHG000000VS5489BUVUR5FS5A",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "350181112",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-3f7bcfdb58f55e6205f7",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-10-24",
-      "time": "14:30",
-      "homeTeam": "VfR Aalen",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "VfR Aalen",
-      "venue": "VfR Aalen",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-aalen-vfr-heilbronn-96-18-i/-/spiel/031K6LR2ES000000VS5489BTVSRD0UH9",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457026",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-b51465a0bb2e795ca673",
       "teamId": "u14",
@@ -895,6 +849,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-c6a602b4b2f03ae1d169",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-11-28",
+      "time": "11:00",
+      "homeTeam": "FC Unterföhring U12",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "FC Unterföhring U12",
+      "venue": "FC Unterföhring U12",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/fc-unterfoehring-u12-vfr-heilbronn-96-18-i/-/spiel/0329QERL4G000000VS5489BUVV5V31CI",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "510077237",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-4265ea03985f2634a2f1",
       "teamId": "sgv",
       "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
@@ -1401,6 +1378,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-8a61b8fbb4f3d6f1c89a",
+      "teamId": "vh",
+      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
+      "club": "vfr",
+      "label": "Herren",
+      "date": "2027-03-21",
+      "time": "15:00",
+      "homeTeam": "TSV Heimerdingen",
+      "awayTeam": "VfR Heilbronn",
+      "locationType": "away",
+      "opponent": "TSV Heimerdingen",
+      "venue": "TSV Heimerdingen",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/tsv-heimerdingen-vfr-heilbronn/-/spiel/031CDDPU98000000VS5489BUVUR5FS5A",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350181204",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-2b0c4216e6ab626ca7d6",
       "teamId": "u16",
       "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
@@ -1540,7 +1540,7 @@
     }
   ],
   "warnings": [
-    "vh: Detail-Link für 5 von 6 Heimspielen gefunden",
+    "vh: Detail-Link für 4 von 5 Heimspielen gefunden",
     "u17: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u16: Detail-Link für 2 von 4 Heimspielen gefunden",
     "Keine Platzinformation für 4 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00, u16 2027-04-18 10:30"
