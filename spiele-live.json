@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-24T05:26:49.090490+00:00",
+  "updatedAt": "2026-10-24T10:19:51.814329+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -1194,6 +1194,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-0d008a9847658ce0bf5b",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2027-02-06",
+      "time": "11:00",
+      "homeTeam": "SKV Rutesheim I",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "SKV Rutesheim I",
+      "venue": "SKV Rutesheim I",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/skv-rutesheim-i-vfr-heilbronn-96-18-ii/-/spiel/032G5BK0N8000000VS5489BTVU989P58",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550034615",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-4f21025b2ada7ce51a81",
       "teamId": "sgv",
       "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
@@ -1375,29 +1398,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181196",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-d6e0d8f958303a765081",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2027-03-20",
-      "time": "14:30",
-      "homeTeam": "FSV Waiblingen",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "FSV Waiblingen",
-      "venue": "FSV Waiblingen",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/fsv-waiblingen-i-vfr-heilbronn-96-18-ii/-/spiel/031L72COD8000000VS5489BTVSRD0UH9",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891047",
       "competitionType": "ME"
     },
     {
