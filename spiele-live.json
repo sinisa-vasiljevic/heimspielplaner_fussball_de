@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-24T17:53:54.664798+00:00",
+  "updatedAt": "2026-10-24T20:14:44.009143+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,34 +15,11 @@
     "u11": 2
   },
   "detailCounts": {
-    "homeGames": 32,
-    "homeGamesWithPitch": 28,
+    "homeGames": 31,
+    "homeGamesWithPitch": 27,
     "homeGamesWithoutPitch": 4
   },
   "games": [
-    {
-      "id": "fd-b51465a0bb2e795ca673",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2026-10-24",
-      "time": "17:00",
-      "homeTeam": "VfR Heilbronn 96/18 II",
-      "awayTeam": "FV Löchgau",
-      "locationType": "home",
-      "opponent": "FV Löchgau",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-ii-fv-loechgau/-/spiel/031L72CM94000000VS5489BTVSRD0UH9",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891022",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-8663cee666f5920edd57",
       "teamId": "u17",
@@ -1329,6 +1306,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181196",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-d6e0d8f958303a765081",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2027-03-20",
+      "time": "14:30",
+      "homeTeam": "FSV Waiblingen",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "FSV Waiblingen",
+      "venue": "FSV Waiblingen",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/fsv-waiblingen-i-vfr-heilbronn-96-18-ii/-/spiel/031L72COD8000000VS5489BTVSRD0UH9",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351891047",
       "competitionType": "ME"
     },
     {
