@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-26T16:47:33.668317+00:00",
+  "updatedAt": "2026-10-26T21:33:27.908787+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,8 +15,8 @@
     "u11": 2
   },
   "detailCounts": {
-    "homeGames": 30,
-    "homeGamesWithPitch": 27,
+    "homeGames": 29,
+    "homeGamesWithPitch": 26,
     "homeGamesWithoutPitch": 3
   },
   "games": [
@@ -1079,6 +1079,29 @@
       "competitionType": "FS"
     },
     {
+      "id": "fd-4de37feebb317fd9362a",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2027-02-20",
+      "time": "13:00",
+      "homeTeam": "SV Fellbach I",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "SV Fellbach I",
+      "venue": "SV Fellbach I",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sv-fellbach-i-vfr-heilbronn-96-18-i/-/spiel/032GTOTOO0000000VS5489BTVU989P58",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550034628",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-4f21025b2ada7ce51a81",
       "teamId": "sgv",
       "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
@@ -1260,29 +1283,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010200",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-6799ddc5a0ec9518a7d3",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2027-03-13",
-      "time": "15:00",
-      "homeTeam": "VfR Heilbronn 96/18",
-      "awayTeam": "SC Pfullendorf",
-      "locationType": "home",
-      "opponent": "SC Pfullendorf",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-sc-pfullendorf/-/spiel/031CQL1HU0000000VS5489BUVUR5FS5A",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013084",
       "competitionType": "ME"
     },
     {
