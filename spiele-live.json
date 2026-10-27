@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-27T07:20:16.943759+00:00",
+  "updatedAt": "2026-10-27T14:01:15.733777+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -88,29 +88,6 @@
       "status": "angesetzt",
       "gameNo": "550023578",
       "competitionType": "FS"
-    },
-    {
-      "id": "fd-82cbd1fd67741a08d732",
-      "teamId": "u16",
-      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
-      "club": "vfr",
-      "label": "U16",
-      "date": "2026-11-01",
-      "time": "10:30",
-      "homeTeam": "Sport-Union Neckarsulm I",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "Sport-Union Neckarsulm I",
-      "venue": "Sport-Union Neckarsulm I",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/sport-union-neckarsulm-i-vfr-heilbronn-96-18-ii/-/spiel/031KFG1SH8000000VS5489BUVVKNMR0J",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351900028",
-      "competitionType": "ME"
     },
     {
       "id": "fd-c0cdeca23b7f37448b74",
@@ -870,6 +847,29 @@
       "status": "angesetzt",
       "gameNo": "550034599",
       "competitionType": "FS"
+    },
+    {
+      "id": "fd-82cbd1fd67741a08d732",
+      "teamId": "u16",
+      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
+      "club": "vfr",
+      "label": "U16",
+      "date": "2026-11-29",
+      "time": "10:30",
+      "homeTeam": "Sport-Union Neckarsulm I",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "Sport-Union Neckarsulm I",
+      "venue": "Sport-Union Neckarsulm I",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sport-union-neckarsulm-i-vfr-heilbronn-96-18-ii/-/spiel/031KFG1SH8000000VS5489BUVVKNMR0J",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351900028",
+      "competitionType": "ME"
     },
     {
       "id": "fd-45b97f819424e5593187",
