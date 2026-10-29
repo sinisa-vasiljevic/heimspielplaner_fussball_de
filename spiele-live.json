@@ -1,11 +1,11 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-29T09:22:52.802864+00:00",
+  "updatedAt": "2026-10-29T16:39:43.960593+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
     "vh": 10,
-    "u19": 5,
+    "u19": 6,
     "u17": 10,
     "u16": 10,
     "u15": 8,
@@ -1031,6 +1031,29 @@
       "status": "angesetzt",
       "gameNo": "350181167",
       "competitionType": "ME"
+    },
+    {
+      "id": "fd-e33b42547830b2fcd84e",
+      "teamId": "u19",
+      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
+      "club": "vfr",
+      "label": "U19",
+      "date": "2027-01-20",
+      "time": "19:30",
+      "homeTeam": "TG Böckingen",
+      "awayTeam": "VfR Heilbronn 96/18",
+      "locationType": "away",
+      "opponent": "TG Böckingen",
+      "venue": "TG Böckingen",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/tg-boeckingen-vfr-heilbronn-96-18/-/spiel/032HP8K6MG000000VS5489BUVSGKI48U",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550015418",
+      "competitionType": "FS"
     },
     {
       "id": "fd-4a3d85048f15ac10a163",
