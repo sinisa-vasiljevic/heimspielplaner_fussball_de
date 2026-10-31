@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-10-31T13:21:57.474513+00:00",
+  "updatedAt": "2026-10-31T18:13:40.439027+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,34 +15,11 @@
     "u11": 2
   },
   "detailCounts": {
-    "homeGames": 30,
-    "homeGamesWithPitch": 27,
+    "homeGames": 29,
+    "homeGamesWithPitch": 26,
     "homeGamesWithoutPitch": 3
   },
   "games": [
-    {
-      "id": "fd-70b475eb5797e160d281",
-      "teamId": "sgv",
-      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
-      "club": "sgv",
-      "label": "Herren",
-      "date": "2026-10-31",
-      "time": "14:00",
-      "homeTeam": "SGV Heilbronn-Freiberg",
-      "awayTeam": "FC-Astoria Walldorf",
-      "locationType": "home",
-      "opponent": "FC-Astoria Walldorf",
-      "venue": "Frankenstadion",
-      "pitch": "Rasenplatz",
-      "surface": "rasen",
-      "venueDetail": "Heilbronn Frankenstadion Rasen 1",
-      "detailUrl": "https://www.fussball.de/spiel/sgv-heilbronn-freiberg-fussball-fc-astoria-walldorf/-/spiel/031ECMOJ28000000VS5489BTVUS470OH",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "490010118",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-b96ff2635f9bdbbcde0d",
       "teamId": "u17",
@@ -1329,6 +1306,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181196",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-4054130f7d1664c2cf09",
+      "teamId": "sgv",
+      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "club": "sgv",
+      "label": "Herren",
+      "date": "2027-03-20",
+      "time": "14:00",
+      "homeTeam": "1. FSV Mainz 05 II",
+      "awayTeam": "SGV Heilbronn-Freiberg",
+      "locationType": "away",
+      "opponent": "1. FSV Mainz 05 II",
+      "venue": "1. FSV Mainz 05 II",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "490010211",
       "competitionType": "ME"
     },
     {
