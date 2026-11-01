@@ -1,11 +1,11 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-01T15:48:56.546819+00:00",
+  "updatedAt": "2026-11-01T20:12:49.826698+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
     "vh": 10,
-    "u19": 6,
+    "u19": 5,
     "u17": 10,
     "u16": 10,
     "u15": 8,
@@ -15,57 +15,11 @@
     "u11": 2
   },
   "detailCounts": {
-    "homeGames": 29,
-    "homeGamesWithPitch": 26,
+    "homeGames": 30,
+    "homeGamesWithPitch": 27,
     "homeGamesWithoutPitch": 3
   },
   "games": [
-    {
-      "id": "fd-c0cdeca23b7f37448b74",
-      "teamId": "vh",
-      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
-      "club": "vfr",
-      "label": "Herren",
-      "date": "2026-11-01",
-      "time": "14:30",
-      "homeTeam": "SG Weinstadt",
-      "awayTeam": "VfR Heilbronn",
-      "locationType": "away",
-      "opponent": "SG Weinstadt",
-      "venue": "SG Weinstadt",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "350181124",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-a6b260e837071b61d3c9",
-      "teamId": "u19",
-      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
-      "club": "vfr",
-      "label": "U19",
-      "date": "2026-11-01",
-      "time": "15:00",
-      "homeTeam": "Offenburger FV",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "Offenburger FV",
-      "venue": "Offenburger FV",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/offenburger-fv-vfr-heilbronn-96-18/-/spiel/031F0C5RVG000000VS5489BTVUS470OH",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390033036",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-e8710b1902f8a0a179e5",
       "teamId": "u12",
@@ -1401,6 +1355,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-6e2a6d90d0251608ddb7",
+      "teamId": "vh",
+      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
+      "club": "vfr",
+      "label": "Herren",
+      "date": "2027-03-28",
+      "time": "15:00",
+      "homeTeam": "VfR Heilbronn",
+      "awayTeam": "TSV Gaildorf",
+      "locationType": "home",
+      "opponent": "TSV Gaildorf",
+      "venue": "Frankenstadion",
+      "pitch": "Rasenplatz",
+      "surface": "rasen",
+      "venueDetail": "Heilbronn Frankenstadion Rasen 1",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-tsv-gaildorf/-/spiel/031CDDPTGK000000VS5489BUVUR5FS5A",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350181212",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-7dab2e584a6d56f29b77",
       "teamId": "u14",
       "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
@@ -1609,7 +1586,7 @@
     }
   ],
   "warnings": [
-    "vh: Detail-Link für 4 von 5 Heimspielen gefunden",
+    "vh: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u17: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u16: Detail-Link für 2 von 3 Heimspielen gefunden",
     "Keine Platzinformation für 3 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
