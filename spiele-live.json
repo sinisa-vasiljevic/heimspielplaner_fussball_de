@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-01T08:44:28.411555+00:00",
+  "updatedAt": "2026-11-01T15:48:56.546819+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -20,29 +20,6 @@
     "homeGamesWithoutPitch": 3
   },
   "games": [
-    {
-      "id": "fd-b96ff2635f9bdbbcde0d",
-      "teamId": "u17",
-      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U17",
-      "date": "2026-11-01",
-      "time": "10:00",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "VfB Eppingen",
-      "locationType": "home",
-      "opponent": "VfB Eppingen",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-vfb-eppingen/-/spiel/032GP2SN2K000000VS5489BTVU989P58",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550023578",
-      "competitionType": "FS"
-    },
     {
       "id": "fd-c0cdeca23b7f37448b74",
       "teamId": "vh",
@@ -1605,6 +1582,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900067",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-8e7f175d5acb2ad11f0f",
+      "teamId": "u17",
+      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U17",
+      "date": "2027-04-25",
+      "time": "11:00",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "SGV Heilbronn-Freiberg Fußball II",
+      "locationType": "home",
+      "opponent": "SGV Heilbronn-Freiberg Fußball II",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-sgv-heilbronn-freiberg-fussball-ii/-/spiel/031GJUQD4G000000VS5489BUVSJ4CRAP",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350838095",
       "competitionType": "ME"
     }
   ],
