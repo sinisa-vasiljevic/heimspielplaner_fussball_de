@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-04T08:44:57.279930+00:00",
+  "updatedAt": "2026-11-04T16:53:38.187957+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,8 +15,8 @@
     "u11": 2
   },
   "detailCounts": {
-    "homeGames": 29,
-    "homeGamesWithPitch": 26,
+    "homeGames": 30,
+    "homeGamesWithPitch": 27,
     "homeGamesWithoutPitch": 3
   },
   "games": [
@@ -556,7 +556,7 @@
       "club": "vfr",
       "label": "U15",
       "date": "2026-11-22",
-      "time": "11:00",
+      "time": "13:00",
       "homeTeam": "VfL Nagold",
       "awayTeam": "VfR Heilbronn 96/18 I",
       "locationType": "away",
@@ -987,6 +987,29 @@
       "competitionType": "FS"
     },
     {
+      "id": "fd-55ad69c8279428252d2c",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2027-01-31",
+      "time": "14:30",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "SV Waldhof-Mannheim",
+      "locationType": "home",
+      "opponent": "SV Waldhof-Mannheim",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-sv-waldhof-mannheim/-/spiel/032JMDOVBO000000VS5489BTVU989P58",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390005181",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-0d008a9847658ce0bf5b",
       "teamId": "u14",
       "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
@@ -1007,6 +1030,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "550034615",
+      "competitionType": "FS"
+    },
+    {
+      "id": "fd-f33ed06ee710097b2bea",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2027-02-14",
+      "time": "12:00",
+      "homeTeam": "FSV Hollenbach I",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "FSV Hollenbach I",
+      "venue": "FSV Hollenbach I",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/fsv-hollenbach-i-vfr-heilbronn-96-18-ii/-/spiel/032JNN5DPS000000VS5489BUVSGKI48U",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550034646",
       "competitionType": "FS"
     },
     {
@@ -1148,29 +1194,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-fc644545150fc6406e11",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2027-03-06",
-      "time": "14:00",
-      "homeTeam": "SSV Reutlingen 1905 Fußball",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "SSV Reutlingen 1905 Fußball",
-      "venue": "SSV Reutlingen 1905 Fußball",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/ssv-reutlingen-1905-fussball-vfr-heilbronn-96-18-i/-/spiel/031CQL1I3O000000VS5489BUVUR5FS5A",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013075",
-      "competitionType": "ME"
-    },
-    {
       "id": "fd-bb045fade7bd2c87afda",
       "teamId": "vh",
       "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
@@ -1306,29 +1329,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010211",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-d6e0d8f958303a765081",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2027-03-20",
-      "time": "14:30",
-      "homeTeam": "FSV Waiblingen",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "FSV Waiblingen",
-      "venue": "FSV Waiblingen",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/fsv-waiblingen-i-vfr-heilbronn-96-18-ii/-/spiel/031L72COD8000000VS5489BTVSRD0UH9",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891047",
       "competitionType": "ME"
     },
     {
