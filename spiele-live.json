@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-05T11:55:23.378304+00:00",
+  "updatedAt": "2026-11-05T19:32:52.789085+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -10,13 +10,13 @@
     "u16": 10,
     "u15": 8,
     "u14": 7,
-    "u13": 5,
+    "u13": 6,
     "u12": 1,
     "u11": 2
   },
   "detailCounts": {
-    "homeGames": 30,
-    "homeGamesWithPitch": 27,
+    "homeGames": 31,
+    "homeGamesWithPitch": 28,
     "homeGamesWithoutPitch": 3
   },
   "games": [
@@ -202,6 +202,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "550070072",
+      "competitionType": "FS"
+    },
+    {
+      "id": "fd-c80aec6edc4906a6bff1",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-11-08",
+      "time": "10:00",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "SG Sonnenhof Großaspach I",
+      "locationType": "home",
+      "opponent": "SG Sonnenhof Großaspach I",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-sg-sonnenhof-grossaspach-i/-/spiel/032K3765CC000000VS5489BUVT7T9F23",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550035065",
       "competitionType": "FS"
     },
     {
