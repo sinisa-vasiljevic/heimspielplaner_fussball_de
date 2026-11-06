@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-06T21:28:51.665642+00:00",
+  "updatedAt": "2026-11-06T22:32:30.876385+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -125,9 +125,9 @@
       "locationType": "home",
       "opponent": "TV Oeffingen",
       "venue": "Frankenstadion",
-      "pitch": "Rasenplatz",
-      "surface": "rasen",
-      "venueDetail": "Heilbronn Frankenstadion Rasen 1",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
       "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-tv-oeffingen/-/spiel/031CDDPDO8000000VS5489BUVUR5FS5A",
       "detailStatus": "geladen",
       "source": "FUSSBALL.DE",
