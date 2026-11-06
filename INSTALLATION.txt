@@ -1,17 +1,17 @@
-Heimspielplaner Version 50.7
+Heimspielplaner Version 50.8
 
 Basis:
-- Funktionierende Version 50.6.
+- Funktionierende Version 50.7.
 
 Geändert:
-- Datumsbereich der Heimspielansicht von 80 Prozent auf 100 Prozent Breite erweitert.
-- Datumsfelder der Heimspielansicht von 32 auf 46 Pixel Höhe vergrößert.
-- Schriftgröße von 14 auf 16 Pixel erhöht.
-- Innenabstand auf 8 x 10 Pixel angepasst.
-- Mobile Breitenregel ebenfalls auf 100 Prozent gesetzt.
-- Keine Änderungen an Kollisionslogik, Platzbearbeitung, Import, Verkauf, Slots oder Kabinen.
+- Nach einem erfolgreichen Abruf ersetzen die aktuellen Spiele aus spiele-live.json den bisherigen lokalen Live-Cache vollständig.
+- Spiele, die in den aktuellen Live-Daten nicht mehr enthalten sind, werden dadurch automatisch entfernt.
+- Bei fehlender Internetverbindung oder fehlgeschlagenem Abruf bleibt der zuletzt erfolgreich gespeicherte Live-Stand als Offline-Fallback erhalten.
+- Keine Änderungen an Kollisionslogik, Platzbearbeitung, Import, Verkauf, freien Slots, Kabinen oder manuellen Änderungen.
 
 Installation:
-1. index.html, sw.js und version.json im Stammverzeichnis ersetzen.
+1. index.html, sw.js, version.json und INSTALLATION.txt im Stammverzeichnis ersetzen.
 2. Kein manueller Start des sync-spiele-Workflows erforderlich.
-3. App vollständig schließen und neu öffnen. Falls noch 50.6 sichtbar ist, die Seite einmal im Browser neu laden.
+3. App vollständig schließen und neu öffnen.
+4. Prüfen, dass im Header Version 50.8 angezeigt wird.
+5. Bei bestehender Internetverbindung einmal die Ansicht Heimspiele öffnen. Das nicht mehr in spiele-live.json enthaltene U15-Spiel gegen SV Vaihingen Allianz I wird dann aus dem lokalen Live-Cache entfernt.

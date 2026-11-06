@@ -1,6 +1,6 @@
 {
   "app": "Heimspielplaner",
-  "version": "50.7",
-  "release": "Groessere Datumsfelder in der Heimspielansicht",
-  "date": "2026-10-20"
+  "version": "50.8",
+  "release": "Aktuelle Live-Daten ersetzen alten Live-Cache",
+  "date": "2026-11-06"
 }
