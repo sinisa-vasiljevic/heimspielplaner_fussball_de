@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-06T07:42:50.898491+00:00",
+  "updatedAt": "2026-11-06T15:52:30.588908+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -73,7 +73,7 @@
       "club": "vfr",
       "label": "U14",
       "date": "2026-11-07",
-      "time": "12:30",
+      "time": "11:30",
       "homeTeam": "VfR Heilbronn 96/18 II",
       "awayTeam": "TSG Backnang",
       "locationType": "home",
