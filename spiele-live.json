@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-08T11:45:29.763243+00:00",
+  "updatedAt": "2026-11-08T17:39:37.075249+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -10,9 +10,9 @@
     "u16": 10,
     "u15": 9,
     "u14": 7,
-    "u13": 6,
+    "u13": 5,
     "u12": 0,
-    "u11": 1
+    "u11": 0
   },
   "detailCounts": {
     "homeGames": 28,
@@ -20,75 +20,6 @@
     "homeGamesWithoutPitch": 3
   },
   "games": [
-    {
-      "id": "fd-6b9c0067a9a9abaae037",
-      "teamId": "u11",
-      "externalTeamId": "027N6TN03G000000VS5489B2VSOPA3SJ",
-      "club": "vfr",
-      "label": "U11",
-      "date": "2026-11-08",
-      "time": "10:00",
-      "homeTeam": "SKV Rutesheim I",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "SKV Rutesheim I",
-      "venue": "SKV Rutesheim I",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/skv-rutesheim-i-vfr-heilbronn-96-18/-/spiel/032A5TJ1U0000000VS5489BTVU989P58",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550070072",
-      "competitionType": "FS"
-    },
-    {
-      "id": "fd-c80aec6edc4906a6bff1",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-08",
-      "time": "10:00",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "SG Sonnenhof Großaspach I",
-      "locationType": "home",
-      "opponent": "SG Sonnenhof Großaspach I",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-sg-sonnenhof-grossaspach-i/-/spiel/032K3765CC000000VS5489BUVT7T9F23",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550035065",
-      "competitionType": "FS"
-    },
-    {
-      "id": "fd-0964d97960f60e4cc4cf",
-      "teamId": "u16",
-      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
-      "club": "vfr",
-      "label": "U16",
-      "date": "2026-11-08",
-      "time": "10:30",
-      "homeTeam": "Spfr Schwäbisch Hall",
-      "awayTeam": "VfR Heilbronn 96/18 II",
-      "locationType": "away",
-      "opponent": "Spfr Schwäbisch Hall",
-      "venue": "Spfr Schwäbisch Hall",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/spfr-schwaebisch-hall-vfr-heilbronn-96-18-ii/-/spiel/031KFG1SB0000000VS5489BUVVKNMR0J",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351900031",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-c462115fd9ad8c4d48d4",
       "teamId": "u14",
@@ -1493,6 +1424,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-b59e3ac1a747eb940aa4",
+      "teamId": "u16",
+      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
+      "club": "vfr",
+      "label": "U16",
+      "date": "2027-04-18",
+      "time": "10:30",
+      "homeTeam": "VfR Heilbronn 96/18 II",
+      "awayTeam": "SpVgg Satteldorf",
+      "locationType": "home",
+      "opponent": "SpVgg Satteldorf",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-ii-spvgg-satteldorf/-/spiel/031KFG1UOG000000VS5489BUVVKNMR0J",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351900065",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-017df16e41fe077f42bd",
       "teamId": "u17",
       "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
@@ -1565,7 +1519,7 @@
   "warnings": [
     "vh: Detail-Link für 5 von 6 Heimspielen gefunden",
     "u17: Detail-Link für 5 von 6 Heimspielen gefunden",
-    "u16: Detail-Link für 1 von 2 Heimspielen gefunden",
+    "u16: Detail-Link für 2 von 3 Heimspielen gefunden",
     "Keine Platzinformation für 3 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
 }
