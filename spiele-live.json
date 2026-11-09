@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-09T09:07:25.094760+00:00",
+  "updatedAt": "2026-11-09T20:28:37.899857+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -573,29 +573,6 @@
       "competitionType": "ME"
     },
     {
-      "id": "fd-3d25c6893e2760fbd8b3",
-      "teamId": "u19",
-      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
-      "club": "vfr",
-      "label": "U19",
-      "date": "2026-11-29",
-      "time": "14:00",
-      "homeTeam": "VfR Heilbronn 96/18",
-      "awayTeam": "TSG 1862/09 Weinheim",
-      "locationType": "home",
-      "opponent": "TSG 1862/09 Weinheim",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-tsg-1862-09-weinheim/-/spiel/031F0C5R1O000000VS5489BTVUS470OH",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390033066",
-      "competitionType": "ME"
-    },
-    {
       "id": "fd-dee201c07ddaff201bf0",
       "teamId": "vh",
       "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
@@ -616,6 +593,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181156",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-3d25c6893e2760fbd8b3",
+      "teamId": "u19",
+      "externalTeamId": "027KSOGTMK000000VS5489B2VVDR0U48",
+      "club": "vfr",
+      "label": "U19",
+      "date": "2026-11-29",
+      "time": "16:30",
+      "homeTeam": "VfR Heilbronn 96/18",
+      "awayTeam": "TSG 1862/09 Weinheim",
+      "locationType": "home",
+      "opponent": "TSG 1862/09 Weinheim",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-tsg-1862-09-weinheim/-/spiel/031F0C5R1O000000VS5489BTVUS470OH",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390033066",
       "competitionType": "ME"
     },
     {
