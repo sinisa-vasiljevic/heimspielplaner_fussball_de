@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-15T07:45:18.824797+00:00",
+  "updatedAt": "2026-11-15T12:32:39.595560+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -10,7 +10,7 @@
     "u16": 10,
     "u15": 9,
     "u14": 7,
-    "u13": 5,
+    "u13": 4,
     "u12": 0,
     "u11": 0
   },
@@ -20,29 +20,6 @@
     "homeGamesWithoutPitch": 3
   },
   "games": [
-    {
-      "id": "fd-cde5590c5feec1d8a5ad",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-15",
-      "time": "09:00",
-      "homeTeam": "SGV Heilbronn-Freiberg Fußball I",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "SGV Heilbronn-Freiberg Fußball I",
-      "venue": "SGV Heilbronn-Freiberg Fußball I",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/sgv-heilbronn-freiberg-fussball-i-vfr-heilbronn-96-18-i/-/spiel/031K6LR250000000VS5489BTVSRD0UH9",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351457039",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-d7ddc63251476810f453",
       "teamId": "u14",
@@ -826,6 +803,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-ff50dbbc94ce977c9f34",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2027-02-21",
+      "time": "12:30",
+      "homeTeam": "FC Würzburger Kickers U15 LZ",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "FC Würzburger Kickers U15 LZ",
+      "venue": "FC Würzburger Kickers U15 LZ",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/fc-wuerzburger-kickers-u15-lz-vfr-heilbronn-96-18-i/-/spiel/032N8EOJ50000000VS5489BUVT7T9F23",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "510051444",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-48ab8e5c20dab336a9bf",
       "teamId": "sgv",
       "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
@@ -847,29 +847,6 @@
       "status": "angesetzt",
       "gameNo": "490010187",
       "competitionType": "ME"
-    },
-    {
-      "id": "fd-e9583efa708ddcf660d7",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2027-02-27",
-      "time": "14:00",
-      "homeTeam": "SV Böblingen I",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "SV Böblingen I",
-      "venue": "SV Böblingen I",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/sv-boeblingen-i-vfr-heilbronn-96-18-i/-/spiel/032LP0VV4K000000VS5489BTVSIO88SN",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550034704",
-      "competitionType": "FS"
     },
     {
       "id": "fd-54e4812ba8e3a9fad8d6",
