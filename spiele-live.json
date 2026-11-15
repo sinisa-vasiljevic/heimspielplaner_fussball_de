@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-13T10:33:57.368065+00:00",
+  "updatedAt": "2026-11-15T07:45:18.824797+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,34 +15,11 @@
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 28,
-    "homeGamesWithPitch": 25,
+    "homeGames": 27,
+    "homeGamesWithPitch": 24,
     "homeGamesWithoutPitch": 3
   },
   "games": [
-    {
-      "id": "fd-1f528816556eb0cd073f",
-      "teamId": "sgv",
-      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
-      "club": "sgv",
-      "label": "Herren",
-      "date": "2026-11-14",
-      "time": "14:00",
-      "homeTeam": "SGV Heilbronn-Freiberg",
-      "awayTeam": "SV Eintracht-Trier",
-      "locationType": "home",
-      "opponent": "SV Eintracht-Trier",
-      "venue": "Frankenstadion",
-      "pitch": "Rasenplatz",
-      "surface": "rasen",
-      "venueDetail": "Heilbronn Frankenstadion Rasen 1",
-      "detailUrl": "https://www.fussball.de/spiel/sgv-heilbronn-freiberg-fussball-sv-eintracht-trier/-/spiel/031ECMOK4G000000VS5489BTVUS470OH",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "490010136",
-      "competitionType": "ME"
-    },
     {
       "id": "fd-cde5590c5feec1d8a5ad",
       "teamId": "u13",
@@ -1306,6 +1283,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181212",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-ce528a8bda0f60e5a011",
+      "teamId": "sgv",
+      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "club": "sgv",
+      "label": "Herren",
+      "date": "2027-04-03",
+      "time": "14:00",
+      "homeTeam": "SV Stuttgarter Kickers",
+      "awayTeam": "SGV Heilbronn-Freiberg",
+      "locationType": "away",
+      "opponent": "SV Stuttgarter Kickers",
+      "venue": "SV Stuttgarter Kickers",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sv-stuttgarter-kickers-sgv-heilbronn-freiberg-fussball/-/spiel/031ECMORPS000000VS5489BTVUS470OH",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "490010233",
       "competitionType": "ME"
     },
     {
