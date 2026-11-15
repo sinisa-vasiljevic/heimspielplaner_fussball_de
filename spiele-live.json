@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-15T19:18:44.441725+00:00",
+  "updatedAt": "2026-11-15T23:48:16.269969+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,9 +15,9 @@
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 27,
+    "homeGames": 26,
     "homeGamesWithPitch": 23,
-    "homeGamesWithoutPitch": 4
+    "homeGamesWithoutPitch": 3
   },
   "games": [
     {
@@ -685,6 +685,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "510051444",
+      "competitionType": "FS"
+    },
+    {
+      "id": "fd-bd4e877f4832cca51e6a",
+      "teamId": "u17",
+      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U17",
+      "date": "2027-02-27",
+      "time": "12:00",
+      "homeTeam": "FSV 08 Bietigheim-Bissingen",
+      "awayTeam": "VfR Heilbronn 96/18 I",
+      "locationType": "away",
+      "opponent": "FSV 08 Bietigheim-Bissingen",
+      "venue": "FSV 08 Bietigheim-Bissingen",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390003071",
       "competitionType": "FS"
     },
     {
@@ -1468,35 +1491,12 @@
       "status": "angesetzt",
       "gameNo": "350838098",
       "competitionType": "ME"
-    },
-    {
-      "id": "fd-07c9209632e5aff3f7b7",
-      "teamId": "u17",
-      "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U17",
-      "date": "2027-05-09",
-      "time": "11:00",
-      "homeTeam": "VfR Heilbronn 96/18 I",
-      "awayTeam": "FSV 08 Bietigheim-Bissingen II",
-      "locationType": "home",
-      "opponent": "FSV 08 Bietigheim-Bissingen II",
-      "venue": "Frankenstadion",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "",
-      "detailStatus": "link_fehlt",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "350838105",
-      "competitionType": "ME"
     }
   ],
   "warnings": [
     "vh: Detail-Link für 6 von 7 Heimspielen gefunden",
-    "u17: Detail-Link für 4 von 6 Heimspielen gefunden",
+    "u17: Detail-Link für 4 von 5 Heimspielen gefunden",
     "u16: Detail-Link für 1 von 2 Heimspielen gefunden",
-    "Keine Platzinformation für 4 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00, u17 2027-05-09 11:00"
+    "Keine Platzinformation für 3 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
 }
