@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-16T13:24:35.719728+00:00",
+  "updatedAt": "2026-11-16T23:16:21.849460+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,8 +15,8 @@
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 25,
-    "homeGamesWithPitch": 22,
+    "homeGames": 24,
+    "homeGamesWithPitch": 21,
     "homeGamesWithoutPitch": 3
   },
   "games": [
@@ -110,6 +110,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181149",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-2dac4946f9328e7c13cd",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2026-11-21",
+      "time": "14:15",
+      "homeTeam": "SV Heilbronn am Leinbach",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "SV Heilbronn am Leinbach",
+      "venue": "SV Heilbronn am Leinbach",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sv-heilbronn-am-leinbach-i-vfr-heilbronn-96-18-ii/-/spiel/031L72CLTC000000VS5489BTVSRD0UH9",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351891042",
       "competitionType": "ME"
     },
     {
@@ -1283,29 +1306,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010233",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-7dab2e584a6d56f29b77",
-      "teamId": "u14",
-      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
-      "club": "vfr",
-      "label": "U14",
-      "date": "2027-04-03",
-      "time": "17:00",
-      "homeTeam": "VfR Heilbronn 96/18 II",
-      "awayTeam": "SV Allmersbach",
-      "locationType": "home",
-      "opponent": "SV Allmersbach",
-      "venue": "Frankenstadion",
-      "pitch": "Kunstrasenplatz",
-      "surface": "kunstrasen",
-      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
-      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-ii-sv-allmersbach-i/-/spiel/031L72COAG000000VS5489BTVSRD0UH9",
-      "detailStatus": "geladen",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "351891053",
       "competitionType": "ME"
     },
     {
