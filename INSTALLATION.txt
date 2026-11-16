@@ -1,6 +1,5 @@
 Heimspielplaner 50.10
 
-- PT17 und PT18 fest ergänzt.
-- Beide Teams sind in Teams, Manuelles Spiel, Bearbeiten, Verkauf, Kabinen, Kollisionen, freie Slots und WhatsApp verfügbar.
-- Standard-Spielzeit: 2 x 40 Minuten, Pause 10 Minuten.
-- Manuelle Spiele und FUSSBALL.DE bleiben getrennt gespeichert.
+- PT17 und PT18 integriert.
+- Manuelle Spiele bleiben getrennt von FUSSBALL.DE gespeichert.
+- Korrektur: Änderungen an manuell angelegten Spielen, insbesondere Datum/Uhrzeit, werden direkt im manuellen Spiel gespeichert und sofort in allen Übersichten verwendet.
