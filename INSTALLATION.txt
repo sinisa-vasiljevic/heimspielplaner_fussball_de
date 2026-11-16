@@ -1,9 +1,6 @@
-Heimspielplaner 50.9
+Heimspielplaner 50.10
 
-- Import/Export wurde durch Manuelles Spiel ersetzt.
-- Manuelle Spiele werden separat in hs_manual_games_v509 gespeichert.
-- FUSSBALL.DE verwendet unverändert hs_live_cache_v49.
-- Neue FUSSBALL.DE-Abrufe überschreiben oder löschen keine manuellen Spiele.
-- Manuelle Spiele fließen in Heimspiele, Kollisionen, Verkauf, freie Slots, Kabinen und WhatsApp ein.
-- FuPa-Altbestand wurde entfernt.
-- Manuelle Spiele werden nur über ihre Löschfunktion entfernt.
+- PT17 und PT18 fest ergänzt.
+- Beide Teams sind in Teams, Manuelles Spiel, Bearbeiten, Verkauf, Kabinen, Kollisionen, freie Slots und WhatsApp verfügbar.
+- Standard-Spielzeit: 2 x 40 Minuten, Pause 10 Minuten.
+- Manuelle Spiele und FUSSBALL.DE bleiben getrennt gespeichert.
