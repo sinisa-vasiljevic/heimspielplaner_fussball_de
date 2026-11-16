@@ -1,17 +1,9 @@
-Heimspielplaner Version 50.8
+Heimspielplaner 50.9
 
-Basis:
-- Funktionierende Version 50.7.
-
-Geändert:
-- Nach einem erfolgreichen Abruf ersetzen die aktuellen Spiele aus spiele-live.json den bisherigen lokalen Live-Cache vollständig.
-- Spiele, die in den aktuellen Live-Daten nicht mehr enthalten sind, werden dadurch automatisch entfernt.
-- Bei fehlender Internetverbindung oder fehlgeschlagenem Abruf bleibt der zuletzt erfolgreich gespeicherte Live-Stand als Offline-Fallback erhalten.
-- Keine Änderungen an Kollisionslogik, Platzbearbeitung, Import, Verkauf, freien Slots, Kabinen oder manuellen Änderungen.
-
-Installation:
-1. index.html, sw.js, version.json und INSTALLATION.txt im Stammverzeichnis ersetzen.
-2. Kein manueller Start des sync-spiele-Workflows erforderlich.
-3. App vollständig schließen und neu öffnen.
-4. Prüfen, dass im Header Version 50.8 angezeigt wird.
-5. Bei bestehender Internetverbindung einmal die Ansicht Heimspiele öffnen. Das nicht mehr in spiele-live.json enthaltene U15-Spiel gegen SV Vaihingen Allianz I wird dann aus dem lokalen Live-Cache entfernt.
+- Import/Export wurde durch Manuelles Spiel ersetzt.
+- Manuelle Spiele werden separat in hs_manual_games_v509 gespeichert.
+- FUSSBALL.DE verwendet unverändert hs_live_cache_v49.
+- Neue FUSSBALL.DE-Abrufe überschreiben oder löschen keine manuellen Spiele.
+- Manuelle Spiele fließen in Heimspiele, Kollisionen, Verkauf, freie Slots, Kabinen und WhatsApp ein.
+- FuPa-Altbestand wurde entfernt.
+- Manuelle Spiele werden nur über ihre Löschfunktion entfernt.
