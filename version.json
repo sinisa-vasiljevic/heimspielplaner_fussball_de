@@ -1,6 +1,1 @@
-{
-  "app": "Heimspielplaner",
-  "version": "50.8",
-  "release": "Aktuelle Live-Daten ersetzen alten Live-Cache",
-  "date": "2026-11-06"
-}
+{"app":"Heimspielplaner","version":"50.10","release":"PT17, PT18 und Speicherkorrektur für manuelle Spiele","date":"2026-11-16"}

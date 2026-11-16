@@ -1,12 +1,12 @@
 'use strict';
-const CACHE_NAME='heimspielplaner-v50.9';
+const CACHE_NAME='heimspielplaner-v50.10';
 const APP_SHELL=[
   './index.html',
-  './manifest.webmanifest?v=50.9',
+  './manifest.webmanifest?v=50.10',
   './version.json',
-  './icon-192.png?v=50.9',
-  './icon-512.png?v=50.9',
-  './apple-touch-icon.png?v=50.9'
+  './icon-192.png?v=50.10',
+  './icon-512.png?v=50.10',
+  './apple-touch-icon.png?v=50.10'
 ];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
   const cache=await caches.open(CACHE_NAME);

@@ -1,5 +1,10 @@
 Heimspielplaner 50.10
 
-- PT17 und PT18 integriert.
-- Manuelle Spiele bleiben getrennt von FUSSBALL.DE gespeichert.
-- Korrektur: Änderungen an manuell angelegten Spielen, insbesondere Datum/Uhrzeit, werden direkt im manuellen Spiel gespeichert und sofort in allen Übersichten verwendet.
+Basis: bereitgestellte Version 50.9 mit Reiter Manuelles Spiel.
+
+Änderungen:
+- PT17 und PT18 ergänzt, jeweils 2 x 40 Minuten plus 10 Minuten Pause.
+- Änderungen an manuellen Spielen werden direkt im manuellen Datensatz gespeichert.
+- Datum, Uhrzeit, Mannschaft, Gegner, Spielstätte, Platz und ausgelagerter Status werden nach dem Speichern sofort in allen Ansichten verwendet.
+- FUSSBALL.DE-Livebestand und manuelle Spiele bleiben getrennt.
+- Service Worker und Versionsdatei auf 50.10 angehoben.
