@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-17T06:27:52.825288+00:00",
+  "updatedAt": "2026-11-17T10:29:14.405495+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -15,8 +15,8 @@
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 24,
-    "homeGamesWithPitch": 21,
+    "homeGames": 25,
+    "homeGamesWithPitch": 22,
     "homeGamesWithoutPitch": 3
   },
   "games": [
@@ -665,6 +665,29 @@
       "competitionType": "FS"
     },
     {
+      "id": "fd-48570909bea274b95011",
+      "teamId": "u15",
+      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U15",
+      "date": "2027-02-06",
+      "time": "13:00",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "TV Würzburg-Kitzingen U15",
+      "locationType": "home",
+      "opponent": "TV Würzburg-Kitzingen U15",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-tv-wuerzburg-kitzingen-u15/-/spiel/032NS1UI1C000000VS5489BUVT7T9F23",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "390005200",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-f33ed06ee710097b2bea",
       "teamId": "u14",
       "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
@@ -795,7 +818,7 @@
       "pitch": "",
       "surface": "unbekannt",
       "venueDetail": "",
-      "detailUrl": "",
+      "detailUrl": "https://www.fussball.de/spiel/fsv-08-bietigheim-bissingen-vfr-heilbronn-96-18-i/-/spiel/032NCN3ES0000000VS5489BUVT7T9F23",
       "detailStatus": "nicht_erforderlich",
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
@@ -961,29 +984,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010190",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-fc644545150fc6406e11",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2027-03-06",
-      "time": "14:00",
-      "homeTeam": "SSV Reutlingen 1905 Fußball",
-      "awayTeam": "VfR Heilbronn 96/18",
-      "locationType": "away",
-      "opponent": "SSV Reutlingen 1905 Fußball",
-      "venue": "SSV Reutlingen 1905 Fußball",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/ssv-reutlingen-1905-fussball-vfr-heilbronn-96-18-i/-/spiel/031CQL1I3O000000VS5489BUVUR5FS5A",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "390013075",
       "competitionType": "ME"
     },
     {
