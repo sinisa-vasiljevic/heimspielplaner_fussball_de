@@ -52,15 +52,25 @@ jobs:
 
           old = json.loads(Path('/tmp/spiele-live-vorher.json').read_text(encoding='utf-8'))
           new = json.loads(Path('spiele-live.json').read_text(encoding='utf-8'))
+
           assert isinstance(new.get('games'), list), 'games fehlt oder ist keine Liste'
+
           old_ids = {g.get('id') for g in old.get('games', []) if g.get('id')}
           new_ids = {g.get('id') for g in new.get('games', []) if g.get('id')}
+
           missing = sorted(old_ids - new_ids)
+
           if missing:
-              raise SystemExit(f'ABBRUCH: {len(missing)} bisherige Spiele fehlen: {missing[:20]}')
+              raise SystemExit(
+                  f'ABBRUCH: {len(missing)} bisherige Spiele fehlen: {missing[:20]}'
+              )
+
           if len(new_ids) != len(new.get('games', [])):
               raise SystemExit('ABBRUCH: doppelte oder ungültige Spiel-IDs')
-          print(f'Prüfung OK: vorher {len(old_ids)}, jetzt {len(new_ids)}, kein Spiel verloren.')
+
+          print(
+              f'Prüfung OK: vorher {len(old_ids)}, jetzt {len(new_ids)}, kein Spiel verloren.'
+          )
           print('Mannschaftszähler:', new.get('counts', {}))
           PY
 
@@ -68,13 +78,31 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add spiele-live.json
+
           if git diff --cached --quiet; then
             echo "Keine JSON-Änderung."
           else
             git commit -m "Spielplan sicher aktualisiert"
             git pull --rebase origin main
             git push origin HEAD:main
+          fi
+
+      - name: Neuesten main-Stand für Pages holen
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+          echo "Aktueller Commit:"
+          git log -1 --oneline
+
+          echo "spiel-aenderungen.json:"
+          if [ -f spiel-aenderungen.json ]; then
+            cat spiel-aenderungen.json
+          else
+            echo "FEHLER: spiel-aenderungen.json fehlt."
+            exit 1
           fi
 
       - uses: actions/configure-pages@v5
