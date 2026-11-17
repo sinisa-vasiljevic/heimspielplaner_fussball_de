@@ -17,7 +17,7 @@ OUT = ROOT / "spiele-live.json"
 DATE_RE = re.compile(r"(?:(?:Mo|Di|Mi|Do|Fr|Sa|So)\.?\s*,?\s*)?(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?([0-2]?\d:[0-5]\d)", re.I)
 # FUSSBALL.DE zeigt Termine teilweise getrennt als "So., 22.11." und "16:00 Uhr".
 # Diese Variante erkennt das Datum auch ohne sichtbares Jahr und ohne Uhrzeit in derselben Zeile.
-DATE_ONLY_RE = re.compile(r"(?:(?:Mo|Di|Mi|Do|Fr|Sa|So)\.?\s*,?\s*)?(\d{1,2})\.(\d{1,2})\.(?:(\d{2,4})\.?)?(?!\d)", re.I)
+DATE_ONLY_RE = re.compile(r"(?:(?:Mo|Di|Mi|Do|Fr|Sa|So)\.?\s*,?\s*)?(\d{1,2})\.(\d{1,2})\.(?:(\d{2,4})\.)?(?!\d)", re.I)
 INFO_RE = re.compile(r"\b(ME|FS|PO|TU)\s*\|\s*(\d{6,})")
 TIME_RE = re.compile(r"(?<!\d)([0-2]?\d:[0-5]\d)(?!\d)")
 EXCLUDED_TYPES = {str(x).upper() for x in CFG.get("excludeCompetitionTypes", ["TU"])}
@@ -180,50 +180,68 @@ def season_year_for(month, explicit_year=None):
 
 def parse_games(text, key, cfg):
     lines = [clean(x) for x in text.splitlines() if clean(x)]
-    try: start = lines.index("MANNSCHAFTSSPIELPLAN")
-    except ValueError: start = 0
-    try: end = lines.index("Legende", start + 1)
-    except ValueError: end = len(lines)
+    try:
+        start = lines.index("MANNSCHAFTSSPIELPLAN")
+    except ValueError:
+        start = 0
+    try:
+        end = lines.index("Legende", start + 1)
+    except ValueError:
+        end = len(lines)
     lines = lines[start:end]
     club_needle = "sgv heilbronn-freiberg" if cfg["club"] == "sgv" else "vfr heilbronn"
-    games = []
-    last_date = last_time = None
-    colon_positions = [i for i, value in enumerate(lines) if value == ":"]
-    for i, value in enumerate(lines):
-        dm = DATE_RE.search(value)
+    games, seen = [], set()
+    current_date = current_time = current_type = current_no = None
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        dm = DATE_RE.search(line)
         if dm:
-            d, m, y, tm = dm.groups(); last_date = f"{season_year_for(m, y)}-{int(m):02d}-{int(d):02d}"; last_time = tm.zfill(5)
+            d, m, y, tm = dm.groups()
+            year = season_year_for(m, y)
+            current_date = f"{year}-{int(m):02d}-{int(d):02d}"
+            current_time = tm.zfill(5)
         else:
-            dm = DATE_ONLY_RE.search(value)
-            if dm:
-                d, m, y = dm.groups(); last_date = f"{season_year_for(m, y)}-{int(m):02d}-{int(d):02d}"
-            tm = TIME_RE.search(value)
-            if tm and last_date: last_time = tm.group(1).zfill(5)
-        if value != ":" or i == 0 or i + 1 >= len(lines): continue
-        home, away = lines[i - 1], lines[i + 1]
-        next_colon = next((j for j in colon_positions if j > i), len(lines))
-        after = lines[i + 2:next_colon]
-        info = next((INFO_RE.search(x) for x in after if INFO_RE.search(x)), None)
-        if not info: continue
-        ctype, game_no = info.group(1).upper(), info.group(2)
-        is_home = club_needle in home.lower(); is_away = club_needle in away.lower()
-        if not (is_home or is_away) or not last_date or not last_time or ctype in EXCLUDED_TYPES: continue
-        actual_venue = extract_venue(lines, i - 1)
-        is_relocated = is_home and bool(actual_venue) and not is_local_venue(actual_venue)
-        stable = cfg["teamId"] + "|" + game_no
-        gid = "fd-" + hashlib.sha1(stable.encode()).hexdigest()[:20]
-        games.append({"id": gid, "teamId": key, "externalTeamId": cfg["teamId"], "club": cfg["club"], "label": cfg["label"],
-            "date": last_date, "time": last_time, "homeTeam": home, "awayTeam": away,
-            "locationType": "relocated" if is_relocated else ("home" if is_home else "away"), "opponent": away if is_home else home,
-            "venue": actual_venue or (CFG.get("venueDefault", "Frankenstadion") if is_home else home),
-            "pitch": "", "surface": "unbekannt", "venueDetail": "", "detailUrl": "", "detailStatus": "nicht_geladen",
-            "source": "FUSSBALL.DE", "status": "abgesetzt" if re.search(r"Absetzung|abgesetzt", "\n".join(after), re.I) else "angesetzt",
-            "gameNo": game_no, "competitionType": ctype})
-    selected = {}
-    for game in games:
-        previous = selected.get(game["gameNo"])
-        if previous is None or (game["date"], game["time"]) >= (previous["date"], previous["time"]): selected[game["gameNo"]] = game
-    return list(selected.values())
+            # Datum und Uhrzeit können auf zwei getrennten Zeilen stehen.
+            short_date = DATE_ONLY_RE.search(line)
+            if short_date:
+                d, m, y = short_date.groups()
+                year = season_year_for(m, y)
+                current_date = f"{year}-{int(m):02d}-{int(d):02d}"
+            mt = TIME_RE.search(line)
+            if mt and current_date:
+                current_time = mt.group(1).zfill(5)
+        info = INFO_RE.search(line)
+        if info:
+            current_type, current_no = info.groups()
+        if i + 2 < len(lines) and lines[i + 1] == ":" and current_date and current_time:
+            home, away = lines[i], lines[i + 2]
+            tail = "\n".join(lines[i:min(len(lines), i + 18)])
+            ctype = (current_type or "").upper()
+            is_home = club_needle in home.lower()
+            is_away = club_needle in away.lower()
+            actual_venue = extract_venue(lines, i)
+            is_relocated = is_home and bool(actual_venue) and not is_local_venue(actual_venue)
+            if (is_home or is_away) and ctype not in EXCLUDED_TYPES:
+                stable = cfg["teamId"] + "|" + current_no if current_no else "|".join([cfg["teamId"], home.lower(), away.lower(), CFG["season"]])
+                gid = "fd-" + hashlib.sha1(stable.encode()).hexdigest()[:20]
+                if gid not in seen:
+                    seen.add(gid)
+                    games.append({
+                        "id": gid, "teamId": key, "externalTeamId": cfg["teamId"], "club": cfg["club"], "label": cfg["label"],
+                        "date": current_date, "time": current_time, "homeTeam": home, "awayTeam": away,
+                        "locationType": "relocated" if is_relocated else ("home" if is_home else "away"),
+                        "opponent": away if is_home else home,
+                        "venue": actual_venue or (CFG.get("venueDefault", "Frankenstadion") if is_home else home),
+                        "pitch": "", "surface": "unbekannt", "venueDetail": "", "detailUrl": "", "detailStatus": "nicht_geladen",
+                        "source": "FUSSBALL.DE", "status": "abgesetzt" if re.search(r"Absetzung|abgesetzt", tail, re.I) else "angesetzt",
+                        "gameNo": current_no or "", "competitionType": current_type or "",
+                    })
+            current_time = current_type = current_no = None
+            i += 2
+        i += 1
+    return games
+
 
 async def accept_cookies(page):
     for name in ["Alle akzeptieren", "Akzeptieren", "Zustimmen"]:
@@ -337,7 +355,7 @@ async def main():
                 counts[key] = len(found)
                 home = [g for g in found if g["locationType"] == "home"]
                 linked = [g for g in home if g["detailUrl"]]
-                print(key, cfg["teamId"], len(active), "Detail-Links", len(linked), "/", len(home), "Kandidaten", len(urls))
+                print(key, cfg["teamId"], len(found), "Detail-Links", len(linked), "/", len(home), "Kandidaten", len(urls))
                 for game in found:
                     print("  ", key, game["date"], game["time"], game["homeTeam"], "-", game["awayTeam"], game["competitionType"] or "?")
                 if len(linked) < len(home):
