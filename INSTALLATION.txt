@@ -1,29 +1,22 @@
-Heimspielplaner 50.11
-Basis: bereitgestellte Version 50.10.
+Heimspielplaner 50.12 - sicherer Synchronisationsablauf
 
 Änderungen:
-- Manuelle Spiele werden weiterhin lokal unter hs_manual_games_v509 gespeichert.
-- Zusätzlich werden sie als manuelle-spiele.json im eigenen Repository sinisa-vasiljevic/heimspielplaner_fussball_de gespeichert.
-- Vorhandene lokale Spiele werden bei der ersten Verbindung automatisch übernommen.
-- Anlage, Änderung und Löschung aktualisieren die zentrale Datei.
-- Der Trainingsplaner kann manuelle-spiele.json später öffentlich und ausschließlich lesend abrufen.
-- Keine Firebase-Verbindung, keine Trainingsplaner-Anmeldung und keine Kopplung an eine andere App.
+- Ein unvollständiger FUSSBALL.DE-Abruf darf kein bereits bekanntes Spiel löschen.
+- Python führt neuen Abruf und alten spiele-live.json-Bestand zusammen.
+- Die App führt frische Daten mit ihrem lokalen Cache zusammen, statt den Cache komplett zu ersetzen.
+- Der Workflow prüft vor Commit/Deployment, dass keine vorhandene Spiel-ID fehlt.
+- Der Workflow führt vor dem Push git pull --rebase aus, damit parallele Updates von manuelle-spiele.json nicht zum non-fast-forward-Abbruch führen.
+- Erst der erfolgreich geprüfte und gepushte Stand wird auf GitHub Pages veröffentlicht.
 
-GitHub-Token:
-- Fine-grained personal access token verwenden.
-- Repository access: Only select repositories -> heimspielplaner_fussball_de.
-- Repository permission: Contents = Read and write.
-- Der Token wird ausschließlich lokal auf dem Gerät im Browser gespeichert und nicht in Dateien oder im Repository abgelegt.
+In GitHub ersetzen:
+- scripts/sync_fussball_de.py
+- .github/workflows/sync-spiele.yml
+- index.html
+- sw.js
+- version.json
 
-Upload:
-- index.html, sw.js, version.json und INSTALLATION.txt ersetzen.
-- github-sync.js und manuelle-spiele.json neu hinzufügen.
-- Vorhandene Import-/Workflow-Dateien und spiele-live.json nicht verändern.
-
-Erstübernahme:
-- Auf dem Gerät mit den vorhandenen manuellen Spielen Version 50.11 öffnen.
-- Im Reiter Manuelles Spiel den Token eintragen und Zentrale Speicherung aktivieren wählen.
-- Vorhandene lokale und eventuell zentrale Spiele werden anhand ihrer ID zusammengeführt und in manuelle-spiele.json gespeichert.
-
-Wichtig:
-- Browser-/PWA-Daten vor der Erstübernahme nicht löschen.
+Nicht verändern:
+- sync_config.json
+- github-sync.js
+- manuelle-spiele.json
+- bestehende Icons
