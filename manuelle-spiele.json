@@ -1,6 +1,41 @@
 {
   "schema": 1,
-  "updatedAt": null,
+  "updatedAt": "2026-11-17T10:44:34.069Z",
   "source": "HEIMSPIELPLANER_MANUELL",
-  "games": []
+  "games": [
+    {
+      "id": "manual-1794850678413-tqkv9z",
+      "teamId": "u14",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2026-11-28",
+      "time": "14:00",
+      "opponent": "Sonnenhof",
+      "venue": "SC Amorbach",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "source": "MANUELL",
+      "manualType": "Testspiel",
+      "locationType": "home",
+      "createdAt": "2026-11-16T17:37:58.413Z",
+      "updatedAt": "2026-11-17T10:44:33.811Z"
+    },
+    {
+      "id": "manual-1794815667159-yrnebk",
+      "teamId": "pt18",
+      "club": "vfr",
+      "label": "PT18",
+      "date": "2026-12-13",
+      "time": "11:00",
+      "opponent": "Stuttgarter Kickers",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "source": "MANUELL",
+      "manualType": "Testspiel",
+      "locationType": "home",
+      "createdAt": "2026-11-16T07:54:27.159Z",
+      "updatedAt": "2026-11-17T10:44:33.811Z"
+    }
+  ]
 }
