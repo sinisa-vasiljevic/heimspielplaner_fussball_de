@@ -1,6 +1,94 @@
 {
   "schema": 1,
-  "updatedAt": "",
+  "updatedAt": "2026-11-17T23:09:21.114Z",
   "source": "HEIMSPIELPLANER_AENDERUNGEN",
-  "overrides": {}
+  "overrides": {
+    "fd-b09c34eaf6905df42ad6": {
+      "id": "fd-b09c34eaf6905df42ad6",
+      "updatedAt": "2026-11-17T23:09:20.829Z",
+      "locationType": "relocated",
+      "venue": "Leingarten",
+      "date": "2026-10-17",
+      "time": "13:30",
+      "teamId": "u13",
+      "label": "U13",
+      "opponent": "TSG Balingen Fußball"
+    },
+    "fd-311de3d5d0a2b8208b54": {
+      "id": "fd-311de3d5d0a2b8208b54",
+      "updatedAt": "2026-11-17T23:09:20.829Z",
+      "locationType": "relocated",
+      "venue": "SC Amorbach",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "teamId": "u14",
+      "label": "U14",
+      "opponent": "Young Boys Reutlingen II U14-C2"
+    },
+    "fd-38cb8e08e1fc8fc7d7e6": {
+      "id": "fd-38cb8e08e1fc8fc7d7e6",
+      "updatedAt": "2026-11-17T23:09:20.829Z",
+      "locationType": "home",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "date": "2026-10-24",
+      "time": "14:00",
+      "teamId": "vh",
+      "label": "Herren",
+      "opponent": "SG Schorndorf"
+    },
+    "fd-141cbdd96f44b5391a68": {
+      "id": "fd-141cbdd96f44b5391a68",
+      "updatedAt": "2026-11-17T23:09:20.829Z",
+      "locationType": "home",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "date": "2026-10-25",
+      "time": "18:00",
+      "teamId": "u15",
+      "label": "U15",
+      "opponent": "1.CfR Pforzheim"
+    },
+    "fd-f4baf40e820d12ef768f": {
+      "id": "fd-f4baf40e820d12ef768f",
+      "updatedAt": "2026-11-17T23:09:20.829Z",
+      "locationType": "home",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "date": "2026-11-21",
+      "time": "14:00",
+      "teamId": "vh",
+      "label": "Herren",
+      "opponent": "TSV Ilshofen"
+    },
+    "fd-dee201c07ddaff201bf0": {
+      "id": "fd-dee201c07ddaff201bf0",
+      "updatedAt": "2026-11-17T23:09:20.829Z",
+      "locationType": "home",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "date": "2026-11-29",
+      "time": "14:30",
+      "teamId": "vh",
+      "label": "Herren",
+      "opponent": "Sport-Union Neckarsulm"
+    },
+    "fd-d0866e3cdc6e21b94564": {
+      "id": "fd-d0866e3cdc6e21b94564",
+      "updatedAt": "2026-11-17T23:09:20.829Z",
+      "locationType": "relocated",
+      "venue": "SC Amorbach",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "date": "2026-11-28",
+      "time": "14:00",
+      "teamId": "u14",
+      "label": "U14",
+      "opponent": "SG Sonnenhof Großaspach II"
+    }
+  }
 }
