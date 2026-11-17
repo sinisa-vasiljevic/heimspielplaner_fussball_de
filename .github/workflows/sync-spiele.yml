@@ -1,4 +1,4 @@
-name: FUSSBALL.DE Spielplan synchronisieren und Pages bereitstellen
+name: FUSSBALL.DE Spielplan sicher synchronisieren und Pages bereitstellen
 
 on:
   workflow_dispatch:
@@ -23,6 +23,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -36,10 +38,33 @@ jobs:
       - name: Chromium und System-Abhängigkeiten installieren
         run: python -m playwright install --with-deps chromium
 
+      - name: Bisherigen Spielbestand sichern
+        run: cp spiele-live.json /tmp/spiele-live-vorher.json
+
       - name: Zehn feste Mannschaftsspielpläne abrufen
         run: python scripts/sync_fussball_de.py
 
-      - name: Aktualisierte JSON in main speichern
+      - name: Vollständigkeit und JSON-Struktur prüfen
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          old = json.loads(Path('/tmp/spiele-live-vorher.json').read_text(encoding='utf-8'))
+          new = json.loads(Path('spiele-live.json').read_text(encoding='utf-8'))
+          assert isinstance(new.get('games'), list), 'games fehlt oder ist keine Liste'
+          old_ids = {g.get('id') for g in old.get('games', []) if g.get('id')}
+          new_ids = {g.get('id') for g in new.get('games', []) if g.get('id')}
+          missing = sorted(old_ids - new_ids)
+          if missing:
+              raise SystemExit(f'ABBRUCH: {len(missing)} bisherige Spiele fehlen: {missing[:20]}')
+          if len(new_ids) != len(new.get('games', [])):
+              raise SystemExit('ABBRUCH: doppelte oder ungültige Spiel-IDs')
+          print(f'Prüfung OK: vorher {len(old_ids)}, jetzt {len(new_ids)}, kein Spiel verloren.')
+          print('Mannschaftszähler:', new.get('counts', {}))
+          PY
+
+      - name: Validierte JSON konfliktfest in main speichern
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -47,8 +72,9 @@ jobs:
           if git diff --cached --quiet; then
             echo "Keine JSON-Änderung."
           else
-            git commit -m "Spielplan automatisch aktualisiert"
-            git push
+            git commit -m "Spielplan sicher aktualisiert"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
 
       - uses: actions/configure-pages@v5
@@ -57,6 +83,6 @@ jobs:
         with:
           path: .
 
-      - name: GitHub Pages veröffentlichen
+      - name: Exakt geprüften Stand auf GitHub Pages veröffentlichen
         id: deployment
         uses: actions/deploy-pages@v4
