@@ -15,6 +15,9 @@ CFG = json.loads((ROOT / "sync_config.json").read_text(encoding="utf-8"))
 OUT = ROOT / "spiele-live.json"
 
 DATE_RE = re.compile(r"(?:(?:Mo|Di|Mi|Do|Fr|Sa|So)\.?\s*,?\s*)?(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?([0-2]?\d:[0-5]\d)", re.I)
+# FUSSBALL.DE zeigt Termine teilweise getrennt als "So., 22.11." und "16:00 Uhr".
+# Diese Variante erkennt das Datum auch ohne sichtbares Jahr und ohne Uhrzeit in derselben Zeile.
+DATE_ONLY_RE = re.compile(r"(?:(?:Mo|Di|Mi|Do|Fr|Sa|So)\.?\s*,?\s*)?(\d{1,2})\.(\d{1,2})\.(?:(\d{2,4})\.)?(?!\d)", re.I)
 INFO_RE = re.compile(r"\b(ME|FS|PO|TU)\s*\|\s*(\d{6,})")
 TIME_RE = re.compile(r"(?<!\d)([0-2]?\d:[0-5]\d)(?!\d)")
 EXCLUDED_TYPES = {str(x).upper() for x in CFG.get("excludeCompetitionTypes", ["TU"])}
@@ -162,6 +165,19 @@ def is_local_venue(venue):
     return any(needle in low for needle in needles)
 
 
+def season_year_for(month, explicit_year=None):
+    """Ermittelt das Kalenderjahr aus der Saison, z. B. 2627 -> Jul-Dez 2026, Jan-Jun 2027."""
+    if explicit_year:
+        year = int(explicit_year)
+        return 2000 + year if year < 100 else year
+    season = str(CFG.get("season", "")).strip()
+    if re.fullmatch(r"\d{4}", season):
+        start_year = 2000 + int(season[:2])
+        end_year = 2000 + int(season[2:])
+        return start_year if int(month) >= 7 else end_year
+    return datetime.now(timezone.utc).year
+
+
 def parse_games(text, key, cfg):
     lines = [clean(x) for x in text.splitlines() if clean(x)]
     try:
@@ -182,12 +198,18 @@ def parse_games(text, key, cfg):
         dm = DATE_RE.search(line)
         if dm:
             d, m, y, tm = dm.groups()
-            y = "20" + y if len(y) == 2 else y
-            current_date = f"{y}-{int(m):02d}-{int(d):02d}"
+            year = season_year_for(m, y)
+            current_date = f"{year}-{int(m):02d}-{int(d):02d}"
             current_time = tm.zfill(5)
-        elif current_date:
+        else:
+            # Datum und Uhrzeit können auf zwei getrennten Zeilen stehen.
+            short_date = DATE_ONLY_RE.search(line)
+            if short_date:
+                d, m, y = short_date.groups()
+                year = season_year_for(m, y)
+                current_date = f"{year}-{int(m):02d}-{int(d):02d}"
             mt = TIME_RE.search(line)
-            if mt:
+            if mt and current_date:
                 current_time = mt.group(1).zfill(5)
         info = INFO_RE.search(line)
         if info:
@@ -250,9 +272,30 @@ async def load(page, cfg):
         await page.goto(cfg["url"], wait_until="domcontentloaded", timeout=90000)
         await page.wait_for_timeout(7000)
         await accept_cookies(page)
-        for _ in range(8):
-            await page.mouse.wheel(0, 1500)
-            await page.wait_for_timeout(450)
+        # Dynamisch bis zum tatsächlichen Seitenende scrollen. Feste Scroll-Zahlen
+        # waren unzuverlässig und konnten insbesondere Freundschaftsspiele auslassen.
+        stable_rounds = 0
+        previous_signature = None
+        for _ in range(40):
+            # Falls FUSSBALL.DE einen Nachlade-Button einblendet, diesen ebenfalls betätigen.
+            for label in ("Mehr anzeigen", "Weitere Spiele", "Mehr Spiele", "Alle anzeigen"):
+                try:
+                    button = page.get_by_role("button", name=re.compile(label, re.I)).last
+                    if await button.is_visible(timeout=250):
+                        await button.click(timeout=1000)
+                        await page.wait_for_timeout(800)
+                except Exception:
+                    pass
+            await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            await page.wait_for_timeout(700)
+            signature = await page.evaluate("[document.body.scrollHeight, document.body.innerText.length].join(':')")
+            if signature == previous_signature:
+                stable_rounds += 1
+            else:
+                stable_rounds = 0
+                previous_signature = signature
+            if stable_rounds >= 4:
+                break
         body = await page.locator("body").inner_text()
         html_source = await page.content()
         attrs = await page.locator("*").evaluate_all("""els => els.flatMap(e => Array.from(e.attributes || []).map(a => a.value)).filter(v => v && (/spiel/i.test(v) || /match/i.test(v)))""")
@@ -314,6 +357,8 @@ async def main():
                 home = [g for g in active if g["locationType"] == "home"]
                 linked = [g for g in home if g["detailUrl"]]
                 print(key, cfg["teamId"], len(active), "Detail-Links", len(linked), "/", len(home), "Kandidaten", len(urls))
+                for game in active:
+                    print("  ", key, game["date"], game["time"], game["homeTeam"], "-", game["awayTeam"], game["competitionType"] or "?")
                 if len(linked) < len(home):
                     warnings.append(f"{key}: Detail-Link für {len(linked)} von {len(home)} Heimspielen gefunden")
             except Exception as exc:
