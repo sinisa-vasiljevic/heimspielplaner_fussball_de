@@ -1,0 +1,10 @@
+Heimspielplaner v51.2 - Update
+==============================
+Diese Dateien im bestehenden Heimspielplaner ersetzen bzw. ergänzen:
+- index.html ersetzen
+- github-sync.js ersetzen
+- version.json ersetzen
+- spiel-aenderungen.json beibehalten/neu hinzufügen
+
+Nach Upload App vollständig neu laden. Bei vorhandenem GitHub-Token wird hs_mod_v19 beim Start sofort synchronisiert.
+Beim Speichern einer Spieländerung erfolgt zusätzlich eine direkte Synchronisierung mit Kontrolllesen.
