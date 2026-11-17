@@ -4,8 +4,8 @@ const APP_SHELL=[
   './index.html',
   './manifest.webmanifest?v=50.11',
   './version.json',
-  './firebase-sync-config.js?v=50.11',
-  './sync.js?v=50.11',
+  './github-sync.js?v=50.11',
+  './manuelle-spiele.json',
   './icon-192.png?v=50.11',
   './icon-512.png?v=50.11',
   './apple-touch-icon.png?v=50.11'
@@ -26,7 +26,7 @@ self.addEventListener('fetch',event=>{
   if(request.method!=='GET') return;
   const url=new URL(request.url);
   if(url.origin!==self.location.origin) return;
-  if(/\/(spiele-live\.json|version\.json)$/.test(url.pathname)){
+  if(/\/(spiele-live\.json|manuelle-spiele\.json|version\.json)$/.test(url.pathname)){
     event.respondWith((async()=>{
       const cache=await caches.open(CACHE_NAME);
       try{

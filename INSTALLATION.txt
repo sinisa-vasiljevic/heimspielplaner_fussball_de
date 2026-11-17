@@ -1,26 +1,29 @@
 Heimspielplaner 50.11
-Basis: Version 50.10.
+Basis: bereitgestellte Version 50.10.
 
 Änderungen:
-- Manuell angelegte Spiele werden zusätzlich zentral in Firebase/Firestore gespeichert.
-- Vorhandene lokale manuelle Spiele werden beim ersten erfolgreichen Verbinden übernommen.
-- Anlage, Bearbeitung und Löschung werden mit der Sammlung manualGames synchronisiert.
-- Lokale Speicherung bleibt als Offline-Sicherung bestehen.
-- FUSSBALL.DE-Livebestand bleibt unverändert und getrennt.
-- Keine Benutzerverwaltung im Heimspielplaner: einmalige Anmeldung mit dem bestehenden Trainingsplaner-Masterkonto.
-- Service Worker und Versionsdatei auf 50.11 angehoben.
+- Manuelle Spiele werden weiterhin lokal unter hs_manual_games_v509 gespeichert.
+- Zusätzlich werden sie als manuelle-spiele.json im eigenen Repository sinisa-vasiljevic/heimspielplaner_fussball_de gespeichert.
+- Vorhandene lokale Spiele werden bei der ersten Verbindung automatisch übernommen.
+- Anlage, Änderung und Löschung aktualisieren die zentrale Datei.
+- Der Trainingsplaner kann manuelle-spiele.json später öffentlich und ausschließlich lesend abrufen.
+- Keine Firebase-Verbindung, keine Trainingsplaner-Anmeldung und keine Kopplung an eine andere App.
 
-Auf GitHub ersetzen/ergänzen:
-- index.html ersetzen
-- sw.js ersetzen
-- version.json ersetzen
-- firebase-sync-config.js neu hinzufügen
-- sync.js neu hinzufügen
+GitHub-Token:
+- Fine-grained personal access token verwenden.
+- Repository access: Only select repositories -> heimspielplaner_fussball_de.
+- Repository permission: Contents = Read and write.
+- Der Token wird ausschließlich lokal auf dem Gerät im Browser gespeichert und nicht in Dateien oder im Repository abgelegt.
 
-Nach dem Upload:
-- Im Reiter Manuelles Spiel einmal mit dem bestehenden Trainingsplaner-Masterkonto verbinden.
-- Vorhandene lokale manuelle Spiele werden dabei in Firestore übernommen.
+Upload:
+- index.html, sw.js, version.json und INSTALLATION.txt ersetzen.
+- github-sync.js und manuelle-spiele.json neu hinzufügen.
+- Vorhandene Import-/Workflow-Dateien und spiele-live.json nicht verändern.
 
-Testgrenze:
-- HTML-Struktur, JavaScript-Syntax, Versionskonsistenz und Integrationspunkte wurden lokal geprüft.
-- Der reale Firebase-Login und Firestore-Schreibzugriff müssen nach Veröffentlichung mit dem echten Masterkonto geprüft werden.
+Erstübernahme:
+- Auf dem Gerät mit den vorhandenen manuellen Spielen Version 50.11 öffnen.
+- Im Reiter Manuelles Spiel den Token eintragen und Zentrale Speicherung aktivieren wählen.
+- Vorhandene lokale und eventuell zentrale Spiele werden anhand ihrer ID zusammengeführt und in manuelle-spiele.json gespeichert.
+
+Wichtig:
+- Browser-/PWA-Daten vor der Erstübernahme nicht löschen.
