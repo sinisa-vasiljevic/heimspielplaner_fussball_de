@@ -351,6 +351,10 @@ async def main():
                 found = parse_games(text, key, cfg)
                 for game in found:
                     game["detailUrl"] = match_detail_url(game, urls)
+                # SGV-Herren sind nur fuer die Belegung des Frankenstadions relevant.
+                # Deshalb werden SGV-Auswaertsspiele vollstaendig verworfen.
+                if key == "sgv":
+                    found = [g for g in found if g.get("locationType") == "home"]
                 games.extend(found)
                 counts[key] = len(found)
                 home = [g for g in found if g["locationType"] == "home"]
@@ -378,6 +382,10 @@ async def main():
     retained = []
     for game_id, previous in oldmap.items():
         if game_id not in newmap:
+            # SGV-Auswaertsspiele duerfen auch aus einem alten Datenbestand
+            # nicht wieder in spiele-live.json zurueckkehren.
+            if previous.get("teamId") == "sgv" and previous.get("locationType") != "home":
+                continue
             retained_game = dict(previous)
             retained_game["retainedFromPreviousRun"] = True
             retained.append(retained_game)
