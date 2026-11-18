@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-18T09:14:12.024467+00:00",
+  "updatedAt": "2026-11-18T17:20:38.845778+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -1595,9 +1595,6 @@
     "u16: Detail-Link für 0 von 2 Heimspielen gefunden",
     "u15: Detail-Link für 3 von 4 Heimspielen gefunden",
     "u14: Detail-Link für 1 von 2 Heimspielen gefunden",
-    "Abgesetztes Spiel entfernt: u15 2026-11-29 10:30 MTV Stuttgart I - VfR Heilbronn 96/18 I",
-    "Abgesetztes Spiel entfernt: u14 2026-12-02 14:00 Spvgg Cannstatt IV - VfR Heilbronn 96/18 II",
-    "Abgesetztes Spiel entfernt: u17 2027-02-13 11:00 FV Löchgau - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u15 2027-03-06 14:00 SSV Reutlingen 1905 Fußball - VfR Heilbronn 96/18",
     "Altbestand beibehalten: u17 2027-04-11 11:00 VfR Heilbronn 96/18 I - SV Allmersbach I",
     "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
