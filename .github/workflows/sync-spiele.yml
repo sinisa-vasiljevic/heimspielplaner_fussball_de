@@ -55,22 +55,45 @@ jobs:
 
           assert isinstance(new.get('games'), list), 'games fehlt oder ist keine Liste'
 
-          old_ids = {g.get('id') for g in old.get('games', []) if g.get('id')}
-          new_ids = {g.get('id') for g in new.get('games', []) if g.get('id')}
+          old_games = [g for g in old.get('games', []) if g.get('id')]
+          new_games = [g for g in new.get('games', []) if g.get('id')]
+          old_ids = {g['id'] for g in old_games}
+          new_ids = {g['id'] for g in new_games}
 
-          missing = sorted(old_ids - new_ids)
+          # Alte Spiele, die bereits als abgesetzt bekannt waren, duerfen nach
+          # der neuen Synchronisierung fehlen. Alle anderen alten Spiele bleiben
+          # weiterhin durch die Vollstaendigkeitspruefung geschuetzt.
+          allowed_removed_ids = {
+              g['id'] for g in old_games
+              if str(g.get('status', '')).strip().lower() == 'abgesetzt'
+          }
+          missing = sorted((old_ids - new_ids) - allowed_removed_ids)
 
           if missing:
               raise SystemExit(
-                  f'ABBRUCH: {len(missing)} bisherige Spiele fehlen: {missing[:20]}'
+                  f'ABBRUCH: {len(missing)} nicht-abgesetzte bisherige Spiele fehlen: {missing[:20]}'
               )
 
-          if len(new_ids) != len(new.get('games', [])):
+          invalid_cancelled = [
+              g.get('id') for g in new_games
+              if str(g.get('status', '')).strip().lower() == 'abgesetzt'
+          ]
+          if invalid_cancelled:
+              raise SystemExit(
+                  f'ABBRUCH: Abgesetzte Spiele stehen noch in neuer JSON: {invalid_cancelled[:20]}'
+              )
+
+          if len(new_ids) != len(new_games):
               raise SystemExit('ABBRUCH: doppelte oder ungültige Spiel-IDs')
 
+          removed_cancelled = sorted((old_ids - new_ids) & allowed_removed_ids)
           print(
-              f'Prüfung OK: vorher {len(old_ids)}, jetzt {len(new_ids)}, kein Spiel verloren.'
+              f'Prüfung OK: vorher {len(old_ids)}, jetzt {len(new_ids)}, '
+              f'{len(removed_cancelled)} bekannte Absetzungen entfernt, '
+              'kein nicht-abgesetztes bisheriges Spiel verloren.'
           )
+          if removed_cancelled:
+              print('Entfernte Absetzungen:', removed_cancelled[:20])
           print('Mannschaftszähler:', new.get('counts', {}))
           PY
 
