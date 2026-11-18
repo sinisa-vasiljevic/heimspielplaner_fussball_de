@@ -216,7 +216,16 @@ def parse_games(text, key, cfg):
             current_type, current_no = info.groups()
         if i + 2 < len(lines) and lines[i + 1] == ":" and current_date and current_time:
             home, away = lines[i], lines[i + 2]
-            tail = "\n".join(lines[i:min(len(lines), i + 18)])
+
+            # Nur der Text bis zur naechsten Spielpaarung gehoert zu diesem Spiel.
+            # So kann eine Absetzung niemals auf die vorherige Zeile uebergreifen.
+            block_end = len(lines)
+            for j in range(i + 3, len(lines) - 1):
+                if lines[j + 1] == ":":
+                    block_end = j
+                    break
+            game_block = "\n".join(lines[i:block_end])
+            is_cancelled = bool(re.search(r"\b(?:Absetzung|abgesetzt)\b", game_block, re.I))
             ctype = (current_type or "").upper()
             is_home = club_needle in home.lower()
             is_away = club_needle in away.lower()
@@ -234,7 +243,7 @@ def parse_games(text, key, cfg):
                         "opponent": away if is_home else home,
                         "venue": actual_venue or (CFG.get("venueDefault", "Frankenstadion") if is_home else home),
                         "pitch": "", "surface": "unbekannt", "venueDetail": "", "detailUrl": "", "detailStatus": "nicht_geladen",
-                        "source": "FUSSBALL.DE", "status": "abgesetzt" if re.search(r"Absetzung|abgesetzt", tail, re.I) else "angesetzt",
+                        "source": "FUSSBALL.DE", "status": "abgesetzt" if is_cancelled else "angesetzt",
                         "gameNo": current_no or "", "competitionType": current_type or "",
                     })
             current_time = current_type = current_no = None
@@ -368,6 +377,13 @@ async def main():
         await page.close()
         await browser.close()
 
+    # Aktuell sicher als abgesetzt erkannte Spiele vor der Ausgabe entfernen.
+    # Die IDs bleiben bekannt, damit das Sicherheitsnetz sie nicht reaktiviert.
+    cancelled_ids = {
+        g.get("id") for g in games
+        if g.get("id") and str(g.get("status", "")).strip().lower() == "abgesetzt"
+    }
+    games = [g for g in games if g.get("id") not in cancelled_ids]
     games = sorted({g["id"]: g for g in games}.values(), key=lambda g: (g["date"], g["time"], g["teamId"]))
     oldmap = {g.get("id"): g for g in old.get("games", []) if g.get("id")}
     newmap = {g.get("id"): g for g in games if g.get("id")}
@@ -377,6 +393,13 @@ async def main():
     # Altbestand, nicht gefundene Altspiele bleiben erhalten und werden geloggt.
     retained = []
     for game_id, previous in oldmap.items():
+        if game_id in cancelled_ids:
+            warnings.append(
+                f"Abgesetztes Spiel entfernt: {previous.get('teamId', '?')} "
+                f"{previous.get('date', '?')} {previous.get('time', '?')} "
+                f"{previous.get('homeTeam', '?')} - {previous.get('awayTeam', '?')}"
+            )
+            continue
         if game_id not in newmap:
             retained_game = dict(previous)
             retained_game["retainedFromPreviousRun"] = True
