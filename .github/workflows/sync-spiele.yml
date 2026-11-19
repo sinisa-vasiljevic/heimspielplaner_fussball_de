@@ -3,7 +3,7 @@ name: FUSSBALL.DE Spielplan sicher synchronisieren und Pages bereitstellen
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '27 * * * *'
 
 permissions:
   contents: write
