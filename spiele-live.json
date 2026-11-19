@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-19T07:33:08.059894+00:00",
+  "updatedAt": "2026-11-19T13:20:47.215509+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -441,7 +441,7 @@
       "club": "vfr",
       "label": "U19",
       "date": "2026-11-29",
-      "time": "16:30",
+      "time": "17:30",
       "homeTeam": "VfR Heilbronn 96/18",
       "awayTeam": "TSG 1862/09 Weinheim",
       "locationType": "home",
