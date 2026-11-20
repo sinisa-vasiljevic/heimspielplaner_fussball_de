@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-20T06:10:08.888449+00:00",
+  "updatedAt": "2026-11-20T07:10:03.696457+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 10,
@@ -110,7 +110,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181149",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-2dac4946f9328e7c13cd",
@@ -432,7 +433,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181156",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-3d25c6893e2760fbd8b3",
@@ -547,7 +549,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181167",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-ccac63b93b752e6fe7e0",
@@ -961,7 +964,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181172",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-1d8ea5f20d971300e91d",
@@ -1123,7 +1127,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181186",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-31067d0accb5e84d6bbf",
@@ -1215,7 +1220,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181196",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-4054130f7d1664c2cf09",
@@ -1330,7 +1336,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181204",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-430489ee13c824031dcd",
@@ -1376,7 +1383,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181212",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-ce528a8bda0f60e5a011",
@@ -1468,7 +1476,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181229",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-4f39174ddaa8f8e50687",
@@ -1561,7 +1570,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181237",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-8cb1d220439d4764aada",
@@ -1590,13 +1600,22 @@
   ],
   "warnings": [
     "sgv: Detail-Link für 3 von 5 Heimspielen gefunden",
-    "vh: Detail-Link für 2 von 7 Heimspielen gefunden",
     "u17: Detail-Link für 2 von 3 Heimspielen gefunden",
     "u16: Detail-Link für 0 von 2 Heimspielen gefunden",
     "u15: Detail-Link für 3 von 4 Heimspielen gefunden",
     "u14: Detail-Link für 1 von 2 Heimspielen gefunden",
+    "Altbestand beibehalten: vh 2026-11-21 14:00 VfR Heilbronn - TSV Ilshofen",
+    "Altbestand beibehalten: vh 2026-11-29 14:30 VfR Heilbronn - Sport-Union Neckarsulm",
+    "Altbestand beibehalten: vh 2026-12-06 14:00 SV Germania Bietigheim - VfR Heilbronn",
+    "Altbestand beibehalten: vh 2027-02-27 15:30 VfR Heilbronn - FV Löchgau",
     "Altbestand beibehalten: u15 2027-03-06 14:00 SSV Reutlingen 1905 Fußball - VfR Heilbronn 96/18",
+    "Altbestand beibehalten: vh 2027-03-07 15:00 SV Allmersbach - VfR Heilbronn",
+    "Altbestand beibehalten: vh 2027-03-14 15:00 VfR Heilbronn - FSV Waiblingen",
+    "Altbestand beibehalten: vh 2027-03-21 15:00 TSV Heimerdingen - VfR Heilbronn",
+    "Altbestand beibehalten: vh 2027-03-28 15:00 VfR Heilbronn - TSV Gaildorf",
+    "Altbestand beibehalten: vh 2027-04-10 14:00 VfR Heilbronn - SSV Schwäbisch Hall",
     "Altbestand beibehalten: u17 2027-04-11 11:00 VfR Heilbronn 96/18 I - SV Allmersbach I",
+    "Altbestand beibehalten: vh 2027-04-18 15:00 VfR Heilbronn - TSG Öhringen",
     "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
     "Keine Platzinformation für 4 Heimspiele: u14 2026-11-28 14:00, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
