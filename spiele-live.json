@@ -1,22 +1,22 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-21T07:09:54.431167+00:00",
+  "updatedAt": "2026-11-21T22:53:15.359584+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
-    "sgv": 10,
-    "vh": 10,
+    "sgv": 11,
+    "vh": 11,
     "u19": 4,
     "u17": 10,
     "u16": 11,
-    "u15": 10,
-    "u14": 9,
+    "u15": 9,
+    "u14": 10,
     "u13": 4,
     "u12": 0,
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 27,
-    "homeGamesWithPitch": 23,
+    "homeGames": 28,
+    "homeGamesWithPitch": 24,
     "homeGamesWithoutPitch": 4
   },
   "games": [
@@ -41,7 +41,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351457043",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-75e624f09e5a0f785902",
@@ -64,7 +65,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "390013059",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-d732d4ecc2c3070206fc",
@@ -87,7 +89,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "490010147",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-f4baf40e820d12ef768f",
@@ -110,7 +113,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181149",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-2dac4946f9328e7c13cd",
@@ -133,30 +137,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351891042",
-      "competitionType": "ME"
-    },
-    {
-      "id": "fd-e5c272d553da04b4f134",
-      "teamId": "u15",
-      "externalTeamId": "02B1JLKKD4000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U15",
-      "date": "2026-11-22",
-      "time": "13:00",
-      "homeTeam": "VfL Nagold",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "VfL Nagold",
-      "venue": "VfL Nagold",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/vfl-nagold-vfr-heilbronn-96-18-i/-/spiel/032ET1A4K4000000VS5489BUVSGKI48U",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "550034610",
-      "competitionType": "FS"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-36ac583160fb70c03e8f",
@@ -1076,8 +1058,7 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "390013075",
-      "competitionType": "ME",
-      "retainedFromPreviousRun": true
+      "competitionType": "ME"
     },
     {
       "id": "fd-9378f99c0620d1f0845f",
@@ -1402,6 +1383,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-7dab2e584a6d56f29b77",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2027-04-03",
+      "time": "17:00",
+      "homeTeam": "VfR Heilbronn 96/18 II",
+      "awayTeam": "SV Allmersbach",
+      "locationType": "home",
+      "opponent": "SV Allmersbach",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-ii-sv-allmersbach-i/-/spiel/031L72COAG000000VS5489BTVSRD0UH9",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "351891053",
+      "competitionType": "ME"
+    },
+    {
       "id": "fd-2b0c4216e6ab626ca7d6",
       "teamId": "u16",
       "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
@@ -1445,6 +1449,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350838074",
+      "competitionType": "ME"
+    },
+    {
+      "id": "fd-6b6cdce30b17d5df3ec6",
+      "teamId": "sgv",
+      "externalTeamId": "019S3IKKIO000000VV0AG80NVVK3URHB",
+      "club": "sgv",
+      "label": "Herren",
+      "date": "2027-04-10",
+      "time": "14:00",
+      "homeTeam": "TSV Steinbach Haiger",
+      "awayTeam": "SGV Heilbronn-Freiberg",
+      "locationType": "away",
+      "opponent": "TSV Steinbach Haiger",
+      "venue": "TSV Steinbach Haiger",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/tsv-steinbach-haiger-sgv-heilbronn-freiberg-fussball/-/spiel/031ECMOS5C000000VS5489BTVUS470OH",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "490010237",
       "competitionType": "ME"
     },
     {
@@ -1586,16 +1613,44 @@
       "gameNo": "351900067",
       "competitionType": "ME",
       "retainedFromPreviousRun": true
+    },
+    {
+      "id": "fd-8ef2aa3dc1d564321222",
+      "teamId": "vh",
+      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
+      "club": "vfr",
+      "label": "Herren",
+      "date": "2027-04-25",
+      "time": "15:30",
+      "homeTeam": "SV Leonberg/Eltingen",
+      "awayTeam": "VfR Heilbronn",
+      "locationType": "away",
+      "opponent": "SV Leonberg/Eltingen",
+      "venue": "SV Leonberg/Eltingen",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "350181247",
+      "competitionType": "ME"
     }
   ],
   "warnings": [
     "sgv: Detail-Link für 3 von 5 Heimspielen gefunden",
-    "vh: Detail-Link für 2 von 7 Heimspielen gefunden",
+    "vh: Detail-Link für 1 von 6 Heimspielen gefunden",
     "u17: Detail-Link für 2 von 3 Heimspielen gefunden",
     "u16: Detail-Link für 0 von 2 Heimspielen gefunden",
     "u15: Detail-Link für 3 von 4 Heimspielen gefunden",
-    "u14: Detail-Link für 1 von 2 Heimspielen gefunden",
-    "Altbestand beibehalten: u15 2027-03-06 14:00 SSV Reutlingen 1905 Fußball - VfR Heilbronn 96/18",
+    "u14: Detail-Link für 2 von 3 Heimspielen gefunden",
+    "Altbestand beibehalten: u13 2026-11-21 09:30 VfR Heilbronn 96/18 I - SSV Reutlingen 1905 Fußball",
+    "Altbestand beibehalten: u15 2026-11-21 13:00 FC Esslingen - VfR Heilbronn 96/18",
+    "Altbestand beibehalten: sgv 2026-11-21 14:00 KSV Hessen Kassel - SGV Heilbronn-Freiberg",
+    "Altbestand beibehalten: vh 2026-11-21 14:00 VfR Heilbronn - TSV Ilshofen",
+    "Altbestand beibehalten: u14 2026-11-21 14:15 SV Heilbronn am Leinbach - VfR Heilbronn 96/18 II",
+    "Abgesetztes Spiel entfernt: u15 2026-11-22 13:00 VfL Nagold - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u17 2027-04-11 11:00 VfR Heilbronn 96/18 I - SV Allmersbach I",
     "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
     "Keine Platzinformation für 4 Heimspiele: u14 2026-11-28 14:00, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
