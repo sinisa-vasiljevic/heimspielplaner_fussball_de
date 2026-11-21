@@ -13,6 +13,7 @@ from playwright.async_api import async_playwright
 ROOT = Path(__file__).resolve().parents[1]
 CFG = json.loads((ROOT / "sync_config.json").read_text(encoding="utf-8"))
 OUT = ROOT / "spiele-live.json"
+CANCELLED_OUT = ROOT / ".fussball-de-cancelled.json"
 
 DATE_RE = re.compile(r"(?:(?:Mo|Di|Mi|Do|Fr|Sa|So)\.?\s*,?\s*)?(\d{1,2})\.(\d{1,2})\.(\d{2,4}).*?([0-2]?\d:[0-5]\d)", re.I)
 # FUSSBALL.DE zeigt Termine teilweise getrennt als "So., 22.11." und "16:00 Uhr".
@@ -383,6 +384,17 @@ async def main():
         g.get("id") for g in games
         if g.get("id") and str(g.get("status", "")).strip().lower() == "abgesetzt"
     }
+
+    # Aktuell direkt auf FUSSBALL.DE erkannte Absetzungen separat an die
+    # nachfolgende Workflow-Pruefung uebergeben.
+    CANCELLED_OUT.write_text(
+        json.dumps(sorted(cancelled_ids), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    if cancelled_ids:
+        print("Aktuell als abgesetzt erkannt:", sorted(cancelled_ids))
+
     games = [g for g in games if g.get("id") not in cancelled_ids]
     games = sorted({g["id"]: g for g in games}.values(), key=lambda g: (g["date"], g["time"], g["teamId"]))
     oldmap = {g.get("id"): g for g in old.get("games", []) if g.get("id")}
