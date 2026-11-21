@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-21T22:53:15.359584+00:00",
+  "updatedAt": "2026-11-21T23:10:01.847404+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -1650,7 +1650,6 @@
     "Altbestand beibehalten: sgv 2026-11-21 14:00 KSV Hessen Kassel - SGV Heilbronn-Freiberg",
     "Altbestand beibehalten: vh 2026-11-21 14:00 VfR Heilbronn - TSV Ilshofen",
     "Altbestand beibehalten: u14 2026-11-21 14:15 SV Heilbronn am Leinbach - VfR Heilbronn 96/18 II",
-    "Abgesetztes Spiel entfernt: u15 2026-11-22 13:00 VfL Nagold - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u17 2027-04-11 11:00 VfR Heilbronn 96/18 I - SV Allmersbach I",
     "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
     "Keine Platzinformation für 4 Heimspiele: u14 2026-11-28 14:00, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
