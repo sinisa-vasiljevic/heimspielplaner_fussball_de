@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-22T20:09:45.290131+00:00",
+  "updatedAt": "2026-11-22T21:09:59.055598+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -243,7 +243,7 @@
       "club": "vfr",
       "label": "U13",
       "date": "2026-11-28",
-      "time": "12:00",
+      "time": "11:30",
       "homeTeam": "FC Unterföhring U12",
       "awayTeam": "VfR Heilbronn 96/18 I",
       "locationType": "away",
