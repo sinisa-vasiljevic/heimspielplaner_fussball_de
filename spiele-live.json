@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-22T15:10:09.239067+00:00",
+  "updatedAt": "2026-11-22T16:09:58.663495+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -161,7 +161,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900044",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-fd24079cf42e81056811",
@@ -184,7 +185,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350838050",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-d7fa92d1d51a1d560b42",
@@ -207,7 +209,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "390033056",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-d546117ce86341613e1d",
@@ -1564,8 +1567,7 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350838080",
-      "competitionType": "ME",
-      "retainedFromPreviousRun": true
+      "competitionType": "ME"
     },
     {
       "id": "fd-b59e3ac1a747eb940aa4",
@@ -1634,8 +1636,7 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900067",
-      "competitionType": "ME",
-      "retainedFromPreviousRun": true
+      "competitionType": "ME"
     },
     {
       "id": "fd-8ef2aa3dc1d564321222",
@@ -1664,7 +1665,7 @@
   "warnings": [
     "sgv: Detail-Link für 3 von 5 Heimspielen gefunden",
     "vh: Detail-Link für 1 von 6 Heimspielen gefunden",
-    "u17: Detail-Link für 2 von 3 Heimspielen gefunden",
+    "u17: Detail-Link für 1 von 3 Heimspielen gefunden",
     "u16: Detail-Link für 0 von 2 Heimspielen gefunden",
     "u15: Detail-Link für 4 von 5 Heimspielen gefunden",
     "u14: Detail-Link für 2 von 3 Heimspielen gefunden",
@@ -1673,8 +1674,9 @@
     "Altbestand beibehalten: sgv 2026-11-21 14:00 KSV Hessen Kassel - SGV Heilbronn-Freiberg",
     "Altbestand beibehalten: vh 2026-11-21 14:00 VfR Heilbronn - TSV Ilshofen",
     "Altbestand beibehalten: u14 2026-11-21 14:15 SV Heilbronn am Leinbach - VfR Heilbronn 96/18 II",
-    "Altbestand beibehalten: u17 2027-04-11 11:00 VfR Heilbronn 96/18 I - SV Allmersbach I",
-    "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
+    "Altbestand beibehalten: u16 2026-11-22 13:00 SGM VfL Mainhardt/Juniorteam MMB I - VfR Heilbronn 96/18 II",
+    "Altbestand beibehalten: u17 2026-11-22 13:00 VfR Heilbronn 96/18 I - SV Fellbach I",
+    "Altbestand beibehalten: u19 2026-11-22 14:00 SV Waldhof Mannheim - VfR Heilbronn 96/18",
     "Keine Platzinformation für 4 Heimspiele: u14 2026-11-28 14:00, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
 }
