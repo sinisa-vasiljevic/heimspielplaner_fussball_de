@@ -1,13 +1,13 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-22T19:09:39.908026+00:00",
+  "updatedAt": "2026-11-22T20:09:45.290131+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
     "vh": 11,
     "u19": 4,
     "u17": 10,
-    "u16": 11,
+    "u16": 12,
     "u15": 10,
     "u14": 11,
     "u13": 4,
@@ -973,6 +973,29 @@
       "competitionType": "FS"
     },
     {
+      "id": "fd-5336d322ac3c7cb05d26",
+      "teamId": "u16",
+      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
+      "club": "vfr",
+      "label": "U16",
+      "date": "2027-02-28",
+      "time": "11:00",
+      "homeTeam": "SGM Hirschl.-Schöck./Heimerd.",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "SGM Hirschl.-Schöck./Heimerd.",
+      "venue": "SGM Hirschl.-Schöck./Heimerd.",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sgm-hirschl-schoeck-heimerd-vfr-heilbronn-96-18-ii/-/spiel/032PK484D8000000VS5489BTVSIO88SN",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550017133",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-27a160ea5b5185c4ab95",
       "teamId": "u16",
       "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
@@ -1660,7 +1683,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900067",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-8ef2aa3dc1d564321222",
@@ -1702,6 +1726,7 @@
     "Altbestand beibehalten: u17 2026-11-22 13:00 VfR Heilbronn 96/18 I - SV Fellbach I",
     "Altbestand beibehalten: u19 2026-11-22 14:00 SV Waldhof Mannheim - VfR Heilbronn 96/18",
     "Altbestand beibehalten: u14 2026-11-22 16:00 VfR Heilbronn 96/18 II - SV Zimmern o.R. II",
+    "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
     "Keine Platzinformation für 4 Heimspiele: u14 2026-11-28 14:00, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
 }
