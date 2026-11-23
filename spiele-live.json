@@ -1,10 +1,10 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-23T08:10:03.735807+00:00",
+  "updatedAt": "2026-11-23T09:09:57.045074+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
-    "vh": 11,
+    "vh": 12,
     "u19": 4,
     "u17": 10,
     "u16": 12,
@@ -740,6 +740,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "550023698",
+      "competitionType": "FS"
+    },
+    {
+      "id": "fd-e18283814f5a262b9567",
+      "teamId": "vh",
+      "externalTeamId": "023SF66GL8000000VS548984VU2AAOK0",
+      "club": "vfr",
+      "label": "Herren",
+      "date": "2027-02-13",
+      "time": "14:00",
+      "homeTeam": "SV Fellbach",
+      "awayTeam": "VfR Heilbronn",
+      "locationType": "away",
+      "opponent": "SV Fellbach",
+      "venue": "SV Fellbach",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/sv-fellbach-vfr-heilbronn/-/spiel/032PPRRP6O000000VS5489BUVT7T9F23",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550006374",
       "competitionType": "FS"
     },
     {
@@ -1707,7 +1730,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "350181247",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     }
   ],
   "warnings": [
@@ -1727,6 +1751,7 @@
     "Altbestand beibehalten: u19 2026-11-22 14:00 SV Waldhof Mannheim - VfR Heilbronn 96/18",
     "Altbestand beibehalten: u14 2026-11-22 16:00 VfR Heilbronn 96/18 II - SV Zimmern o.R. II",
     "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
+    "Altbestand beibehalten: vh 2027-04-25 15:30 SV Leonberg/Eltingen - VfR Heilbronn",
     "Keine Platzinformation für 3 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
 }
