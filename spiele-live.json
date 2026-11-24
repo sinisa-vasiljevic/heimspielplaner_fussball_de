@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-24T05:09:54.505519+00:00",
+  "updatedAt": "2026-11-24T06:10:05.094123+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -10,13 +10,13 @@
     "u16": 13,
     "u15": 10,
     "u14": 11,
-    "u13": 4,
+    "u13": 5,
     "u12": 0,
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 29,
-    "homeGamesWithPitch": 26,
+    "homeGames": 30,
+    "homeGamesWithPitch": 27,
     "homeGamesWithoutPitch": 3
   },
   "games": [
@@ -581,6 +581,29 @@
       "gameNo": "520010176",
       "competitionType": "FS",
       "retainedFromPreviousRun": true
+    },
+    {
+      "id": "fd-1ff5855757a032664639",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-12-13",
+      "time": "15:30",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "FSV 08 Bietigheim-Bissingen I",
+      "locationType": "home",
+      "opponent": "FSV 08 Bietigheim-Bissingen I",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-fsv-08-bietigheim-bissingen-i/-/spiel/032Q30T5EK000000VS5489BTVSIO88SN",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550035071",
+      "competitionType": "FS"
     },
     {
       "id": "fd-5c5b8b81b8b999bc9d83",
