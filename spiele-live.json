@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-24T14:10:00.298756+00:00",
+  "updatedAt": "2026-11-24T15:10:11.432485+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -10,13 +10,13 @@
     "u16": 13,
     "u15": 10,
     "u14": 11,
-    "u13": 5,
+    "u13": 6,
     "u12": 0,
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 30,
-    "homeGamesWithPitch": 27,
+    "homeGames": 31,
+    "homeGamesWithPitch": 28,
     "homeGamesWithoutPitch": 3
   },
   "games": [
@@ -880,6 +880,29 @@
       "status": "angesetzt",
       "gameNo": "490010172",
       "competitionType": "ME"
+    },
+    {
+      "id": "fd-faa4257a0470004dfcdf",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2027-02-21",
+      "time": "10:00",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "VfR Mannheim",
+      "locationType": "home",
+      "opponent": "VfR Mannheim",
+      "venue": "Frankenstadion",
+      "pitch": "Rasenplatz",
+      "surface": "rasen",
+      "venueDetail": "Heilbronn Frankenstadion Rasen 2 (Nebenplatz)",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-vfr-mannheim/-/spiel/032Q6ILL0S000000VS5489BTVSIO88SN",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550035072",
+      "competitionType": "FS"
     },
     {
       "id": "fd-adc0dd30f45674136954",
