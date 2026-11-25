@@ -145,6 +145,9 @@ jobs:
         with:
           path: .
 
+      - name: 10 Sekunden auf Artefakt-Verfügbarkeit warten
+        run: sleep 10
+
       - name: Exakt geprüften Stand auf GitHub Pages veröffentlichen
         id: deployment
         uses: actions/deploy-pages@v5
