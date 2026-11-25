@@ -147,4 +147,4 @@ jobs:
 
       - name: Exakt geprüften Stand auf GitHub Pages veröffentlichen
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
