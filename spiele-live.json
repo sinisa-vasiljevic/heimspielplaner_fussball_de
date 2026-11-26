@@ -1,13 +1,13 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-26T17:09:57.113950+00:00",
+  "updatedAt": "2026-11-26T18:10:18.014425+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
     "vh": 12,
     "u19": 4,
     "u17": 11,
-    "u16": 13,
+    "u16": 14,
     "u15": 10,
     "u14": 13,
     "u13": 6,
@@ -928,6 +928,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-0a6abcfd7aa1a1e360ea",
+      "teamId": "u16",
+      "externalTeamId": "02IGCLELL8000000VS5489B1VUG7QVAU",
+      "club": "vfr",
+      "label": "U16",
+      "date": "2027-02-20",
+      "time": "14:30",
+      "homeTeam": "FSV Offenbach",
+      "awayTeam": "VfR Heilbronn 96/18 II",
+      "locationType": "away",
+      "opponent": "FSV Offenbach",
+      "venue": "FSV Offenbach",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "https://www.fussball.de/spiel/fsv-offenbach-vfr-heilbronn-96-18-ii/-/spiel/032QSKI1TK000000VS5489BUVU5G371E",
+      "detailStatus": "nicht_erforderlich",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "480006236",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-faa4257a0470004dfcdf",
       "teamId": "u13",
       "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
@@ -1732,7 +1755,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351900057",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-8d9d7fb900a8cc913a76",
@@ -1895,6 +1919,7 @@
     "Altbestand beibehalten: u17 2026-12-13 14:00 VfR Mannheim - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u14 2027-04-03 17:00 VfR Heilbronn 96/18 II - SV Allmersbach",
     "Altbestand beibehalten: u14 2027-04-10 15:00 SGV Heilbronn-Freiberg Fußball II - VfR Heilbronn 96/18 II",
+    "Altbestand beibehalten: u16 2027-04-11 10:30 SV Heilbronn am Leinbach I - VfR Heilbronn 96/18 II",
     "Altbestand beibehalten: u16 2027-04-18 10:30 VfR Heilbronn 96/18 II - SpVgg Satteldorf",
     "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
     "Altbestand beibehalten: vh 2027-04-25 15:30 SV Leonberg/Eltingen - VfR Heilbronn",
