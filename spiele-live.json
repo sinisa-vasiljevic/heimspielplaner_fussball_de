@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-26T08:10:06.445042+00:00",
+  "updatedAt": "2026-11-26T09:09:54.499907+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -9,15 +9,15 @@
     "u17": 11,
     "u16": 13,
     "u15": 10,
-    "u14": 11,
+    "u14": 13,
     "u13": 6,
     "u12": 0,
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 31,
-    "homeGamesWithPitch": 28,
-    "homeGamesWithoutPitch": 3
+    "homeGames": 33,
+    "homeGamesWithPitch": 29,
+    "homeGamesWithoutPitch": 4
   },
   "games": [
     {
@@ -652,6 +652,29 @@
       "competitionType": "FS"
     },
     {
+      "id": "fd-9cda9d1f0840ec99d934",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2027-01-23",
+      "time": "15:30",
+      "homeTeam": "VfR Heilbronn 96/18 II",
+      "awayTeam": "MTV Stuttgart I",
+      "locationType": "home",
+      "opponent": "MTV Stuttgart I",
+      "venue": "Frankenstadion",
+      "pitch": "",
+      "surface": "unbekannt",
+      "venueDetail": "",
+      "detailUrl": "",
+      "detailStatus": "link_fehlt",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550034819",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-4a3d85048f15ac10a163",
       "teamId": "u13",
       "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
@@ -672,6 +695,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "550035044",
+      "competitionType": "FS"
+    },
+    {
+      "id": "fd-96d9ab7e99fe7ef62b7e",
+      "teamId": "u14",
+      "externalTeamId": "02EKPGCJ60000000VS5489B2VU47K6LH",
+      "club": "vfr",
+      "label": "U14",
+      "date": "2027-01-30",
+      "time": "11:00",
+      "homeTeam": "VfR Heilbronn 96/18 II",
+      "awayTeam": "FSV Waldebene Stuttgart Ost I",
+      "locationType": "home",
+      "opponent": "FSV Waldebene Stuttgart Ost I",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-ii-fsv-waldebene-stuttgart-ost-i/-/spiel/032QONKAB4000000VS5489BUVU5G371E",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550034820",
       "competitionType": "FS"
     },
     {
@@ -1546,7 +1592,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351891053",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-2b0c4216e6ab626ca7d6",
@@ -1661,7 +1708,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "351891056",
-      "competitionType": "ME"
+      "competitionType": "ME",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-4f39174ddaa8f8e50687",
@@ -1834,7 +1882,7 @@
     "u17: Detail-Link für 1 von 3 Heimspielen gefunden",
     "u16: Detail-Link für 0 von 1 Heimspielen gefunden",
     "u15: Detail-Link für 4 von 5 Heimspielen gefunden",
-    "u14: Detail-Link für 1 von 2 Heimspielen gefunden",
+    "u14: Detail-Link für 1 von 3 Heimspielen gefunden",
     "Altbestand beibehalten: u13 2026-11-21 09:30 VfR Heilbronn 96/18 I - SSV Reutlingen 1905 Fußball",
     "Altbestand beibehalten: u15 2026-11-21 13:00 FC Esslingen - VfR Heilbronn 96/18",
     "Altbestand beibehalten: sgv 2026-11-21 14:00 KSV Hessen Kassel - SGV Heilbronn-Freiberg",
@@ -1845,9 +1893,11 @@
     "Altbestand beibehalten: u19 2026-11-22 14:00 SV Waldhof Mannheim - VfR Heilbronn 96/18",
     "Altbestand beibehalten: u14 2026-11-22 16:00 VfR Heilbronn 96/18 II - SV Zimmern o.R. II",
     "Altbestand beibehalten: u17 2026-12-13 14:00 VfR Mannheim - VfR Heilbronn 96/18 I",
+    "Altbestand beibehalten: u14 2027-04-03 17:00 VfR Heilbronn 96/18 II - SV Allmersbach",
+    "Altbestand beibehalten: u14 2027-04-10 15:00 SGV Heilbronn-Freiberg Fußball II - VfR Heilbronn 96/18 II",
     "Altbestand beibehalten: u16 2027-04-18 10:30 VfR Heilbronn 96/18 II - SpVgg Satteldorf",
     "Altbestand beibehalten: u16 2027-04-25 10:30 SGM VfR Gommersdorf/Mittleres Jagsttal I - VfR Heilbronn 96/18 II",
     "Altbestand beibehalten: vh 2027-04-25 15:30 SV Leonberg/Eltingen - VfR Heilbronn",
-    "Keine Platzinformation für 3 Heimspiele: vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
+    "Keine Platzinformation für 4 Heimspiele: u14 2027-01-23 15:30, vh 2027-03-14 15:00, u16 2027-04-04 10:30, u17 2027-04-11 11:00"
   ]
 }
