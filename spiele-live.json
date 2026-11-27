@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-27T09:09:49.759847+00:00",
+  "updatedAt": "2026-11-27T10:10:09.429785+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -10,7 +10,7 @@
     "u16": 14,
     "u15": 10,
     "u14": 13,
-    "u13": 6,
+    "u13": 5,
     "u12": 0,
     "u11": 0
   },
@@ -303,29 +303,6 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "550034742",
-      "competitionType": "FS"
-    },
-    {
-      "id": "fd-94dfa5d7138dace6a8e3",
-      "teamId": "u13",
-      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
-      "club": "vfr",
-      "label": "U13",
-      "date": "2026-11-29",
-      "time": "10:00",
-      "homeTeam": "TSV Milbertshofen U13",
-      "awayTeam": "VfR Heilbronn 96/18 I",
-      "locationType": "away",
-      "opponent": "TSV Milbertshofen U13",
-      "venue": "TSV Milbertshofen U13",
-      "pitch": "",
-      "surface": "unbekannt",
-      "venueDetail": "",
-      "detailUrl": "https://www.fussball.de/spiel/tsv-milbertshofen-u13-vfr-heilbronn-96-18-i/-/spiel/032FRU8BJ8000000VS5489BTVU989P58",
-      "detailStatus": "nicht_erforderlich",
-      "source": "FUSSBALL.DE",
-      "status": "angesetzt",
-      "gameNo": "510100171",
       "competitionType": "FS"
     },
     {
@@ -1916,6 +1893,7 @@
     "Altbestand beibehalten: u17 2026-11-22 13:00 VfR Heilbronn 96/18 I - SV Fellbach I",
     "Altbestand beibehalten: u19 2026-11-22 14:00 SV Waldhof Mannheim - VfR Heilbronn 96/18",
     "Altbestand beibehalten: u14 2026-11-22 16:00 VfR Heilbronn 96/18 II - SV Zimmern o.R. II",
+    "Abgesetztes Spiel entfernt: u13 2026-11-29 10:00 TSV Milbertshofen U13 - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u17 2026-12-13 14:00 VfR Mannheim - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u14 2027-04-03 17:00 VfR Heilbronn 96/18 II - SV Allmersbach",
     "Altbestand beibehalten: u14 2027-04-10 15:00 SGV Heilbronn-Freiberg Fußball II - VfR Heilbronn 96/18 II",
