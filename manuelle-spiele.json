@@ -1,8 +1,25 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-27T20:26:07.812Z",
+  "updatedAt": "2026-11-27T20:29:59.175Z",
   "source": "HEIMSPIELPLANER_MANUELL",
   "games": [
+    {
+      "id": "manual-1795811398164-nwftml",
+      "teamId": "pt18",
+      "club": "vfr",
+      "label": "PT18",
+      "date": "2026-12-05",
+      "time": "10:00",
+      "opponent": "LV",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "source": "MANUELL",
+      "manualType": "Testspiel",
+      "locationType": "home",
+      "createdAt": "2026-11-27T20:29:58.166Z",
+      "updatedAt": "2026-11-27T20:29:58.168Z"
+    },
     {
       "id": "manual-1794815667159-yrnebk",
       "teamId": "pt18",
