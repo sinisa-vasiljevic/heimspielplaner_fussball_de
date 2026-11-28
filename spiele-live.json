@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-28T07:09:54.148365+00:00",
+  "updatedAt": "2026-11-28T08:10:07.433279+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -10,13 +10,13 @@
     "u16": 14,
     "u15": 10,
     "u14": 14,
-    "u13": 5,
+    "u13": 7,
     "u12": 0,
     "u11": 0
   },
   "detailCounts": {
-    "homeGames": 33,
-    "homeGamesWithPitch": 29,
+    "homeGames": 35,
+    "homeGamesWithPitch": 31,
     "homeGamesWithoutPitch": 4
   },
   "games": [
@@ -559,6 +559,29 @@
       "competitionType": "ME"
     },
     {
+      "id": "fd-b19cd65f1669cd5023bc",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2026-12-12",
+      "time": "10:00",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "TSV Schmiden I",
+      "locationType": "home",
+      "opponent": "TSV Schmiden I",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-tsv-schmiden-i/-/spiel/032RCPVE88000000VS5489BUVT9QCK2K",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550035073",
+      "competitionType": "FS"
+    },
+    {
       "id": "fd-ccac63b93b752e6fe7e0",
       "teamId": "u17",
       "externalTeamId": "02EKPDV1FS000000VS5489B2VU47K6LH",
@@ -856,6 +879,29 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "550006374",
+      "competitionType": "FS"
+    },
+    {
+      "id": "fd-fc3c3d436a3dcaca8fc1",
+      "teamId": "u13",
+      "externalTeamId": "02B1JNESM0000000VS5489B2VS0NK514",
+      "club": "vfr",
+      "label": "U13",
+      "date": "2027-02-14",
+      "time": "10:00",
+      "homeTeam": "VfR Heilbronn 96/18 I",
+      "awayTeam": "SG HD-Kirchheim",
+      "locationType": "home",
+      "opponent": "SG HD-Kirchheim",
+      "venue": "Frankenstadion",
+      "pitch": "Kunstrasenplatz",
+      "surface": "kunstrasen",
+      "venueDetail": "Heilbronn Frankenstadion Kunstrasen",
+      "detailUrl": "https://www.fussball.de/spiel/vfr-heilbronn-96-18-i-sg-hd-kirchheim/-/spiel/032RCQM9FO000000VS5489BUVT9QCK2K",
+      "detailStatus": "geladen",
+      "source": "FUSSBALL.DE",
+      "status": "angesetzt",
+      "gameNo": "550035074",
       "competitionType": "FS"
     },
     {
