@@ -1,6 +1,6 @@
 {
   "schema": 5,
-  "updatedAt": "2026-11-28T13:10:15.875441+00:00",
+  "updatedAt": "2026-11-28T14:10:16.289571+00:00",
   "source": "FUSSBALL.DE",
   "counts": {
     "sgv": 11,
@@ -257,7 +257,8 @@
       "source": "FUSSBALL.DE",
       "status": "angesetzt",
       "gameNo": "510077237",
-      "competitionType": "FS"
+      "competitionType": "FS",
+      "retainedFromPreviousRun": true
     },
     {
       "id": "fd-4265ea03985f2634a2f1",
@@ -1963,6 +1964,7 @@
     "Altbestand beibehalten: u17 2026-11-22 13:00 VfR Heilbronn 96/18 I - SV Fellbach I",
     "Altbestand beibehalten: u19 2026-11-22 14:00 SV Waldhof Mannheim - VfR Heilbronn 96/18",
     "Altbestand beibehalten: u14 2026-11-22 16:00 VfR Heilbronn 96/18 II - SV Zimmern o.R. II",
+    "Altbestand beibehalten: u13 2026-11-28 11:30 FC Unterföhring U12 - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u17 2026-12-13 14:00 VfR Mannheim - VfR Heilbronn 96/18 I",
     "Altbestand beibehalten: u14 2027-03-20 14:30 FSV Waiblingen - VfR Heilbronn 96/18 II",
     "Altbestand beibehalten: u14 2027-04-03 17:00 VfR Heilbronn 96/18 II - SV Allmersbach",
