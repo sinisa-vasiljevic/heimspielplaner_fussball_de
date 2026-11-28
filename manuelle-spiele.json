@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-11-27T20:29:59.175Z",
+  "updatedAt": "2026-11-28T08:54:53.929Z",
   "source": "HEIMSPIELPLANER_MANUELL",
   "games": [
     {
@@ -18,7 +18,7 @@
       "manualType": "Testspiel",
       "locationType": "home",
       "createdAt": "2026-11-27T20:29:58.166Z",
-      "updatedAt": "2026-11-27T20:29:58.168Z"
+      "updatedAt": "2026-11-28T08:54:53.603Z"
     },
     {
       "id": "manual-1794815667159-yrnebk",
